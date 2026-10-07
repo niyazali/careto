@@ -1,12 +1,12 @@
 # Carotenoid bioaccessibility benchmark
 
-Data and Python code for evaluating carotenoid bioaccessibility predictions across food matrices and original studies.
+Data and code for predicting in vitro carotenoid bioaccessibility across food matrices and original studies.
 
-The main dataset contains 414 observations from 63 study groups in nine food-matrix categories. The target is isolated-micellar bioaccessibility expressed relative to carotenoid content in the initial food. Graph-derived values are identified in the data. Three sensitivity datasets test the inclusion of graph estimates, broader aqueous fractions and approximate endpoint conversions. A separate analysis compares categorical and quantitative predictors on 40 observations from seven studies.
+The primary dataset contains 414 observations from 63 study groups in nine food-matrix categories. The target is isolated-micellar bioaccessibility relative to carotenoid content in the initial food. Graph estimates are flagged. Sensitivity analyses assess graph exclusion, broader aqueous fractions, endpoint conversions, influential studies, training weights and training size. A quantitative-feature comparison uses 40 observations from seven studies.
 
 ## Installation
 
-Use Python 3.12 or newer. From this directory:
+Use Python 3.12 or newer.
 
 ```sh
 python -m venv .venv
@@ -16,8 +16,6 @@ python -m pip install -r requirements.txt
 
 ## Main analysis
 
-Each command writes to a separate directory. Existing result files support comparisons with a fresh run.
-
 ```sh
 python run_validation.py --output results/core
 python run_validation.py --sensitivity numeric_text_table_only --output results/numeric
@@ -25,11 +23,11 @@ python run_validation.py --sensitivity core_plus_supernatant --output results/aq
 python run_validation.py --cohort COHORT_with_conversions.json --sensitivity core_plus_supernatant --output results/converted
 ```
 
-`analysis_config.json` specifies features, model settings, validation designs and seeds. Preprocessing and hyperparameter selection use only the training data within each split. The study-separated and category-purged designs exclude the test studies from training. Full runs fit several hundred models and can take substantial time on a CPU. A run resumes from a matching checkpoint; changed inputs or code require a new output directory.
+`analysis_config.json` contains the features, models, tuning grids, validation designs and random seeds. Preprocessing and tuning use only training data. Study-separated and category-purged validation exclude test studies from training. Full runs can take substantial CPU time. Use a new output directory after changing inputs or code.
 
-Saved summaries and held-out predictions are in `saved_results_core`, `saved_results_numeric`, `saved_results_supernatant` and `saved_results_converted`. The release omits fitted-model binaries and intermediate checkpoints; fresh runs generate them.
+The primary summary and held-out predictions are supplied in `saved_results_core/`. The supplementary analyses below use these predictions. To replace them after rerunning the primary analysis, copy `results/core/RESULT_SUMMARY.json` and `results/core/oof_predictions.intermediate.csv` to `saved_results_core/RESULT_SUMMARY.json` and `saved_results_core/heldout_predictions.csv`, respectively.
 
-## Quantitative predictors
+## Quantitative-feature comparison
 
 ```sh
 cd quantitative_feature_benchmark
@@ -39,9 +37,9 @@ python test_benchmark.py
 cd ..
 ```
 
-This analysis uses nested leave-one-study-out evaluation and the same observations for each feature comparison. `extraction_evidence.csv` records source locators and unit qualifications. The quantitative analysis was developed after the main analysis; it was not preregistered.
+The comparison uses nested leave-one-study-out validation on the same observations. `extraction_evidence.csv` provides source links, locators, units and qualifications. This analysis was developed after the main analysis and was not preregistered.
 
-## Sensitivity analyses and figures
+## Supplementary analyses and figures
 
 ```sh
 python robustness_analysis.py
@@ -52,18 +50,17 @@ python plot_validation_diagnostics.py
 python plot_heldout_predictions.py
 ```
 
-The sensitivity scripts write to their respective result directories. Preserve the supplied CSV files before rerunning them. Training-size analysis caches completed fits; remove its generated cache to repeat every fit. Figure scripts use the supplied predictions and write to `figures/`.
+These commands generate result directories and figures locally. Training-size analysis caches completed fits; remove its generated cache to repeat every fit.
 
-## Data files
+## Data
 
-- `COHORT.json`: model inputs for the main and broader aqueous cohorts.
-- `COHORT_with_conversions.json`: inputs including the five approximate conversions.
-- `core_dataset.csv`, `broader_dataset.csv` and `observations.csv`: tabular observations and cohort membership.
-- `source_bibliography.csv`: publication identifiers for the retained main-study groups.
-- `conversions.csv`: assumptions used in endpoint conversions.
-- `FEATURE_ALIASES.json`: mappings used to harmonize categorical descriptors.
-- `SHA256SUMS`: checksums of the release files.
+- `core_dataset.csv` and `broader_dataset.csv`: observations, cohort membership and source identifiers.
+- `COHORT.json` and `COHORT_with_conversions.json`: model inputs, including the endpoint-conversion sensitivity dataset.
+- `source_bibliography.csv`: references for the primary study groups.
+- `conversions.csv`: endpoint-conversion assumptions.
+- `FREEZE*.json`: input hashes checked by the analysis runner.
+- `SHA256SUMS`: checksums of the distributed files.
 
-Observations from one study are correlated. The number of rows is not the number of independent experiments. Reported uncertainty intervals resample held-out study losses and exclude uncertainty from refitting. No model demonstrated a clear primary advantage over the median baseline, and no prospective external validation was performed.
+Observations within studies are correlated. Uncertainty intervals resample study losses from fixed held-out predictions and exclude refitting uncertainty. No model demonstrated a clear primary advantage over the median baseline. No prospective external validation was performed.
 
-Original articles and downloaded full texts are not distributed in this repository. Code formatting and release paths have been cleaned; the analysis rows and model calculations are unchanged.
+Original articles and downloaded full texts are not included.

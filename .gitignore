@@ -10,9 +10,10 @@ __pycache__/
 *.tmp
 *.pkl
 results/
+results_core/
 figures/
 checks/
-robustness_results/*.json
-training_weight_results/*.json
-training_size_results/*.json
+robustness_results/
+training_weight_results/
+training_size_results/
 quantitative_feature_benchmark/results/
