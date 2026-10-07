@@ -1,4 +1,4 @@
-"""Publication figures from saved predictions; no additional model fits."""
+"""Plot validation results from saved predictions."""
 
 import csv, json
 from pathlib import Path

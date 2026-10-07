@@ -1,7 +1,7 @@
-"""Nested, original-study and category-purged evaluation of reviewed cohort.
+"""Run nested validation with row, study and food-category holdouts.
 
 Requires Python 3.12 or newer. Preprocessing fits within each training split.
-Results persist after each outer fold. Release inputs are checked against their hashes.
+Save results after each outer fold and check input hashes before fitting.
 """
 
 import argparse
@@ -126,7 +126,7 @@ def splits(rows, scheme, config):
 
 
 def inner_splits(rows, config):
-    # Prefer the outer deployment objective. A deterministic max of three category folds bounds compute.
+    # Use category holdouts where possible, with at most three inner folds.
     candidates = [
         (name, tr, te)
         for name, tr, te in splits(rows, "category_study_purged", config)

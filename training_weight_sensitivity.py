@@ -1,4 +1,4 @@
-"""Post hoc equal-study learner fitting and inner-partition sensitivity.
+"""Check study-weighted fitting across alternative inner partitions.
 Original data, outer folds, candidate grid and model randomness are unchanged.
 """
 
@@ -159,7 +159,7 @@ for seed in seeds:
                     },
                 )
                 print(seed, weighted, name, fold, flush=True)
-# Verify exact recovery of released original-seed results and baseline.
+# Check that the original seed reproduces the saved results and baseline.
 saved = list(csv.DictReader((D / "saved_results_core/heldout_predictions.csv").open()))
 saved = {
     (r["model"], r["row_id"]): float(r["prediction"])

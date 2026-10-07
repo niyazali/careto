@@ -1,4 +1,4 @@
-"""Post hoc influence checks with unchanged inputs and nested validation.
+"""Check sensitivity to removing the largest studies using nested validation.
 Run from the released code directory. Results are saved separately from original fits.
 Five studies are selected by observation count before inspecting deletion results.
 """

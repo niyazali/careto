@@ -1,8 +1,10 @@
 # Carotenoid bioaccessibility benchmark
 
-Data and code for predicting in vitro carotenoid bioaccessibility across food matrices and original studies.
+Code and data accompanying the study of in vitro carotenoid bioaccessibility across foods.
 
-The primary dataset contains 414 observations from 63 study groups in nine food-matrix categories. The target is isolated-micellar bioaccessibility relative to carotenoid content in the initial food. Graph estimates are flagged. Sensitivity analyses assess graph exclusion, broader aqueous fractions, endpoint conversions, influential studies, training weights and training size. A quantitative-feature comparison uses 40 observations from seven studies.
+The main dataset has 414 observations from 63 studies across nine food categories. Bioaccessibility is expressed as the carotenoid amount in the isolated micellar fraction divided by the initial amount in the food. Values estimated from graphs are marked in the data.
+
+The analysis compares seven regression models with mean and median baselines. Additional analyses examine endpoint definitions, graph estimates, influential studies, training weights and training-set size. A smaller comparison adds quantitative predictors for 40 observations from seven studies.
 
 ## Installation
 
@@ -23,7 +25,7 @@ python run_validation.py --sensitivity core_plus_supernatant --output results/aq
 python run_validation.py --cohort COHORT_with_conversions.json --sensitivity core_plus_supernatant --output results/converted
 ```
 
-`analysis_config.json` contains the features, models, tuning grids, validation designs and random seeds. Preprocessing and tuning use only training data. Study-separated and category-purged validation exclude test studies from training. Full runs can take substantial CPU time. Use a new output directory after changing inputs or code.
+`analysis_config.json` contains the features, models, tuning grids, validation designs and random seeds. Preprocessing and tuning use only training data. Study holdouts and category holdouts with study exclusion remove test studies from training. Full runs can take several hours. Use a new output directory after changing inputs or code.
 
 The primary summary and held-out predictions are supplied in `saved_results_core/`. The supplementary analyses below use these predictions. To replace them after rerunning the primary analysis, copy `results/core/RESULT_SUMMARY.json` and `results/core/oof_predictions.intermediate.csv` to `saved_results_core/RESULT_SUMMARY.json` and `saved_results_core/heldout_predictions.csv`, respectively.
 
@@ -37,7 +39,7 @@ python test_benchmark.py
 cd ..
 ```
 
-The comparison uses nested leave-one-study-out validation on the same observations. `extraction_evidence.csv` provides source links, locators, units and qualifications. This analysis was developed after the main analysis and was not preregistered.
+The comparison uses nested leave-one-study-out validation on the same observations. `extraction_evidence.csv` records the source, table or figure location, units and extraction notes for each predictor. This analysis was developed after the main analysis and was not preregistered.
 
 ## Supplementary analyses and figures
 
@@ -61,6 +63,8 @@ These commands generate result directories and figures locally. Training-size an
 - `FREEZE*.json`: input hashes checked by the analysis runner.
 - `SHA256SUMS`: checksums of the distributed files.
 
-Observations within studies are correlated. Uncertainty intervals resample study losses from fixed held-out predictions. They exclude refitting and tuning uncertainty and do not capture dependence from overlapping training sets; they are descriptive conditional intervals. No model demonstrated a clear primary advantage over the median baseline. No prospective external validation was performed.
+## Interpretation
+
+The primary analysis did not demonstrate a clear model advantage over the median baseline. Observations from the same study are correlated. Reported intervals resample study errors from saved predictions; they do not include model refitting, tuning uncertainty or dependence caused by overlapping training sets. They describe uncertainty conditional on these fitted models. The study has no prospective external validation.
 
 Original articles and downloaded full texts are not included.

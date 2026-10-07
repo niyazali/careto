@@ -1,4 +1,4 @@
-"""True-vector endpoint and validation schematic; illustrations are conceptual."""
+"""Draw the endpoint definition and validation designs as vector graphics."""
 
 from pathlib import Path
 import matplotlib
@@ -103,7 +103,7 @@ ax.add_patch(
 )
 for x, y in [(12, 65), (17, 65), (23, 64)]:
     ax.add_patch(Circle((x, y), 0.55, facecolor="#ECC35D", edgecolor=ink, lw=0.5))
-# Beaker and separated fraction, all geometry remains vector.
+# Draw the digesta beaker and micellar fraction.
 ax.add_patch(Rectangle((49, 58), 12, 10, facecolor="none", edgecolor=ink, lw=1.2))
 ax.add_patch(Rectangle((49.3, 58.3), 11.4, 6.4, facecolor="#F0D7A4", edgecolor="none"))
 for x, y in [(51, 61), (55, 60), (59, 63)]:

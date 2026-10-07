@@ -1,6 +1,6 @@
-"""Post hoc row-count-matched category holdout, preserving nested tuning.
-Twenty outcome-blind subsets of the unpurged training pool match each primary
-purged fold's row count. Losses, not predictions, are averaged over repetitions.
+"""Compare category holdouts with matched training-set sizes.
+Twenty subsets sampled without using outcomes match each primary
+study-excluded fold's training size. Average losses over repetitions.
 """
 
 from pathlib import Path

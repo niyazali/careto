@@ -1,4 +1,4 @@
-"""Draw primary out-of-fold predictions. No model fitting or outcome-based selection."""
+"""Plot observed and predicted values from the saved primary analysis."""
 
 from pathlib import Path
 import json, csv, hashlib

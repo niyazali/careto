@@ -1,4 +1,4 @@
-"""Synthetic structural checks. Outputs here are test fixtures, not research results."""
+"""Test splitting, preprocessing and scoring with synthetic data."""
 
 import tempfile, json
 from pathlib import Path

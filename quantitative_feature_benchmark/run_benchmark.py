@@ -1,4 +1,4 @@
-"""Matched-feature nested original-study benchmark; fixed before fit, post hoc to original analysis."""
+"""Compare categorical and quantitative predictors using nested study holdouts."""
 
 import argparse, hashlib, json, platform, os, io
 from pathlib import Path
