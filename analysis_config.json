@@ -1,0 +1,157 @@
+{
+  "version": "2026-10-07-source-expansion-round3",
+  "input_sha256": "edb0b6cafcf865650858f52c12a4082825016adb3de996ce4981e2a746f730e8",
+  "seed": 20261005,
+  "target": "100 times terminal isolated micellar same-analyte amount / initial food same-analyte amount",
+  "features": [
+    "analyte",
+    "chemical_class",
+    "food_form",
+    "processing",
+    "added_fat",
+    "protocol"
+  ],
+  "outer_schemes": [
+    "random_row",
+    "original_study",
+    "category_unpurged",
+    "category_study_purged"
+  ],
+  "outer_folds": 5,
+  "max_inner_folds": 3,
+  "inner_rule": "Up to three deterministically selected feasible study-purged category splits; otherwise up to three original-study GroupKFold splits. Require at least two inner splits. Never tune on outer test data.",
+  "primary_metric": "Equal-original-study MAE, pooled over saved held-out rows",
+  "prediction_policy": "unbounded",
+  "bootstrap_replicates": 2000,
+  "bootstrap_scope": "Conditional approximate intervals, resampling original studies from fixed cross-fitted predictions; does not include refitting uncertainty",
+  "model_reporting": "All prespecified families, no posthoc outer-score winner claim",
+  "hyperparameters": {
+    "Ridge": [
+      {
+        "alpha": 0.1
+      },
+      {
+        "alpha": 1.0
+      },
+      {
+        "alpha": 10.0
+      }
+    ],
+    "ElasticNet": [
+      {
+        "alpha": 0.01,
+        "l1_ratio": 0.2
+      },
+      {
+        "alpha": 0.1,
+        "l1_ratio": 0.5
+      },
+      {
+        "alpha": 1.0,
+        "l1_ratio": 0.8
+      }
+    ],
+    "RandomForest": [
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 2
+      },
+      {
+        "max_depth": 6,
+        "min_samples_leaf": 2
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 4
+      }
+    ],
+    "GradientBoosting": [
+      {
+        "learning_rate": 0.03,
+        "max_depth": 2
+      },
+      {
+        "learning_rate": 0.1,
+        "max_depth": 2
+      },
+      {
+        "learning_rate": 0.05,
+        "max_depth": 3
+      }
+    ],
+    "SVR": [
+      {
+        "C": 1.0,
+        "gamma": "scale",
+        "epsilon": 0.1
+      },
+      {
+        "C": 10.0,
+        "gamma": "scale",
+        "epsilon": 0.5
+      },
+      {
+        "C": 100.0,
+        "gamma": "scale",
+        "epsilon": 1.0
+      }
+    ],
+    "KNN": [
+      {
+        "n_neighbors": 1
+      },
+      {
+        "n_neighbors": 3
+      },
+      {
+        "n_neighbors": 5
+      }
+    ],
+    "XGBoost": [
+      {
+        "max_depth": 2,
+        "learning_rate": 0.03,
+        "reg_lambda": 1
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "reg_lambda": 5
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "reg_lambda": 10
+      }
+    ]
+  },
+  "fixed_model_settings": {
+    "tree_estimators": 100,
+    "tree_jobs": 1,
+    "elasticnet_max_iter": 20000
+  },
+  "sensitivity_cohorts": [
+    "numeric_text_table_only",
+    "core_plus_supernatant"
+  ],
+  "eligibility_policy": "No range/bound midpoint, no magnitude-based capping or deletion, source-verified graph central points included with flag. Unknown method evidence remains pending, rather than being asserted compatible.",
+  "grouping_limit": "Original experimental source/linkage group; undocumented laboratory/sample overlap cannot be ruled out. Source DOI is not laboratory identity.",
+  "baseline_training_weights": "Equal total mass per original study,1/n_rows_in_study per training row; weighted mean and median",
+  "permutation_groups": {
+    "chemical_identity": [
+      "analyte",
+      "chemical_class"
+    ],
+    "food_design": [
+      "food_form",
+      "processing",
+      "added_fat"
+    ],
+    "protocol": [
+      "protocol"
+    ]
+  },
+  "feature_normalization": "Explicit reviewed aliases frozen before fitting; commodity identity removed from physical form and detailed processing kept in evidence ledger",
+  "baseline_config_sha256": "1afdefcf1c29ece2ecd06b8f1ea2275f36d085a5d224c1b64b93deb6350016c9",
+  "expansion_evidence_sha256": "8003a5f98fe9aa9d59d270202c13ae127422a2454c5a5b54fdb4250b77748b97"
+}

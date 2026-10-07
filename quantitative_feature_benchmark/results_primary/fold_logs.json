@@ -1,0 +1,1038 @@
+[
+  {
+    "fold": 1,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2022.132595",
+      "doi:10.1016/j.foodres.2014.06.016",
+      "doi:10.1021/jf072751r",
+      "doi:10.1021/jf100413m",
+      "doi:10.15835/buasvmcn-fst:2021.0004",
+      "doi:10.3390/foods14173089"
+    ],
+    "test_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035"
+    ],
+    "train_row_ids": [
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114",
+      "X-P0957-0426",
+      "X-P0957-0427",
+      "X-P0128-0048",
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06",
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004",
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "test_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ],
+        "validation_studies": [
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          43.35212092730345,
+          43.16795847007061,
+          42.37965350048401
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          47.4943690823198,
+          47.08868273253367,
+          44.39806824305808
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          49.36825319854708,
+          43.438068113925475,
+          37.176749637031634
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          49.10207254478445,
+          42.51440491734859,
+          36.91392808988882
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      }
+    }
+  },
+  {
+    "fold": 2,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035",
+      "doi:10.1016/j.foodres.2014.06.016",
+      "doi:10.1021/jf072751r",
+      "doi:10.1021/jf100413m",
+      "doi:10.15835/buasvmcn-fst:2021.0004",
+      "doi:10.3390/foods14173089"
+    ],
+    "test_studies": [
+      "doi:10.1016/j.foodchem.2022.132595"
+    ],
+    "train_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100",
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114",
+      "X-P0957-0426",
+      "X-P0957-0427",
+      "X-P0128-0048",
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06",
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004"
+    ],
+    "test_row_ids": [
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodres.2014.06.016"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m"
+        ],
+        "validation_studies": [
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          50.77421895927816,
+          50.862203114606956,
+          52.75337858908949
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          54.074788897478186,
+          54.112956839655055,
+          51.51136921884995
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          45.46901864403508,
+          43.68901669484541,
+          44.79437451953507
+        ],
+        "selected_index": 1,
+        "selected_settings": {
+          "C": 10.0,
+          "gamma": "scale",
+          "epsilon": 0.5
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          45.276362910896715,
+          46.457488806816826,
+          48.851122807595495
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "C": 1.0,
+          "gamma": "scale",
+          "epsilon": 0.1
+        }
+      }
+    }
+  },
+  {
+    "fold": 3,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035",
+      "doi:10.1016/j.foodchem.2022.132595",
+      "doi:10.1021/jf072751r",
+      "doi:10.1021/jf100413m",
+      "doi:10.15835/buasvmcn-fst:2021.0004",
+      "doi:10.3390/foods14173089"
+    ],
+    "test_studies": [
+      "doi:10.1016/j.foodres.2014.06.016"
+    ],
+    "train_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100",
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114",
+      "X-P0957-0426",
+      "X-P0957-0427",
+      "X-P0128-0048",
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06",
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "test_row_ids": [
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2022.132595"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m"
+        ],
+        "validation_studies": [
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          54.74887205166226,
+          54.688576639075514,
+          55.58359790272197
+        ],
+        "selected_index": 1,
+        "selected_settings": {
+          "max_depth": 6,
+          "min_samples_leaf": 2
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          52.046102574061194,
+          51.97327163166529,
+          48.785244506172035
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          42.5626604515216,
+          48.46203616678196,
+          47.17829935531279
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "C": 1.0,
+          "gamma": "scale",
+          "epsilon": 0.1
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          42.551116660618455,
+          48.47672750061303,
+          47.81020370498272
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "C": 1.0,
+          "gamma": "scale",
+          "epsilon": 0.1
+        }
+      }
+    }
+  },
+  {
+    "fold": 4,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035",
+      "doi:10.1016/j.foodchem.2022.132595",
+      "doi:10.1016/j.foodres.2014.06.016",
+      "doi:10.1021/jf100413m",
+      "doi:10.15835/buasvmcn-fst:2021.0004",
+      "doi:10.3390/foods14173089"
+    ],
+    "test_studies": [
+      "doi:10.1021/jf072751r"
+    ],
+    "train_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100",
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114",
+      "X-P0128-0048",
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06",
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004",
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "test_row_ids": [
+      "X-P0957-0426",
+      "X-P0957-0427"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ],
+        "validation_studies": [
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          40.942208813497416,
+          40.997121340638536,
+          39.74067233325849
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          40.807065488977564,
+          40.92815318783068,
+          39.322819672863965
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          36.108384320933126,
+          36.450198174169394,
+          34.16913301738921
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          36.023371424121315,
+          37.5519338866359,
+          35.14485073111018
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      }
+    }
+  },
+  {
+    "fold": 5,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035",
+      "doi:10.1016/j.foodchem.2022.132595",
+      "doi:10.1016/j.foodres.2014.06.016",
+      "doi:10.1021/jf072751r",
+      "doi:10.15835/buasvmcn-fst:2021.0004",
+      "doi:10.3390/foods14173089"
+    ],
+    "test_studies": [
+      "doi:10.1021/jf100413m"
+    ],
+    "train_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100",
+      "X-P0957-0426",
+      "X-P0957-0427",
+      "X-P0128-0048",
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06",
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004",
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "test_row_ids": [
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.15835/buasvmcn-fst:2021.0004",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.3390/foods14173089"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          35.45014281699121,
+          35.46486617932663,
+          34.25054020252171
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          25.355390583299883,
+          25.176392115951185,
+          26.527206936920393
+        ],
+        "selected_index": 1,
+        "selected_settings": {
+          "max_depth": 6,
+          "min_samples_leaf": 2
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          43.21212523975811,
+          35.98829049677695,
+          33.95056206483779
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          43.02353702201415,
+          33.84050201967829,
+          31.75511219187759
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      }
+    }
+  },
+  {
+    "fold": 6,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035",
+      "doi:10.1016/j.foodchem.2022.132595",
+      "doi:10.1016/j.foodres.2014.06.016",
+      "doi:10.1021/jf072751r",
+      "doi:10.1021/jf100413m",
+      "doi:10.3390/foods14173089"
+    ],
+    "test_studies": [
+      "doi:10.15835/buasvmcn-fst:2021.0004"
+    ],
+    "train_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100",
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114",
+      "X-P0957-0426",
+      "X-P0957-0427",
+      "X-P0128-0048",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06",
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004",
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "test_row_ids": [
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r"
+        ],
+        "validation_studies": [
+          "doi:10.1021/jf100413m",
+          "doi:10.3390/foods14173089"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          26.054578971331637,
+          26.115198520618602,
+          30.46735038918453
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          28.511068899031468,
+          28.64952029349619,
+          29.734618953098614
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          33.09329920384088,
+          31.82384667572718,
+          31.595026796278617
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "C": 100.0,
+          "gamma": "scale",
+          "epsilon": 1.0
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          32.93766123442145,
+          32.09891800120724,
+          32.7747037007701
+        ],
+        "selected_index": 1,
+        "selected_settings": {
+          "C": 10.0,
+          "gamma": "scale",
+          "epsilon": 0.5
+        }
+      }
+    }
+  },
+  {
+    "fold": 7,
+    "train_studies": [
+      "doi:10.1016/j.foodchem.2012.07.035",
+      "doi:10.1016/j.foodchem.2022.132595",
+      "doi:10.1016/j.foodres.2014.06.016",
+      "doi:10.1021/jf072751r",
+      "doi:10.1021/jf100413m",
+      "doi:10.15835/buasvmcn-fst:2021.0004"
+    ],
+    "test_studies": [
+      "doi:10.3390/foods14173089"
+    ],
+    "train_row_ids": [
+      "X-P0904-0097",
+      "X-P0904-0098",
+      "X-P0904-0099",
+      "X-P0904-0100",
+      "X-P0909-0111",
+      "X-P0909-0112",
+      "X-P0909-0113",
+      "X-P0909-0114",
+      "X-P0957-0426",
+      "X-P0957-0427",
+      "EXP-AD-EGG2021-001",
+      "EXP-AD-EGG2021-002",
+      "R2-AD-XAVIER2014-001",
+      "R2-AD-XAVIER2014-002",
+      "R2-AD-XAVIER2014-003",
+      "R2-AD-XAVIER2014-004",
+      "R2-AD-XAVIER2014-005",
+      "R2-AD-XAVIER2014-006",
+      "R3-AD-XAVIER2014-RECON-001",
+      "R3-AD-XAVIER2014-RECON-002",
+      "R3-AD-XAVIER2014-RECON-003",
+      "R3-AD-XAVIER2014-RECON-004",
+      "R3-CEREAL-SQUASH2022-004",
+      "R3-CEREAL-SQUASH2022-005",
+      "R3-CEREAL-SQUASH2022-006",
+      "R3-CEREAL-SQUASH2022-007",
+      "R3-CEREAL-SQUASH2022-008",
+      "R3-CEREAL-SQUASH2022-009",
+      "R3-CEREAL-SQUASH2022-010",
+      "R3-CEREAL-SQUASH2022-011",
+      "R3-CEREAL-SQUASH2022-012",
+      "R3-CEREAL-SQUASH2022-013",
+      "R3-CEREAL-SQUASH2022-014"
+    ],
+    "test_row_ids": [
+      "X-P0128-0048",
+      "E-OIL-P0128-01",
+      "E-OIL-P0128-02",
+      "E-OIL-P0128-03",
+      "E-OIL-P0128-04",
+      "E-OIL-P0128-05",
+      "E-OIL-P0128-06"
+    ],
+    "inner_splits": [
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2022.132595"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r"
+        ]
+      },
+      {
+        "train_studies": [
+          "doi:10.1016/j.foodchem.2022.132595",
+          "doi:10.1016/j.foodres.2014.06.016",
+          "doi:10.1021/jf072751r"
+        ],
+        "validation_studies": [
+          "doi:10.1016/j.foodchem.2012.07.035",
+          "doi:10.1021/jf100413m",
+          "doi:10.15835/buasvmcn-fst:2021.0004"
+        ]
+      }
+    ],
+    "models": {
+      "RandomForest_categorical": {
+        "candidate_study_balanced_mae": [
+          30.1173226461348,
+          30.121718839496154,
+          30.63338455532953
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      "RandomForest_quantitative": {
+        "candidate_study_balanced_mae": [
+          28.370900381232826,
+          28.388195603625544,
+          27.760135045802258
+        ],
+        "selected_index": 2,
+        "selected_settings": {
+          "max_depth": null,
+          "min_samples_leaf": 4
+        }
+      },
+      "SVR_categorical": {
+        "candidate_study_balanced_mae": [
+          28.222585598443633,
+          28.51967619006868,
+          33.083776672330245
+        ],
+        "selected_index": 0,
+        "selected_settings": {
+          "C": 1.0,
+          "gamma": "scale",
+          "epsilon": 0.1
+        }
+      },
+      "SVR_quantitative": {
+        "candidate_study_balanced_mae": [
+          28.0671222683566,
+          27.345129715376686,
+          31.792027403540626
+        ],
+        "selected_index": 1,
+        "selected_settings": {
+          "C": 10.0,
+          "gamma": "scale",
+          "epsilon": 0.5
+        }
+      }
+    }
+  }
+]

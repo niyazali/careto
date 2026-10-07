@@ -1,0 +1,107 @@
+{
+  "rows": 40,
+  "studies": 7,
+  "interval_scope": "Paired study resampling of fixed cross-fitted losses; conditional intervals exclude model refitting uncertainty",
+  "models": {
+    "weighted_median": {
+      "study_balanced_MAE": 42.980853432282004,
+      "conditional_95pct_interval": [
+        30.38412987012987,
+        58.12543460111318
+      ],
+      "descriptive_row_MAE": 38.79225,
+      "descriptive_row_RMSE": 43.97699947131454,
+      "descriptive_pooled_R2": -0.9333362799409308
+    },
+    "RandomForest_categorical": {
+      "study_balanced_MAE": 45.519707242312116,
+      "conditional_95pct_interval": [
+        36.6913181545846,
+        56.606311450430894
+      ],
+      "descriptive_row_MAE": 43.33859685183184,
+      "descriptive_row_RMSE": 46.70355520515385,
+      "descriptive_pooled_R2": -1.1805000207496072
+    },
+    "RandomForest_quantitative": {
+      "study_balanced_MAE": 38.63191544250187,
+      "conditional_95pct_interval": [
+        28.265403930357056,
+        51.236080592240015
+      ],
+      "descriptive_row_MAE": 35.09784890211341,
+      "descriptive_row_RMSE": 40.33984605064105,
+      "descriptive_pooled_R2": -0.626764494628125
+    },
+    "SVR_categorical": {
+      "study_balanced_MAE": 30.06254144845726,
+      "conditional_95pct_interval": [
+        16.590548807342802,
+        44.5569000572584
+      ],
+      "descriptive_row_MAE": 34.3873155639816,
+      "descriptive_row_RMSE": 40.57552758548775,
+      "descriptive_pooled_R2": -0.6458284412679214
+    },
+    "SVR_quantitative": {
+      "study_balanced_MAE": 29.40598551259522,
+      "conditional_95pct_interval": [
+        17.36690517040525,
+        42.382588762771334
+      ],
+      "descriptive_row_MAE": 33.336231865263144,
+      "descriptive_row_RMSE": 38.4258965557654,
+      "descriptive_pooled_R2": -0.4760607452042924
+    }
+  },
+  "paired_differences": {
+    "RandomForest": {
+      "direction": "quantitative minus categorical; negative favors quantitative",
+      "delta_MAE": -6.887791799810243,
+      "conditional_95pct_interval": [
+        -9.732435086073872,
+        -4.566977043299245
+      ]
+    },
+    "SVR": {
+      "direction": "quantitative minus categorical; negative favors quantitative",
+      "delta_MAE": -0.6565559358620341,
+      "conditional_95pct_interval": [
+        -3.1684442916171345,
+        1.1730689788620146
+      ]
+    },
+    "RandomForest_categorical_minus_weighted_median": {
+      "direction": "learner minus weighted median; negative favors learner",
+      "delta_MAE": 2.538853810030115,
+      "conditional_95pct_interval": [
+        -4.170910243969034,
+        9.116430534750986
+      ]
+    },
+    "RandomForest_quantitative_minus_weighted_median": {
+      "direction": "learner minus weighted median; negative favors learner",
+      "delta_MAE": -4.3489379897801275,
+      "conditional_95pct_interval": [
+        -10.183155990252525,
+        1.68026665112418
+      ]
+    },
+    "SVR_categorical_minus_weighted_median": {
+      "direction": "learner minus weighted median; negative favors learner",
+      "delta_MAE": -12.918311983824745,
+      "conditional_95pct_interval": [
+        -23.623399637757327,
+        -1.9216207725144518
+      ]
+    },
+    "SVR_quantitative_minus_weighted_median": {
+      "direction": "learner minus weighted median; negative favors learner",
+      "delta_MAE": -13.57486791968678,
+      "conditional_95pct_interval": [
+        -23.766501709633417,
+        -3.1360104040773193
+      ]
+    }
+  }
+}
