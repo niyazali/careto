@@ -61,6 +61,6 @@ These commands generate result directories and figures locally. Training-size an
 - `FREEZE*.json`: input hashes checked by the analysis runner.
 - `SHA256SUMS`: checksums of the distributed files.
 
-Observations within studies are correlated. Uncertainty intervals resample study losses from fixed held-out predictions and exclude refitting uncertainty. No model demonstrated a clear primary advantage over the median baseline. No prospective external validation was performed.
+Observations within studies are correlated. Uncertainty intervals resample study losses from fixed held-out predictions. They exclude refitting and tuning uncertainty and do not capture dependence from overlapping training sets; they are descriptive conditional intervals. No model demonstrated a clear primary advantage over the median baseline. No prospective external validation was performed.
 
 Original articles and downloaded full texts are not included.
