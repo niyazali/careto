@@ -1,0 +1,4462 @@
+{
+  "plan": {
+    "analysis": "Post hoc training-row-count-matched category holdout",
+    "models": [
+      "RandomForest",
+      "SVR",
+      "training_median"
+    ],
+    "sampling_seeds": [
+      20261010,
+      20261011,
+      20261012,
+      20261013,
+      20261014,
+      20261015,
+      20261016,
+      20261017,
+      20261018,
+      20261019,
+      20261020,
+      20261021,
+      20261022,
+      20261023,
+      20261024,
+      20261025,
+      20261026,
+      20261027,
+      20261028,
+      20261029
+    ],
+    "sampling": "Uniform rows without replacement from category-unpurged training pool; no target-based selection; preserve original input order",
+    "reference": "Saved primary category/study-purged predictions",
+    "test": "Exactly the same held-out category observations in both arms",
+    "tuning": "Original nested, study-purged inner rule and candidates; fixed original seed",
+    "aggregation": "Mean absolute loss per row across 20 repetitions, then equal original-study mean; not ensemble predictions",
+    "interval": "2000 paired original-study resamples of repetition-averaged fixed losses; conditional, unadjusted; does not include refitting uncertainty",
+    "limits": "Matches observation count only; study count, feature support and composition differ; not a pure leakage estimate",
+    "inputs": {
+      "COHORT.json": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+      "analysis_config.json": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+      "saved_results_core/heldout_predictions.csv": "f7ec6c81df06622e3273fb7128e5012e042902300ddc929204f6aecdb138c51d",
+      "run_validation.py": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53"
+    }
+  },
+  "summary": [
+    {
+      "model": "RandomForest",
+      "primary_study_MAE": 21.638291314981725,
+      "matched_study_MAE": 20.358674801578857,
+      "repetition_min": 19.851161423444427,
+      "repetition_max": 20.72412821875401,
+      "versus_primary": {
+        "delta_study_MAE": -1.2796165134028639,
+        "conditional_CI": [
+          -2.507409431846276,
+          -0.08621668478413176
+        ]
+      },
+      "versus_own_median": {
+        "delta_study_MAE": 0.5156836098796805,
+        "conditional_CI": [
+          -1.1276659197329382,
+          2.0886312590404925
+        ]
+      }
+    },
+    {
+      "model": "SVR",
+      "primary_study_MAE": 19.955863042945786,
+      "matched_study_MAE": 19.753438467246554,
+      "repetition_min": 19.60897681768524,
+      "repetition_max": 19.8671806795522,
+      "versus_primary": {
+        "delta_study_MAE": -0.2024245756992361,
+        "conditional_CI": [
+          -0.5974982030494432,
+          0.18014723651417136
+        ]
+      },
+      "versus_own_median": {
+        "delta_study_MAE": -0.08955272445262669,
+        "conditional_CI": [
+          -0.5487595819852868,
+          0.3413390936861944
+        ]
+      }
+    },
+    {
+      "model": "training_median",
+      "primary_study_MAE": 20.131576718060295,
+      "matched_study_MAE": 19.842991191699177,
+      "repetition_min": 19.723553950972885,
+      "repetition_max": 19.97577374953605,
+      "versus_primary": {
+        "delta_study_MAE": -0.28858552636111723,
+        "conditional_CI": [
+          -0.7218156973256862,
+          0.13679858431482486
+        ]
+      },
+      "versus_own_median": {
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "repetitions": [
+    {
+      "model": "RandomForest",
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "study_MAE": 20.314710223462356,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.3235810915193686,
+        "conditional_CI": [
+          -2.9426738243781054,
+          0.32604094021882135
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.41612950725856607,
+        "conditional_CI": [
+          -1.513534521087509,
+          2.3359381926339093
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "study_MAE": 20.607888453394025,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.0304028615876994,
+        "conditional_CI": [
+          -2.198663586348922,
+          0.03686955957747207
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.779290163857612,
+        "conditional_CI": [
+          -0.9304200471518315,
+          2.4238528171483975
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "study_MAE": 20.03653811236784,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.6017532026138834,
+        "conditional_CI": [
+          -2.924198972976371,
+          -0.39713822559134604
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.13623083159939064,
+        "conditional_CI": [
+          -1.4452358266240268,
+          1.638450461488284
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "study_MAE": 20.24185450991284,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.3964368050688822,
+        "conditional_CI": [
+          -2.688787096873512,
+          -0.18361774892650992
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.3947867039765133,
+        "conditional_CI": [
+          -1.3004368525488155,
+          1.9516148962958348
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "study_MAE": 20.45551935225877,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.182771962722953,
+        "conditional_CI": [
+          -2.7185271222770204,
+          0.35874858530462866
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.5490912825578549,
+        "conditional_CI": [
+          -1.5334761337367617,
+          2.626836103193703
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "study_MAE": 19.948953852676556,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.6893374623051636,
+        "conditional_CI": [
+          -3.410115825386412,
+          -0.11650705565867316
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.004232158066555303,
+        "conditional_CI": [
+          -1.6202583592209105,
+          1.5330212564060564
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "study_MAE": 19.851161423444427,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.7871298915372982,
+        "conditional_CI": [
+          -3.1564720033819924,
+          -0.40258978109625904
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.05762434456797039,
+        "conditional_CI": [
+          -1.6975069610465898,
+          1.7541619472902867
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "study_MAE": 20.46227651745805,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.1760147975236743,
+        "conditional_CI": [
+          -2.3834222311971978,
+          0.08198421127378588
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.7387225664851652,
+        "conditional_CI": [
+          -1.3077379741388495,
+          2.625117097548738
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "study_MAE": 20.72412821875401,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.914163096227711,
+        "conditional_CI": [
+          -2.096426701205636,
+          0.2449807237684505
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.963460600005273,
+        "conditional_CI": [
+          -0.7217620309373243,
+          2.611013200068374
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "study_MAE": 20.296098282910066,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.3421930320716569,
+        "conditional_CI": [
+          -2.770726645725346,
+          -0.10627949004381088
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.4469791949274288,
+        "conditional_CI": [
+          -1.2265421718894685,
+          2.0298363989166255
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "study_MAE": 20.68019934206895,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.9580919729127743,
+        "conditional_CI": [
+          -2.4942680432650257,
+          0.5442796632485513
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.87572008107573,
+        "conditional_CI": [
+          -0.8535389449371972,
+          2.626893364915235
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "study_MAE": 20.578998995388798,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.059292319592927,
+        "conditional_CI": [
+          -2.3263047206389693,
+          0.2760647350564423
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.7665385255175841,
+        "conditional_CI": [
+          -0.9288639554240178,
+          2.3372559519041665
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "study_MAE": 20.102420450679716,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.5358708643020074,
+        "conditional_CI": [
+          -3.065272246482394,
+          -0.06819590789864247
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.19169524880844163,
+        "conditional_CI": [
+          -1.5298491976224806,
+          1.8613389975596986
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "study_MAE": 20.456193321780397,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.1820979932013278,
+        "conditional_CI": [
+          -2.2615034675923305,
+          -0.13069915393368267
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.7097481025427632,
+        "conditional_CI": [
+          -0.9864559398456877,
+          2.355821208576638
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "study_MAE": 20.357470889197195,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.2808204257845266,
+        "conditional_CI": [
+          -2.5043061206927653,
+          -0.16014712632341568
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.45657663088647266,
+        "conditional_CI": [
+          -1.3172294132244755,
+          2.1151829364887083
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "study_MAE": 20.503747214599656,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.1345441003820675,
+        "conditional_CI": [
+          -2.5180783559388105,
+          0.05833197338424367
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.7066966720955535,
+        "conditional_CI": [
+          -1.0415564199801135,
+          2.3134190268353123
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "study_MAE": 20.370251748193432,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.268039566788291,
+        "conditional_CI": [
+          -2.6697523032650627,
+          0.11450393546761987
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.49978199505300636,
+        "conditional_CI": [
+          -1.1330586048662328,
+          2.0791309126726283
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "study_MAE": 20.348345794925933,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.2899455200557903,
+        "conditional_CI": [
+          -2.4749876691068957,
+          -0.17223999291048261
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.5816780643935471,
+        "conditional_CI": [
+          -1.0814432352476206,
+          2.2149070578936287
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "study_MAE": 20.55400627781835,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.0842850371633748,
+        "conditional_CI": [
+          -2.428781260564502,
+          0.3543543357435746
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.7401945393015089,
+        "conditional_CI": [
+          -1.2181081308603539,
+          2.612860262552051
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "RandomForest",
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "study_MAE": 20.282733050285827,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -1.355558264695899,
+        "conditional_CI": [
+          -2.863261389300915,
+          -0.06340836984192681
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.30695930074977573,
+        "conditional_CI": [
+          -1.2424283475390694,
+          1.763835424151541
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "study_MAE": 19.805987676264724,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.14987536668106516,
+        "conditional_CI": [
+          -0.5618020103785323,
+          0.24867755957110496
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.09259303993906513,
+        "conditional_CI": [
+          -0.5061718695557252,
+          0.3173121435169249
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "study_MAE": 19.724401607810677,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.23146143513511058,
+        "conditional_CI": [
+          -0.7111683916829421,
+          0.21158692352576436
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.10419668172573382,
+        "conditional_CI": [
+          -0.6694536951785895,
+          0.4391694810151866
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "study_MAE": 19.75076133933201,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.20510170361378066,
+        "conditional_CI": [
+          -0.6272596384890312,
+          0.19772184486929914
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.1495459414364414,
+        "conditional_CI": [
+          -0.5603789900243106,
+          0.23987596406836062
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "study_MAE": 19.706348654836727,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.24951438810906085,
+        "conditional_CI": [
+          -0.6474937845845921,
+          0.144304009331096
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.1407191510996003,
+        "conditional_CI": [
+          -0.5289377367535234,
+          0.2190460842736599
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "study_MAE": 19.79368257612685,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.16218046681893689,
+        "conditional_CI": [
+          -0.6054096895274766,
+          0.2635540730708561
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.11274549357406392,
+        "conditional_CI": [
+          -0.49776813934127273,
+          0.26474889871473534
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "study_MAE": 19.80017864349454,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.15568439945124873,
+        "conditional_CI": [
+          -0.5525158524069381,
+          0.21706439112241363
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.15300736724857483,
+        "conditional_CI": [
+          -0.6060327000228445,
+          0.28498257685306727
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "study_MAE": 19.708106830003864,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.24775621294192654,
+        "conditional_CI": [
+          -0.736323393644596,
+          0.2317086377106869
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.08543024887259265,
+        "conditional_CI": [
+          -0.6270613878229694,
+          0.42236284380275296
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "study_MAE": 19.807811157249937,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.14805188569585248,
+        "conditional_CI": [
+          -0.5337302567486504,
+          0.22760651248570382
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.08425720627705209,
+        "conditional_CI": [
+          -0.3100558945155752,
+          0.46736865063590083
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "study_MAE": 19.691459713403844,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.26440332954194434,
+        "conditional_CI": [
+          -0.7733326611749103,
+          0.19264148838339007
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.06920790534489536,
+        "conditional_CI": [
+          -0.6261186560139153,
+          0.4624545989957377
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "study_MAE": 19.681055763738637,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.274807279207152,
+        "conditional_CI": [
+          -0.6624307512411746,
+          0.0884086597312134
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.16806332424400117,
+        "conditional_CI": [
+          -0.68738490255754,
+          0.314993065429187
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "study_MAE": 19.76492333033398,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.19093971261180948,
+        "conditional_CI": [
+          -0.618846123940857,
+          0.2291179758921913
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.039555930659239825,
+        "conditional_CI": [
+          -0.48941535104955164,
+          0.39811026919341025
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "study_MAE": 19.68078761858326,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.27507542436253246,
+        "conditional_CI": [
+          -0.661422265683076,
+          0.09301688076901503
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.13167285128795636,
+        "conditional_CI": [
+          -0.6842128759798584,
+          0.38820505492272245
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "study_MAE": 19.780091217670357,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.17577182527543095,
+        "conditional_CI": [
+          -0.5679594086066804,
+          0.22095212718130977
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.13063398420091682,
+        "conditional_CI": [
+          -0.5976458013443793,
+          0.3094857937333992
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "study_MAE": 19.84107774074225,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.114785302203535,
+        "conditional_CI": [
+          -0.5759248990950967,
+          0.30649140269135144
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0946325215046212,
+        "conditional_CI": [
+          -0.47597587566487093,
+          0.6871830646700352
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "study_MAE": 19.60897681768524,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.34688622526055,
+        "conditional_CI": [
+          -0.7994720528996231,
+          0.08063699453331884
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.29191744062548575,
+        "conditional_CI": [
+          -0.70298790699429,
+          0.09322981148047378
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "study_MAE": 19.691005238619844,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.26485780432594314,
+        "conditional_CI": [
+          -0.7468354500679298,
+          0.16430314430707402
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.10604530388425717,
+        "conditional_CI": [
+          -0.6123245405974007,
+          0.3790638367755733
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "study_MAE": 19.634970217454224,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3208928254915659,
+        "conditional_CI": [
+          -0.8169851565244467,
+          0.1418595205533162
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.23549953568620324,
+        "conditional_CI": [
+          -0.7716226353182659,
+          0.28645232309681995
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "study_MAE": 19.863247864413687,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.0926151785321014,
+        "conditional_CI": [
+          -0.4362458004205098,
+          0.2617927094921026
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.09658013388130146,
+        "conditional_CI": [
+          -0.3063865625177598,
+          0.5019446529687893
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "study_MAE": 19.8671806795522,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.08868236339358979,
+        "conditional_CI": [
+          -0.5796481326108166,
+          0.3779591658240129
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.05336894103535901,
+        "conditional_CI": [
+          -0.5352714989509811,
+          0.6386155016792551
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "SVR",
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "study_MAE": 19.866714657614196,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.08914838533159325,
+        "conditional_CI": [
+          -0.5087109608885335,
+          0.3050412506735362
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.10905909192185312,
+        "conditional_CI": [
+          -0.6886217701391222,
+          0.45485318380355133
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "study_MAE": 19.89858071620379,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.23299600185650776,
+        "conditional_CI": [
+          -0.6305020463384722,
+          0.16017659805127116
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "study_MAE": 19.828598289536412,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.30297842852388446,
+        "conditional_CI": [
+          -0.7437811744518676,
+          0.14741923252212663
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "study_MAE": 19.90030728076845,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.23126943729184696,
+        "conditional_CI": [
+          -0.6787142307075323,
+          0.21848674811977248
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "study_MAE": 19.84706780593633,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.28450891212396834,
+        "conditional_CI": [
+          -0.8030266525203164,
+          0.23024337174900664
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "study_MAE": 19.906428069700915,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.22514864835938067,
+        "conditional_CI": [
+          -0.7467870170426795,
+          0.28699483129792835
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "study_MAE": 19.953186010743114,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.17839070731718165,
+        "conditional_CI": [
+          -0.5672873922030587,
+          0.20657021514752374
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "study_MAE": 19.793537078876454,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.33803963918384167,
+        "conditional_CI": [
+          -0.8214199483898015,
+          0.15028255696193815
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "study_MAE": 19.723553950972885,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.40802276708741225,
+        "conditional_CI": [
+          -0.8755618408219374,
+          0.059575085540767986
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "study_MAE": 19.76066761874874,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3709090993115568,
+        "conditional_CI": [
+          -0.8364623732606404,
+          0.08588629148710462
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "study_MAE": 19.84911908798264,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.28245763007765856,
+        "conditional_CI": [
+          -0.6450053388165152,
+          0.08151694236314809
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "study_MAE": 19.80447926099322,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3270974570670773,
+        "conditional_CI": [
+          -0.7562529705690751,
+          0.08987764445821218
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "study_MAE": 19.812460469871212,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.31911624818908374,
+        "conditional_CI": [
+          -0.6928569810006205,
+          0.05533704014393414
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "study_MAE": 19.910725201871273,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.220851516189022,
+        "conditional_CI": [
+          -0.5798760824756637,
+          0.13423931361202746
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "study_MAE": 19.746445219237632,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3851314988226639,
+        "conditional_CI": [
+          -0.8530799603691192,
+          0.07899991915223784
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "study_MAE": 19.900894258310725,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.23068245974957202,
+        "conditional_CI": [
+          -0.6825692404909827,
+          0.21648068006330146
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "study_MAE": 19.797050542504103,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3345261755561937,
+        "conditional_CI": [
+          -0.8362251610702017,
+          0.16146814224542072
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "study_MAE": 19.870469753140426,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.2611069649198704,
+        "conditional_CI": [
+          -0.7503603631982879,
+          0.2248358905377361
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "study_MAE": 19.766667730532387,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3649089875279107,
+        "conditional_CI": [
+          -0.8339734695134999,
+          0.10075266041908107
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "study_MAE": 19.81381173851684,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.3177649795434566,
+        "conditional_CI": [
+          -0.7641539039798015,
+          0.13085937831759212
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    },
+    {
+      "model": "training_median",
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "study_MAE": 19.97577374953605,
+      "versus_primary": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": -0.15580296852424785,
+        "conditional_CI": [
+          -0.5180810947944381,
+          0.2144540102652918
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      },
+      "versus_own_median": {
+        "rows": 450,
+        "studies": 64,
+        "delta_study_MAE": 0.0,
+        "conditional_CI": [
+          0.0,
+          0.0
+        ],
+        "direction": "A minus B; positive means A has larger error"
+      }
+    }
+  ],
+  "fold_diagnostics": [
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 13
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 55
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 55,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 55,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 0,
+      "sampling_seed": 20261010,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 59,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 43
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 62,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 48,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 13
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 1,
+      "sampling_seed": 20261011,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 58,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 42
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 59,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 2
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 51,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 55,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 2,
+      "sampling_seed": 20261012,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 59,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 49,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 51,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 54,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 3,
+      "sampling_seed": 20261013,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 57,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 43
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 59,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 50
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 51,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 55,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 4,
+      "sampling_seed": 20261014,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 58,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f"
+      ],
+      "shared_test_study_rows": 42
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 20
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 52
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 53,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 43
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 56,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 5,
+      "sampling_seed": 20261015,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 58,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 37
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 58,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 51,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 62,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 52
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 51
+    },
+    {
+      "repetition": 6,
+      "sampling_seed": 20261016,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 59,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 42
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 19
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 48,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 50,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 51
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 54,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 46
+    },
+    {
+      "repetition": 7,
+      "sampling_seed": 20261017,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 59,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 38
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 2
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 48,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 50
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 51,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 51
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 8,
+      "sampling_seed": 20261018,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 60,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 45
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 20
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 49,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 50
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 46
+    },
+    {
+      "repetition": 9,
+      "sampling_seed": 20261019,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 57,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 45
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 20
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 51,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 50
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 13
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 50,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 57,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 10,
+      "sampling_seed": 20261020,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 60,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 44
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 59,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 52,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 11,
+      "sampling_seed": 20261021,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 60,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 59,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 50
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 62,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 52
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 54,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 12,
+      "sampling_seed": 20261022,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 58,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 45
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 50
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 62,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 51,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 51
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 13,
+      "sampling_seed": 20261023,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 60,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 46
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 44
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 62,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 53,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 55
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 52
+    },
+    {
+      "repetition": 14,
+      "sampling_seed": 20261024,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 60,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 22
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 51
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 53,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 55,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 15,
+      "sampling_seed": 20261025,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 59,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 44
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 59,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 62,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 49,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 62,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 51,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 57,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 44
+    },
+    {
+      "repetition": 16,
+      "sampling_seed": 20261026,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 57,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 43
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 60,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 51
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 62,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 53,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 45
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 48
+    },
+    {
+      "repetition": 17,
+      "sampling_seed": 20261027,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 57,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 44
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 59,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 19
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 50,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 52
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 60,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 14
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 51,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 49
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 57,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 56,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 18,
+      "sampling_seed": 20261028,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 58,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 41
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "algae_microbial",
+      "training_rows": 375,
+      "primary_training_rows": 375,
+      "training_studies": 58,
+      "primary_training_studies": 58,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 21
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "animal_dairy",
+      "training_rows": 430,
+      "primary_training_rows": 430,
+      "training_studies": 61,
+      "primary_training_studies": 61,
+      "shared_test_studies": [],
+      "shared_test_study_rows": 0
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "cereals_legumes",
+      "training_rows": 397,
+      "primary_training_rows": 397,
+      "training_studies": 63,
+      "primary_training_studies": 62,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2022.132595"
+      ],
+      "shared_test_study_rows": 3
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "engineered_carriers",
+      "training_rows": 316,
+      "primary_training_rows": 316,
+      "training_studies": 51,
+      "primary_training_studies": 45,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627",
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 52
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "extracted_oils",
+      "training_rows": 416,
+      "primary_training_rows": 416,
+      "training_studies": 63,
+      "primary_training_studies": 61,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodres.2023.113174",
+        "doi:10.3390/nu12010076"
+      ],
+      "shared_test_study_rows": 15
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "fruits_fruiting_vegetables",
+      "training_rows": 317,
+      "primary_training_rows": 317,
+      "training_studies": 52,
+      "primary_training_studies": 44,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1016/j.foodchem.2022.132595",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005",
+        "doi:10.3390/pr13092964"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "leafy_brassica",
+      "training_rows": 382,
+      "primary_training_rows": 382,
+      "training_studies": 58,
+      "primary_training_studies": 54,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2015.10.049",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 16
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "mixed_meals",
+      "training_rows": 335,
+      "primary_training_rows": 335,
+      "training_studies": 55,
+      "primary_training_studies": 55,
+      "shared_test_studies": [
+        "doi:10.1016/j.foodchem.2025.147332",
+        "doi:10.1016/j.foodchem.2026.149627"
+      ],
+      "shared_test_study_rows": 47
+    },
+    {
+      "repetition": 19,
+      "sampling_seed": 20261029,
+      "fold": "roots_tubers",
+      "training_rows": 353,
+      "primary_training_rows": 353,
+      "training_studies": 59,
+      "primary_training_studies": 53,
+      "shared_test_studies": [
+        "doi:10.1002/jsfa.5768",
+        "doi:10.1016/j.foodchem.2012.07.035",
+        "doi:10.1016/j.foodchem.2012.08.076",
+        "doi:10.1016/j.foodchem.2013.05.064",
+        "doi:10.1021/jf303502h",
+        "doi:10.1039/d1fo00786f",
+        "doi:10.3390/antiox10071005"
+      ],
+      "shared_test_study_rows": 43
+    }
+  ]
+}

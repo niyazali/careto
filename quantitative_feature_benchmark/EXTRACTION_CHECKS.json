@@ -1,0 +1,30 @@
+{
+  "rows_before": 40,
+  "studies_before": 7,
+  "rows_after": 81,
+  "studies_after": 10,
+  "new_rows_by_study": {
+    "10.1002/fsn3.2150": 2,
+    "10.1002/jsfa.5768": 32,
+    "10.3390/nu12010076": 7
+  },
+  "all_original_fields_and_targets_identical": true,
+  "old_subset_preserved": true,
+  "source_table_images_visually_checked": true,
+  "source_pdf_hashes": {
+    "literature/papers/P0737.pdf": "93baa8cd0fd2ce2088a7c2fc4ca213bad4ba4243ecb6eac41011200d753dfd23",
+    "literature/papers/P0360.pdf": "483edfe13ab35692659e7087e2d3522a19db84c50539db0c671e883f13a56844",
+    "literature/papers/P0328.pdf": "65a6bb3bfc28dc540b2278c092201a1c6e8bbcc1ac68d89504d89e69332378bd"
+  },
+  "input_sha256": "a6e88c292b570315307d4fbdbb80a4bcb261d700049d7b4b3cb0df67dc38a1bd",
+  "features_unchanged": [
+    "log10_initial_carotenoid_ug_g",
+    "gastric_duration_min",
+    "intestinal_duration_min"
+  ],
+  "excluded_other_reviewed_sources": {
+    "10.3390/antiox8080291": "ng/mL cannot convert to micrograms/g without reported density; did not assume density.",
+    "10.1021/acs.jafc.7b04854": "Table2 reports individual-food composition; core rows are mixed meals. Did not assign individual-food concentration to mixed meal or assume unreported components zero.",
+    "10.1021/jf303502h": "Inspected main Tables1\u20133 and Methods; particle fractions and relative BA do not supply matching initial carotenoid concentrations for these rows."
+  }
+}

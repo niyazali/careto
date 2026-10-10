@@ -1,0 +1,62 @@
+Query ID,Database,Search date,Recorded query,Reported query count
+E01,Europe PMC (REST API v6.9),2026-07-21,"((carotenoid* OR ""beta-carotene"" OR lutein OR lycopene OR zeaxanthin OR ""alpha-carotene"" OR ""beta-cryptoxanthin"") AND (bioaccessib* OR micellarization OR micellarisation OR ""micellar fraction"") AND (""in vitro"" OR digestion OR gastrointestinal OR ""simulated digestion""))",2801
+E02,Europe PMC (REST API v6.9),2026-07-21,"((carotenoid* OR ""beta-carotene"" OR lutein OR lycopene OR zeaxanthin) AND (bioaccessib* OR ""micellar fraction"") AND (""food matrix"" OR matrix OR food OR beverage OR fruit OR vegetable OR cereal OR dairy OR ""plant-based"" OR emulsion) AND (digestion OR gastrointestinal OR ""in vitro""))",2728
+E03,Europe PMC (REST API v6.9),2026-07-21,"carotenoid AND ""simulated gastrointestinal digestion"" AND (bioaccessib* OR micellar*)",220
+E04,Europe PMC (REST API v6.9),2026-07-21,"carotenoid AND (micellarization OR micellarisation OR ""micellar fraction"" OR ""aqueous fraction"" OR ""mixed micelles"") AND (digestion OR gastrointestinal OR ""in vitro"")",881
+E05,Europe PMC (REST API v6.9),2026-07-21,"(lutein OR lycopene OR zeaxanthin OR ""beta-cryptoxanthin"" OR capsanthin OR fucoxanthin OR phytoene OR violaxanthin) AND bioaccessib* AND (digestion OR gastrointestinal OR ""in vitro"")",1516
+E06,Europe PMC (REST API v6.9),2026-07-21,"(carotenoid* OR ""beta-carotene"" OR lutein OR lycopene) AND bioaccessib* AND (nanoemulsion OR encapsulation OR ""plant-based"" OR dairy OR cereal OR legume OR milk) AND digestion",1445
+C01,Crossref (REST API),2026-07-21,carotenoid bioaccessibility in vitro digestion food matrix,2331566
+C02,Crossref (REST API),2026-07-21,carotenoid micellarization micellar fraction digestion,176714
+OA1,OpenAlex (REST API),2026-07-21,carotenoid bioaccessibility in vitro digestion,6925
+OA2,OpenAlex (REST API),2026-07-21,carotenoid micellarization food matrix,388
+CONS01,Consensus API v1,2026-07-21,What studies have measured carotenoid bioaccessibility after in vitro gastrointestinal digestion?,20
+CONS02,Consensus API v1,2026-07-21,What foods and food matrices have been studied for carotenoid bioaccessibility?,20
+CONS03,Consensus API v1,2026-07-21,What factors affect carotenoid bioaccessibility during simulated gastrointestinal digestion?,20
+CONS04,Consensus API v1,2026-07-21,carotenoid bioaccessibility in dairy milk and plant-based beverages after in vitro digestion,20
+CONS05,Consensus API v1,2026-07-21,carotenoid bioaccessibility in cereals grains and legumes after simulated gastrointestinal digestion,20
+CONS06,Consensus API v1,2026-07-21,carotenoid micellarization from nanoemulsions and encapsulation systems during digestion,20
+sparse_coverage_expansion_2026-10-06/broad,Consensus,2026-10-06,carotenoid bioaccessibility isolated micellar fraction in vitro digestion food,20
+sparse_coverage_expansion_2026-10-06/algae1,Consensus,2026-10-06,whole microalgae seaweed Spirulina Chlorella carotenoid bioaccessibility micellarization in vitro digestion,20
+sparse_coverage_expansion_2026-10-06/animal1,Consensus,2026-10-06,carotenoid lutein astaxanthin bioaccessibility in vitro digestion milk yogurt cheese egg salmon shrimp,20
+sparse_coverage_expansion_2026-10-06/oils1,Consensus,2026-10-06,carotenoid bioaccessibility micellarization in vitro digestion edible oil palm buriti pequi tucuma,20
+sparse_coverage_expansion_2026-10-06/algae2,Consensus,2026-10-06,fucoxanthin astaxanthin bioaccessibility edible microalgae biomass in vitro gastrointestinal digestion,20
+sparse_coverage_expansion_2026-10-06/animal2,Consensus,2026-10-06,lutein zeaxanthin beta carotene bioaccessibility dairy products egg yolk seafood micellar fraction,20
+sparse_coverage_expansion_round2_2026-10-06/egg,Consensus,2026-10-06,lutein zeaxanthin bioaccessibility egg yolk cooked eggs isolated micellar fraction static digestion,20
+sparse_coverage_expansion_round2_2026-10-06/seafood,Consensus,2026-10-06,astaxanthin bioaccessibility salmon trout shrimp seafood in vitro digestion micelles,20
+sparse_coverage_expansion_round2_2026-10-06/dairy,Consensus,2026-10-06,lutein zeaxanthin bioaccessibility dairy milk cheese yogurt intestinal micellar initial,20
+sparse_coverage_expansion_round2_2026-10-06/human_milk,Consensus,2026-10-06,carotenoid bioaccessibility colostrum mature human milk in vitro micellar,20
+sparse_coverage_expansion_round2_2026-10-06/palm,Consensus,2026-10-06,red palm oil beta carotene micellarization in vitro digestion bioaccessibility,20
+sparse_coverage_expansion_round2_2026-10-06/oils,Consensus,2026-10-06,carotenoid bioaccessibility cold pressed oil pequi sea buckthorn tucuma in vitro,20
+sparse_coverage_expansion_round2_2026-10-06/algae,Consensus,2026-10-06,microalgae carotenoid micellar bioaccessibility Dunaliella Phaeodactylum Scenedesmus,20
+sparse_coverage_expansion_round2_2026-10-06/cereals,Consensus,2026-10-06,carotenoid bioaccessibility maize corn millet wheat rice legumes in vitro mixed micelles,20
+sparse_coverage_expansion_round2_2026-10-06/algae_food,Consensus,2026-10-06,carotenoid bioaccessibility algae biomass yogurt milk digestion,20
+sparse_coverage_expansion_round2_2026-10-06/enriched_oils,Consensus,2026-10-06,beta carotene lycopene bioaccessibility virgin olive oil enrichment edible oils micellar fraction,20
+round3/animal_dairy/seafood,Consensus,2026-10-07,in vitro digestion micellarization bioaccessibility astaxanthin salmon trout shrimp food cooking,20
+round3/animal_dairy/eggs,Consensus,2026-10-07,egg yolk lutein zeaxanthin cooking micellar bioaccessibility in vitro digestion,
+round3/animal_dairy/milk,Consensus,2026-10-07,human milk infant formula lutein carotenoids micellar bioaccessibility digestion,
+round3/oils_cereals/0,Consensus,2026-10-07,carotenoid micellar bioaccessibility digestion pasta bread sorghum millet chickpea lentil food,
+round3/oils_cereals/1,Consensus,2026-10-07,carotenoid bioaccessibility extracted edible red palm buriti pequi oil unencapsulated control digestion,
+round3/oils_cereals/2,Consensus,2026-10-07,lutein zeaxanthin beta carotene bioaccessibility wheat maize cereal legume cooking germination digestion,20
+round3/oils_cereals/web0,Web discovery,2026-10-07,carotenoid bioaccessibility lentil digestion,
+round3/oils_cereals/web1,Web discovery,2026-10-07,carotenoid oil micellar control digestion cold pressed,
+round3/oils_cereals/web2,Web discovery,2026-10-07,10.1039/d2fo00611a repository,
+round3/oils_cereals/web3,Web discovery,2026-10-07,10.1016/j.foodres.2024.114935 full text,
+round3/oils_cereals/web4,Web discovery,2026-10-07,vvaf164 carotenoid,
+round3/oils_cereals/web5,Web discovery,2026-10-07,10.1039/c7fo01034f repository maize,
+round3/oils_cereals/web6,Web discovery,2026-10-07,10.1039/c9fo02622c manuscript,
+round3/oils_cereals/web7,Web discovery,2026-10-07,10.1039/d2fo00611a pasta,
+round3/oils_cereals/web8,Web discovery,2026-10-07,10.1016/j.jcs.2024.103879 pdf,
+round3/oils_cereals/web9,Web discovery,2026-10-07,Effect of cooking duration Oduro thesis carotenoid,
+round3/oils_cereals/web10,Web discovery,2026-10-07,10.1111/ijfs.15038 full text,
+round3/oils_cereals/web11,Web discovery,2026-10-07,carotenoid bioaccessibility bread chickpea,
+round3/oils_cereals/web12,Web discovery,2026-10-07,Yuwei Song maize thesis Manitoba carotenoid,
+round3/oils_cereals/web13,Web discovery,2026-10-07,Hannah Oduro-Obeng thesis Manitoba,
+round3/oils_cereals/web14,Web discovery,2026-10-07,Drum drying of whole maize full text pdf,
+round3/algae_marine/provider_limited,Consensus,2026-10-07,Haematococcus Isochrysis Scenedesmus astaxanthin lutein carotenoid bioaccessibility digestion,
+round3/algae_marine/query54,Consensus,2026-10-07,microalgae Chlamydomonas Phaeodactylum carotenoids bioaccessibility in vitro micellar digestion,20
+round3/algae_marine/query55,Consensus,2026-10-07,seaweed fucoxanthin bioaccessibility in vitro digestion micelles food biomass,20
+round4/consensus/1,Consensus,2026-10-09,carotenoid bioaccessibility micellarization maize wheat rice sorghum legumes digestion,20
+round4/consensus/2,Consensus,2026-10-09,carotenoid bioaccessibility egg yolk salmon milk edible oils in vitro digestion,20
+round4/consensus/3,Consensus,2026-10-09,carotenoid bioaccessibility initial concentration lipid content particle size in vitro food matrix,20
+round4/user_files,User-supplied source,2026-10-10,Full text of 10.1016/j.crfs.2023.100500: existing comparator; no digestion outcomes,
+round4/user_files_pasta,User-supplied supplement,2026-10-10,Supplement of 10.1039/D2FO00611A: staged for endpoint and duplicate-source review; not admitted,

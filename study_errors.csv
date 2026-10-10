@@ -1,0 +1,193 @@
+Study group,Source DOI URL,Model,Observations,Categories,Study MAE (pp),Mean observed (%),Mean predicted (%)
+doi:10.1002/fsn3.2150,https://doi.org/10.1002/fsn3.2150,Training median,2,algae_microbial,11.804999999999998,30.994999999999997,22.5
+doi:10.1002/fsn3.2150,https://doi.org/10.1002/fsn3.2150,Random forest,2,algae_microbial,15.5975716185556,30.994999999999997,46.592571618555596
+doi:10.1002/fsn3.2150,https://doi.org/10.1002/fsn3.2150,Support vector regression,2,algae_microbial,11.571553326363317,30.994999999999997,23.67786821370456
+doi:10.1002/fsn3.71103,https://doi.org/10.1002/fsn3.71103,Training median,2,fruits_fruiting_vegetables,27.225,51.325,24.1
+doi:10.1002/fsn3.71103,https://doi.org/10.1002/fsn3.71103,Random forest,2,fruits_fruiting_vegetables,17.77404609787488,51.325,33.55095390212512
+doi:10.1002/fsn3.71103,https://doi.org/10.1002/fsn3.71103,Support vector regression,2,fruits_fruiting_vegetables,28.424011346982276,51.325,22.900988653017727
+doi:10.1002/jsfa.5768,https://doi.org/10.1002/jsfa.5768,Training median,32,fruits_fruiting_vegetables; roots_tubers,19.671875,30.459374999999998,24.1
+doi:10.1002/jsfa.5768,https://doi.org/10.1002/jsfa.5768,Random forest,32,fruits_fruiting_vegetables; roots_tubers,21.51069698860804,30.459374999999998,27.865373108335607
+doi:10.1002/jsfa.5768,https://doi.org/10.1002/jsfa.5768,Support vector regression,32,fruits_fruiting_vegetables; roots_tubers,19.629958236704248,30.459374999999998,22.894324325145185
+doi:10.1007/s11130-026-01551-8,https://doi.org/10.1007/s11130-026-01551-8,Training median,5,fruits_fruiting_vegetables,15.839999999999998,33.54,24.1
+doi:10.1007/s11130-026-01551-8,https://doi.org/10.1007/s11130-026-01551-8,Random forest,5,fruits_fruiting_vegetables,17.18520282863398,33.54,28.973449885236676
+doi:10.1007/s11130-026-01551-8,https://doi.org/10.1007/s11130-026-01551-8,Support vector regression,5,fruits_fruiting_vegetables,17.36386566640008,33.54,22.115012577623506
+doi:10.1016/j.fochx.2026.104124,https://doi.org/10.1016/j.fochx.2026.104124,Training median,2,engineered_carriers,14.5,27.0,19.0
+doi:10.1016/j.fochx.2026.104124,https://doi.org/10.1016/j.fochx.2026.104124,Random forest,2,engineered_carriers,14.5,27.0,15.81638810525001
+doi:10.1016/j.fochx.2026.104124,https://doi.org/10.1016/j.fochx.2026.104124,Support vector regression,2,engineered_carriers,14.5,27.0,14.827458343041439
+doi:10.1016/j.foodchem.2010.09.110,https://doi.org/10.1016/j.foodchem.2010.09.110,Training median,4,leafy_brassica,19.325000000000003,34.375,23.0
+doi:10.1016/j.foodchem.2010.09.110,https://doi.org/10.1016/j.foodchem.2010.09.110,Random forest,4,leafy_brassica,12.589989349726409,34.375,28.497537603525494
+doi:10.1016/j.foodchem.2010.09.110,https://doi.org/10.1016/j.foodchem.2010.09.110,Support vector regression,4,leafy_brassica,16.620312113248932,34.375,23.4992120468551
+doi:10.1016/j.foodchem.2012.02.036,https://doi.org/10.1016/j.foodchem.2012.02.036,Training median,1,fruits_fruiting_vegetables,4.799999999999997,28.9,24.1
+doi:10.1016/j.foodchem.2012.02.036,https://doi.org/10.1016/j.foodchem.2012.02.036,Random forest,1,fruits_fruiting_vegetables,6.783598551599972,28.9,22.116401448400026
+doi:10.1016/j.foodchem.2012.02.036,https://doi.org/10.1016/j.foodchem.2012.02.036,Support vector regression,1,fruits_fruiting_vegetables,6.495019580543325,28.9,22.404980419456674
+doi:10.1016/j.foodchem.2012.07.035,https://doi.org/10.1016/j.foodchem.2012.07.035,Training median,4,fruits_fruiting_vegetables; roots_tubers,19.35,4.75,24.1
+doi:10.1016/j.foodchem.2012.07.035,https://doi.org/10.1016/j.foodchem.2012.07.035,Random forest,4,fruits_fruiting_vegetables; roots_tubers,16.29310627958087,4.75,21.04310627958087
+doi:10.1016/j.foodchem.2012.07.035,https://doi.org/10.1016/j.foodchem.2012.07.035,Support vector regression,4,fruits_fruiting_vegetables; roots_tubers,13.54756387698232,4.75,18.29756387698232
+doi:10.1016/j.foodchem.2012.08.076,https://doi.org/10.1016/j.foodchem.2012.08.076,Training median,5,leafy_brassica; roots_tubers,14.16,9.5,23.659999999999997
+doi:10.1016/j.foodchem.2012.08.076,https://doi.org/10.1016/j.foodchem.2012.08.076,Random forest,5,leafy_brassica; roots_tubers,21.266748072166912,9.5,30.766748072166912
+doi:10.1016/j.foodchem.2012.08.076,https://doi.org/10.1016/j.foodchem.2012.08.076,Support vector regression,5,leafy_brassica; roots_tubers,15.009958062181479,9.5,24.509958062181486
+doi:10.1016/j.foodchem.2013.05.064,https://doi.org/10.1016/j.foodchem.2013.05.064,Training median,11,engineered_carriers; fruits_fruiting_vegetables; roots_tubers,12.681818181818182,20.727272727272727,22.245454545454546
+doi:10.1016/j.foodchem.2013.05.064,https://doi.org/10.1016/j.foodchem.2013.05.064,Random forest,11,engineered_carriers; fruits_fruiting_vegetables; roots_tubers,12.753868993503596,20.727272727272727,20.292939274193547
+doi:10.1016/j.foodchem.2013.05.064,https://doi.org/10.1016/j.foodchem.2013.05.064,Support vector regression,11,engineered_carriers; fruits_fruiting_vegetables; roots_tubers,12.855075421087122,20.727272727272727,19.058338773411734
+doi:10.1016/j.foodchem.2015.10.049,https://doi.org/10.1016/j.foodchem.2015.10.049,Training median,7,fruits_fruiting_vegetables; leafy_brassica,18.62857142857143,4.8428571428571425,23.47142857142857
+doi:10.1016/j.foodchem.2015.10.049,https://doi.org/10.1016/j.foodchem.2015.10.049,Random forest,7,fruits_fruiting_vegetables; leafy_brassica,19.244739593585887,4.8428571428571425,24.087596736443032
+doi:10.1016/j.foodchem.2015.10.049,https://doi.org/10.1016/j.foodchem.2015.10.049,Support vector regression,7,fruits_fruiting_vegetables; leafy_brassica,17.717343558793914,4.8428571428571425,22.560200701651052
+doi:10.1016/j.foodchem.2016.09.065,https://doi.org/10.1016/j.foodchem.2016.09.065,Training median,1,fruits_fruiting_vegetables,17.400000000000002,6.7,24.1
+doi:10.1016/j.foodchem.2016.09.065,https://doi.org/10.1016/j.foodchem.2016.09.065,Random forest,1,fruits_fruiting_vegetables,26.46460107374914,6.7,33.16460107374914
+doi:10.1016/j.foodchem.2016.09.065,https://doi.org/10.1016/j.foodchem.2016.09.065,Support vector regression,1,fruits_fruiting_vegetables,16.735474122369496,6.7,23.435474122369495
+doi:10.1016/j.foodchem.2017.02.074,https://doi.org/10.1016/j.foodchem.2017.02.074,Training median,2,fruits_fruiting_vegetables,40.78000000000001,56.06,24.1
+doi:10.1016/j.foodchem.2017.02.074,https://doi.org/10.1016/j.foodchem.2017.02.074,Random forest,2,fruits_fruiting_vegetables,40.78,56.06,26.80283087760417
+doi:10.1016/j.foodchem.2017.02.074,https://doi.org/10.1016/j.foodchem.2017.02.074,Support vector regression,2,fruits_fruiting_vegetables,40.55260707997804,56.06,22.294645067885803
+doi:10.1016/j.foodchem.2017.06.147,https://doi.org/10.1016/j.foodchem.2017.06.147,Training median,3,leafy_brassica,21.573333333333334,1.4266666666666667,23.0
+doi:10.1016/j.foodchem.2017.06.147,https://doi.org/10.1016/j.foodchem.2017.06.147,Random forest,3,leafy_brassica,21.6278632451113,1.4266666666666667,23.054529911777962
+doi:10.1016/j.foodchem.2017.06.147,https://doi.org/10.1016/j.foodchem.2017.06.147,Support vector regression,3,leafy_brassica,15.538639495806335,1.4266666666666667,16.965306162473
+doi:10.1016/j.foodchem.2018.11.039,https://doi.org/10.1016/j.foodchem.2018.11.039,Training median,2,engineered_carriers,62.0,81.0,19.0
+doi:10.1016/j.foodchem.2018.11.039,https://doi.org/10.1016/j.foodchem.2018.11.039,Random forest,2,engineered_carriers,64.00900685487586,81.0,16.99099314512414
+doi:10.1016/j.foodchem.2018.11.039,https://doi.org/10.1016/j.foodchem.2018.11.039,Support vector regression,2,engineered_carriers,64.92720066549808,81.0,16.072799334501916
+doi:10.1016/j.foodchem.2021.130377,https://doi.org/10.1016/j.foodchem.2021.130377,Training median,3,roots_tubers,18.466666666666665,5.633333333333333,24.100000000000005
+doi:10.1016/j.foodchem.2021.130377,https://doi.org/10.1016/j.foodchem.2021.130377,Random forest,3,roots_tubers,20.870489017958235,5.633333333333333,26.50382235129157
+doi:10.1016/j.foodchem.2021.130377,https://doi.org/10.1016/j.foodchem.2021.130377,Support vector regression,3,roots_tubers,15.833709153207513,5.633333333333333,21.467042486540844
+doi:10.1016/j.foodchem.2022.132595,https://doi.org/10.1016/j.foodchem.2022.132595,Training median,17,cereals_legumes; fruits_fruiting_vegetables,18.417058823529413,2.619411764705883,21.036470588235293
+doi:10.1016/j.foodchem.2022.132595,https://doi.org/10.1016/j.foodchem.2022.132595,Random forest,17,cereals_legumes; fruits_fruiting_vegetables,27.186344984282567,2.619411764705883,29.805756748988447
+doi:10.1016/j.foodchem.2022.132595,https://doi.org/10.1016/j.foodchem.2022.132595,Support vector regression,17,cereals_legumes; fruits_fruiting_vegetables,18.316618357781287,2.619411764705883,20.936030122487168
+doi:10.1016/j.foodchem.2025.147332,https://doi.org/10.1016/j.foodchem.2025.147332,Training median,26,algae_microbial; engineered_carriers; mixed_meals,14.941153846153847,16.71807692307692,21.057692307692307
+doi:10.1016/j.foodchem.2025.147332,https://doi.org/10.1016/j.foodchem.2025.147332,Random forest,26,algae_microbial; engineered_carriers; mixed_meals,14.988761268678616,16.71807692307692,21.44758181673078
+doi:10.1016/j.foodchem.2025.147332,https://doi.org/10.1016/j.foodchem.2025.147332,Support vector regression,26,algae_microbial; engineered_carriers; mixed_meals,13.849509358235734,16.71807692307692,19.046632258234446
+doi:10.1016/j.foodchem.2026.149627,https://doi.org/10.1016/j.foodchem.2026.149627,Training median,31,algae_microbial; engineered_carriers; mixed_meals,21.43548387096774,26.616129032258065,21.29032258064516
+doi:10.1016/j.foodchem.2026.149627,https://doi.org/10.1016/j.foodchem.2026.149627,Random forest,31,algae_microbial; engineered_carriers; mixed_meals,22.24675526367302,26.616129032258065,19.964332068588345
+doi:10.1016/j.foodchem.2026.149627,https://doi.org/10.1016/j.foodchem.2026.149627,Support vector regression,31,algae_microbial; engineered_carriers; mixed_meals,22.043724963728504,26.616129032258065,18.753357575375087
+doi:10.1016/j.foodhyd.2018.10.032,https://doi.org/10.1016/j.foodhyd.2018.10.032,Training median,2,engineered_carriers,10.100000000000001,29.1,19.0
+doi:10.1016/j.foodhyd.2018.10.032,https://doi.org/10.1016/j.foodhyd.2018.10.032,Random forest,2,engineered_carriers,13.283611894749992,29.1,15.81638810525001
+doi:10.1016/j.foodhyd.2018.10.032,https://doi.org/10.1016/j.foodhyd.2018.10.032,Support vector regression,2,engineered_carriers,14.272541656958563,29.1,14.827458343041439
+doi:10.1016/j.foodhyd.2021.107064,https://doi.org/10.1016/j.foodhyd.2021.107064,Training median,5,engineered_carriers,2.184,17.552,19.0
+doi:10.1016/j.foodhyd.2021.107064,https://doi.org/10.1016/j.foodhyd.2021.107064,Random forest,5,engineered_carriers,2.810167136849994,17.552,15.81638810525001
+doi:10.1016/j.foodhyd.2021.107064,https://doi.org/10.1016/j.foodhyd.2021.107064,Support vector regression,5,engineered_carriers,3.403524994175136,17.552,14.827458343041439
+doi:10.1016/j.foodres.2014.06.016,https://doi.org/10.1016/j.foodres.2014.06.016,Training median,10,animal_dairy,14.219999999999999,31.46,19.199999999999996
+doi:10.1016/j.foodres.2014.06.016,https://doi.org/10.1016/j.foodres.2014.06.016,Random forest,10,animal_dairy,13.299231163060252,31.46,23.303844184698733
+doi:10.1016/j.foodres.2014.06.016,https://doi.org/10.1016/j.foodres.2014.06.016,Support vector regression,10,animal_dairy,14.448099016348674,31.46,18.667419382921537
+doi:10.1016/j.foodres.2021.110162,https://doi.org/10.1016/j.foodres.2021.110162,Training median,2,leafy_brassica,4.75,18.25,23.0
+doi:10.1016/j.foodres.2021.110162,https://doi.org/10.1016/j.foodres.2021.110162,Random forest,2,leafy_brassica,1.0993833518736906,18.25,19.34938335187369
+doi:10.1016/j.foodres.2021.110162,https://doi.org/10.1016/j.foodres.2021.110162,Support vector regression,2,leafy_brassica,6.000933543103876,18.25,12.249066456896124
+doi:10.1016/j.foodres.2023.113174,https://doi.org/10.1016/j.foodres.2023.113174,Training median,4,engineered_carriers; extracted_oils,16.65,2.6,19.25
+doi:10.1016/j.foodres.2023.113174,https://doi.org/10.1016/j.foodres.2023.113174,Random forest,4,engineered_carriers; extracted_oils,14.89019236693796,2.6,17.49019236693796
+doi:10.1016/j.foodres.2023.113174,https://doi.org/10.1016/j.foodres.2023.113174,Support vector regression,4,engineered_carriers; extracted_oils,14.066767236304472,2.6,16.66676723630447
+doi:10.1016/j.foodres.2025.116576,https://doi.org/10.1016/j.foodres.2025.116576,Training median,1,engineered_carriers,57.0,76.0,19.0
+doi:10.1016/j.foodres.2025.116576,https://doi.org/10.1016/j.foodres.2025.116576,Random forest,1,engineered_carriers,59.544692958781646,76.0,16.455307041218354
+doi:10.1016/j.foodres.2025.116576,https://doi.org/10.1016/j.foodres.2025.116576,Support vector regression,1,engineered_carriers,60.9974690898792,76.0,15.002530910120797
+doi:10.1016/j.jfca.2019.01.019,https://doi.org/10.1016/j.jfca.2019.01.019,Training median,1,mixed_meals,66.8,86.8,20.0
+doi:10.1016/j.jfca.2019.01.019,https://doi.org/10.1016/j.jfca.2019.01.019,Random forest,1,mixed_meals,56.89448101037851,86.8,29.905518989621488
+doi:10.1016/j.jfca.2019.01.019,https://doi.org/10.1016/j.jfca.2019.01.019,Support vector regression,1,mixed_meals,65.82764674568631,86.8,20.97235325431368
+doi:10.1016/j.jff.2018.08.039,https://doi.org/10.1016/j.jff.2018.08.039,Training median,5,mixed_meals,4.965999999999999,17.717999999999996,20.0
+doi:10.1016/j.jff.2018.08.039,https://doi.org/10.1016/j.jff.2018.08.039,Random forest,5,mixed_meals,17.456014024897808,17.717999999999996,32.58211304710436
+doi:10.1016/j.jff.2018.08.039,https://doi.org/10.1016/j.jff.2018.08.039,Support vector regression,5,mixed_meals,5.5020658834629925,17.717999999999996,20.69559959789977
+doi:10.1016/j.jff.2019.103770,https://doi.org/10.1016/j.jff.2019.103770,Training median,12,algae_microbial,14.083333333333334,8.416666666666666,22.5
+doi:10.1016/j.jff.2019.103770,https://doi.org/10.1016/j.jff.2019.103770,Random forest,12,algae_microbial,27.998601803006352,8.416666666666666,36.415268469673016
+doi:10.1016/j.jff.2019.103770,https://doi.org/10.1016/j.jff.2019.103770,Support vector regression,12,algae_microbial,12.32066589007111,8.416666666666666,20.737332556737776
+doi:10.1016/j.lwt.2014.07.045,https://doi.org/10.1016/j.lwt.2014.07.045,Training median,3,engineered_carriers,7.633333333333334,26.633333333333336,19.0
+doi:10.1016/j.lwt.2014.07.045,https://doi.org/10.1016/j.lwt.2014.07.045,Random forest,3,engineered_carriers,9.864671195961131,26.633333333333336,16.768662137372203
+doi:10.1016/j.lwt.2014.07.045,https://doi.org/10.1016/j.lwt.2014.07.045,Support vector regression,3,engineered_carriers,10.73901593309978,26.633333333333336,15.894317400233552
+doi:10.1016/j.lwt.2018.05.061,https://doi.org/10.1016/j.lwt.2018.05.061,Training median,4,roots_tubers,20.174999999999997,35.525,24.1
+doi:10.1016/j.lwt.2018.05.061,https://doi.org/10.1016/j.lwt.2018.05.061,Random forest,4,roots_tubers,18.035139278853215,35.525,24.938429474334992
+doi:10.1016/j.lwt.2018.05.061,https://doi.org/10.1016/j.lwt.2018.05.061,Support vector regression,4,roots_tubers,21.717177957218745,35.525,20.814857375903962
+doi:10.1021/acs.jafc.6c01729,https://doi.org/10.1021/acs.jafc.6c01729,Training median,36,cereals_legumes,15.152500000000007,27.527499999999996,20.38
+doi:10.1021/acs.jafc.6c01729,https://doi.org/10.1021/acs.jafc.6c01729,Random forest,36,cereals_legumes,15.29472330765306,27.527499999999996,29.192629807178566
+doi:10.1021/acs.jafc.6c01729,https://doi.org/10.1021/acs.jafc.6c01729,Support vector regression,36,cereals_legumes,14.550517874940981,27.527499999999996,18.80393531728153
+doi:10.1021/acs.jafc.7b04854,https://doi.org/10.1021/acs.jafc.7b04854,Training median,23,mixed_meals,21.869565217391305,34.391304347826086,20.0
+doi:10.1021/acs.jafc.7b04854,https://doi.org/10.1021/acs.jafc.7b04854,Random forest,23,mixed_meals,18.56538793971804,34.391304347826086,35.05318332262293
+doi:10.1021/acs.jafc.7b04854,https://doi.org/10.1021/acs.jafc.7b04854,Support vector regression,23,mixed_meals,21.86187459542896,34.391304347826086,18.945850496698483
+doi:10.1021/acs.jafc.9b02496,https://doi.org/10.1021/acs.jafc.9b02496,Training median,1,algae_microbial,11.1,11.4,22.5
+doi:10.1021/acs.jafc.9b02496,https://doi.org/10.1021/acs.jafc.9b02496,Random forest,1,algae_microbial,28.30009794774668,11.4,39.70009794774668
+doi:10.1021/acs.jafc.9b02496,https://doi.org/10.1021/acs.jafc.9b02496,Support vector regression,1,algae_microbial,8.285531314327025,11.4,19.685531314327026
+doi:10.1021/jf000775r,https://doi.org/10.1021/jf000775r,Training median,6,leafy_brassica,6.166666666666667,22.0,23.0
+doi:10.1021/jf000775r,https://doi.org/10.1021/jf000775r,Random forest,6,leafy_brassica,6.379134995316953,22.0,24.672581954364343
+doi:10.1021/jf000775r,https://doi.org/10.1021/jf000775r,Support vector regression,6,leafy_brassica,5.594700631065931,22.0,18.10634002264016
+doi:10.1021/jf071687a,https://doi.org/10.1021/jf071687a,Training median,4,mixed_meals,11.55,21.249999999999996,20.0
+doi:10.1021/jf071687a,https://doi.org/10.1021/jf071687a,Random forest,4,mixed_meals,10.728053700767806,21.249999999999996,24.755455109969304
+doi:10.1021/jf071687a,https://doi.org/10.1021/jf071687a,Support vector regression,4,mixed_meals,10.697221424608674,21.249999999999996,19.64869008048766
+doi:10.1021/jf072751r,https://doi.org/10.1021/jf072751r,Training median,2,fruits_fruiting_vegetables,18.400000000000002,5.7,24.1
+doi:10.1021/jf072751r,https://doi.org/10.1021/jf072751r,Random forest,2,fruits_fruiting_vegetables,15.275261930071032,5.7,20.97526193007103
+doi:10.1021/jf072751r,https://doi.org/10.1021/jf072751r,Support vector regression,2,fruits_fruiting_vegetables,12.50577338119982,5.7,18.20577338119982
+doi:10.1021/jf100413m,https://doi.org/10.1021/jf100413m,Training median,4,fruits_fruiting_vegetables,30.15,45.29999999999999,24.1
+doi:10.1021/jf100413m,https://doi.org/10.1021/jf100413m,Random forest,4,fruits_fruiting_vegetables,24.28547405167255,45.29999999999999,28.402156913362962
+doi:10.1021/jf100413m,https://doi.org/10.1021/jf100413m,Support vector regression,4,fruits_fruiting_vegetables,29.09582221861134,45.29999999999999,22.942537816328706
+doi:10.1021/jf303502h,https://doi.org/10.1021/jf303502h,Training median,18,fruits_fruiting_vegetables; roots_tubers,19.69055555555556,4.4094444444444445,24.100000000000005
+doi:10.1021/jf303502h,https://doi.org/10.1021/jf303502h,Random forest,18,fruits_fruiting_vegetables; roots_tubers,17.72019771614497,4.4094444444444445,22.129642160589412
+doi:10.1021/jf303502h,https://doi.org/10.1021/jf303502h,Support vector regression,18,fruits_fruiting_vegetables; roots_tubers,16.331410408009894,4.4094444444444445,20.74085485245434
+doi:10.1021/jf303967f,https://doi.org/10.1021/jf303967f,Training median,1,engineered_carriers,15.9,3.1,19.0
+doi:10.1021/jf303967f,https://doi.org/10.1021/jf303967f,Random forest,1,engineered_carriers,55.63347089621893,3.1,58.73347089621893
+doi:10.1021/jf303967f,https://doi.org/10.1021/jf303967f,Support vector regression,1,engineered_carriers,16.15888427672582,3.1,19.258884276725823
+doi:10.1021/jf505297t,https://doi.org/10.1021/jf505297t,Training median,1,fruits_fruiting_vegetables,13.3,10.8,24.1
+doi:10.1021/jf505297t,https://doi.org/10.1021/jf505297t,Random forest,1,fruits_fruiting_vegetables,20.048764944106345,10.8,30.848764944106346
+doi:10.1021/jf505297t,https://doi.org/10.1021/jf505297t,Support vector regression,1,fruits_fruiting_vegetables,11.558900617932402,10.8,22.358900617932402
+doi:10.1038/s41598-026-46813-2,https://doi.org/10.1038/s41598-026-46813-2,Training median,2,engineered_carriers,23.85,42.85,19.0
+doi:10.1038/s41598-026-46813-2,https://doi.org/10.1038/s41598-026-46813-2,Random forest,2,engineered_carriers,13.08807936673939,42.85,29.761920633260612
+doi:10.1038/s41598-026-46813-2,https://doi.org/10.1038/s41598-026-46813-2,Support vector regression,2,engineered_carriers,22.385998565766915,42.85,20.464001434233086
+doi:10.1039/c3fo60599j,https://doi.org/10.1039/c3fo60599j,Training median,14,mixed_meals,13.164285714285713,23.978571428571424,20.0
+doi:10.1039/c3fo60599j,https://doi.org/10.1039/c3fo60599j,Random forest,14,mixed_meals,14.598730990071497,23.978571428571424,32.4724865119685
+doi:10.1039/c3fo60599j,https://doi.org/10.1039/c3fo60599j,Support vector regression,14,mixed_meals,12.891581333200856,23.978571428571424,20.528513967304374
+doi:10.1039/c9fo01328h,https://doi.org/10.1039/c9fo01328h,Training median,3,leafy_brassica,6.3,18.900000000000002,23.0
+doi:10.1039/c9fo01328h,https://doi.org/10.1039/c9fo01328h,Random forest,3,leafy_brassica,9.479312348720162,18.900000000000002,25.17343497173017
+doi:10.1039/c9fo01328h,https://doi.org/10.1039/c9fo01328h,Support vector regression,3,leafy_brassica,4.266828620374814,18.900000000000002,14.704511020286938
+doi:10.1039/c9fo01453e,https://doi.org/10.1039/c9fo01453e,Training median,2,fruits_fruiting_vegetables,8.0,27.0,24.1
+doi:10.1039/c9fo01453e,https://doi.org/10.1039/c9fo01453e,Random forest,2,fruits_fruiting_vegetables,8.0,27.0,29.15069573903916
+doi:10.1039/c9fo01453e,https://doi.org/10.1039/c9fo01453e,Support vector regression,2,fruits_fruiting_vegetables,8.0,27.0,22.377180003096495
+doi:10.1039/d0fo00888e,https://doi.org/10.1039/d0fo00888e,Training median,3,engineered_carriers,23.63333333333333,42.63333333333333,19.0
+doi:10.1039/d0fo00888e,https://doi.org/10.1039/d0fo00888e,Random forest,3,engineered_carriers,21.71892577203684,42.63333333333333,20.91440756129649
+doi:10.1039/d0fo00888e,https://doi.org/10.1039/d0fo00888e,Support vector regression,3,engineered_carriers,26.133212611626647,42.63333333333333,16.500120721706683
+doi:10.1039/d0fo03035j,https://doi.org/10.1039/d0fo03035j,Training median,5,roots_tubers,11.696000000000002,12.404,24.1
+doi:10.1039/d0fo03035j,https://doi.org/10.1039/d0fo03035j,Random forest,5,roots_tubers,14.91462089397325,12.404,27.318620893973247
+doi:10.1039/d0fo03035j,https://doi.org/10.1039/d0fo03035j,Support vector regression,5,roots_tubers,9.081533628955393,12.404,20.37141767785435
+doi:10.1039/d1fo00600b,https://doi.org/10.1039/d1fo00600b,Training median,24,leafy_brassica,15.9,35.23333333333333,23.0
+doi:10.1039/d1fo00600b,https://doi.org/10.1039/d1fo00600b,Random forest,24,leafy_brassica,17.165787086697392,35.23333333333333,19.98679464589568
+doi:10.1039/d1fo00600b,https://doi.org/10.1039/d1fo00600b,Support vector regression,24,leafy_brassica,17.60872541813752,35.23333333333333,18.104514441873835
+doi:10.1039/d1fo00786f,https://doi.org/10.1039/d1fo00786f,Training median,11,fruits_fruiting_vegetables; leafy_brassica; roots_tubers,21.472727272727273,27.96363636363636,23.8
+doi:10.1039/d1fo00786f,https://doi.org/10.1039/d1fo00786f,Random forest,11,fruits_fruiting_vegetables; leafy_brassica; roots_tubers,34.118597237863966,27.96363636363636,35.534562083670174
+doi:10.1039/d1fo00786f,https://doi.org/10.1039/d1fo00786f,Support vector regression,11,fruits_fruiting_vegetables; leafy_brassica; roots_tubers,20.326023780211116,27.96363636363636,24.612925279257595
+doi:10.1039/d2fo01808j,https://doi.org/10.1039/d2fo01808j,Training median,1,mixed_meals,6.0,26.0,20.0
+doi:10.1039/d2fo01808j,https://doi.org/10.1039/d2fo01808j,Random forest,1,mixed_meals,6.835393120213105,26.0,32.835393120213105
+doi:10.1039/d2fo01808j,https://doi.org/10.1039/d2fo01808j,Support vector regression,1,mixed_meals,6.986618335561936,26.0,19.013381664438064
+doi:10.1039/d5fo01844g,https://doi.org/10.1039/d5fo01844g,Training median,9,engineered_carriers,13.244444444444445,18.28888888888889,19.0
+doi:10.1039/d5fo01844g,https://doi.org/10.1039/d5fo01844g,Random forest,9,engineered_carriers,10.843279198931079,18.28888888888889,19.934126175629096
+doi:10.1039/d5fo01844g,https://doi.org/10.1039/d5fo01844g,Support vector regression,9,engineered_carriers,11.637349262125634,18.28888888888889,17.072783641669716
+doi:10.1080/09637486.2016.1181158,https://doi.org/10.1080/09637486.2016.1181158,Training median,3,algae_microbial,10.0,12.5,22.5
+doi:10.1080/09637486.2016.1181158,https://doi.org/10.1080/09637486.2016.1181158,Random forest,3,algae_microbial,21.456852315408764,12.5,33.95685231540876
+doi:10.1080/09637486.2016.1181158,https://doi.org/10.1080/09637486.2016.1181158,Support vector regression,3,algae_microbial,9.909140341517563,12.5,22.40914034151756
+doi:10.1093/ijfood/vvaf164,https://doi.org/10.1093/ijfood/vvaf164,Training median,3,fruits_fruiting_vegetables,10.966666666666667,31.0,24.100000000000005
+doi:10.1093/ijfood/vvaf164,https://doi.org/10.1093/ijfood/vvaf164,Random forest,3,fruits_fruiting_vegetables,11.417210037597021,31.0,21.80453413191762
+doi:10.1093/ijfood/vvaf164,https://doi.org/10.1093/ijfood/vvaf164,Support vector regression,3,fruits_fruiting_vegetables,11.237759593568029,31.0,23.247750390980144
+doi:10.1093/jn/138.3.482,https://doi.org/10.1093/jn/138.3.482,Training median,10,mixed_meals,15.529999999999998,30.169999999999998,20.0
+doi:10.1093/jn/138.3.482,https://doi.org/10.1093/jn/138.3.482,Random forest,10,mixed_meals,19.98257873651512,30.169999999999998,12.699762388673415
+doi:10.1093/jn/138.3.482,https://doi.org/10.1093/jn/138.3.482,Support vector regression,10,mixed_meals,17.040298556305427,30.169999999999998,17.16173791121212
+doi:10.1371/journal.pone.0187102,https://doi.org/10.1371/journal.pone.0187102,Training median,1,roots_tubers,13.899999999999999,38.0,24.1
+doi:10.1371/journal.pone.0187102,https://doi.org/10.1371/journal.pone.0187102,Random forest,1,roots_tubers,3.238973680636356,38.0,41.238973680636356
+doi:10.1371/journal.pone.0187102,https://doi.org/10.1371/journal.pone.0187102,Support vector regression,1,roots_tubers,15.747247362742947,38.0,22.252752637257053
+doi:10.15835/buasvmcn-fst:2021.0004,https://doi.org/10.15835/buasvmcn-fst:2021.0004,Training median,2,animal_dairy,69.3,88.5,19.2
+doi:10.15835/buasvmcn-fst:2021.0004,https://doi.org/10.15835/buasvmcn-fst:2021.0004,Random forest,2,animal_dairy,69.60042958777333,88.5,18.89957041222666
+doi:10.15835/buasvmcn-fst:2021.0004,https://doi.org/10.15835/buasvmcn-fst:2021.0004,Support vector regression,2,animal_dairy,71.03893443659764,88.5,17.461065563402364
+doi:10.21203/rs.3.rs-413208/v1,https://doi.org/10.21203/rs.3.rs-413208/v1,Training median,1,engineered_carriers,68.4,87.4,19.0
+doi:10.21203/rs.3.rs-413208/v1,https://doi.org/10.21203/rs.3.rs-413208/v1,Random forest,1,engineered_carriers,57.63807936673939,87.4,29.761920633260612
+doi:10.21203/rs.3.rs-413208/v1,https://doi.org/10.21203/rs.3.rs-413208/v1,Support vector regression,1,engineered_carriers,67.32349381156864,87.4,20.076506188431367
+doi:10.3390/antiox10071005,https://doi.org/10.3390/antiox10071005,Training median,3,fruits_fruiting_vegetables; leafy_brassica; roots_tubers,12.600000000000001,11.133333333333333,23.733333333333334
+doi:10.3390/antiox10071005,https://doi.org/10.3390/antiox10071005,Random forest,3,fruits_fruiting_vegetables; leafy_brassica; roots_tubers,23.02697003543641,11.133333333333333,34.160303368769746
+doi:10.3390/antiox10071005,https://doi.org/10.3390/antiox10071005,Support vector regression,3,fruits_fruiting_vegetables; leafy_brassica; roots_tubers,12.804842805931791,11.133333333333333,19.215086529483234
+doi:10.3390/antiox8080291,https://doi.org/10.3390/antiox8080291,Training median,8,animal_dairy,14.3625,33.5625,19.2
+doi:10.3390/antiox8080291,https://doi.org/10.3390/antiox8080291,Random forest,8,animal_dairy,10.78135365641866,33.5625,31.023588920339375
+doi:10.3390/antiox8080291,https://doi.org/10.3390/antiox8080291,Support vector regression,8,animal_dairy,15.197979385209056,33.5625,18.364520614790944
+doi:10.3390/foods10112646,https://doi.org/10.3390/foods10112646,Training median,1,engineered_carriers,15.4,3.6,19.0
+doi:10.3390/foods10112646,https://doi.org/10.3390/foods10112646,Random forest,1,engineered_carriers,24.83541225915359,3.6,28.43541225915359
+doi:10.3390/foods10112646,https://doi.org/10.3390/foods10112646,Support vector regression,1,engineered_carriers,16.156143966836403,3.6,19.756143966836405
+doi:10.3390/foods14173089,https://doi.org/10.3390/foods14173089,Training median,7,extracted_oils,53.53142857142858,73.53142857142858,20.0
+doi:10.3390/foods14173089,https://doi.org/10.3390/foods14173089,Random forest,7,extracted_oils,50.307370232982244,73.53142857142858,23.224058338446323
+doi:10.3390/foods14173089,https://doi.org/10.3390/foods14173089,Support vector regression,7,extracted_oils,54.669245892781696,73.53142857142858,18.86218267864688
+doi:10.3390/molecules26133989,https://doi.org/10.3390/molecules26133989,Training median,2,engineered_carriers,11.045,30.045,19.0
+doi:10.3390/molecules26133989,https://doi.org/10.3390/molecules26133989,Random forest,2,engineered_carriers,4.560623176113944,30.045,25.484376823886056
+doi:10.3390/molecules26133989,https://doi.org/10.3390/molecules26133989,Support vector regression,2,engineered_carriers,12.03106551593246,30.045,18.01393448406754
+doi:10.3390/molecules29061259,https://doi.org/10.3390/molecules29061259,Training median,2,fruits_fruiting_vegetables,39.9,64.0,24.1
+doi:10.3390/molecules29061259,https://doi.org/10.3390/molecules29061259,Random forest,2,fruits_fruiting_vegetables,42.00367568667561,64.0,21.996324313324394
+doi:10.3390/molecules29061259,https://doi.org/10.3390/molecules29061259,Support vector regression,2,fruits_fruiting_vegetables,42.32529030307691,64.0,21.674709696923088
+doi:10.3390/nu12010076,https://doi.org/10.3390/nu12010076,Training median,23,engineered_carriers; extracted_oils,18.702608695652174,38.006956521739134,19.47826086956522
+doi:10.3390/nu12010076,https://doi.org/10.3390/nu12010076,Random forest,23,engineered_carriers; extracted_oils,14.39041204130173,38.006956521739134,24.54998466843329
+doi:10.3390/nu12010076,https://doi.org/10.3390/nu12010076,Support vector regression,23,engineered_carriers; extracted_oils,19.12393446637663,38.006956521739134,18.95948588346449
+doi:10.3390/pr13092964,https://doi.org/10.3390/pr13092964,Training median,5,engineered_carriers; fruits_fruiting_vegetables,16.68,9.02,22.060000000000002
+doi:10.3390/pr13092964,https://doi.org/10.3390/pr13092964,Random forest,5,engineered_carriers; fruits_fruiting_vegetables,19.767833633899688,9.02,28.30676683262444
+doi:10.3390/pr13092964,https://doi.org/10.3390/pr13092964,Support vector regression,5,engineered_carriers; fruits_fruiting_vegetables,15.783297679072769,9.02,21.245179086778265

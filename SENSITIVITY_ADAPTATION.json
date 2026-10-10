@@ -1,0 +1,62 @@
+{
+  "status": "sensitivity_jobs_running",
+  "adaptation": "Fixed279rowassertions replaced with actualcoreIDs;fixed8categoryfolds replaced withactualcategories;fixed160fitcount replaced withdesign-derivedcounts. StudyIDs/targets/foldmembership crosschecked, sensitivitymodelscope/seeds/bootstrap/grid preserved.",
+  "original_scope": {
+    "training_size_repetitions": 20,
+    "training_size_models": [
+      "RandomForest",
+      "SVR",
+      "training_median"
+    ],
+    "training_weight_seeds": [
+      20261005,
+      20261006,
+      20261007,
+      20261008,
+      20261009
+    ],
+    "training_weight_models": [
+      "RandomForest",
+      "SVR"
+    ],
+    "training_weight_arms": [
+      "unweighted",
+      "equal_study_weighted"
+    ],
+    "largest_study_deletions": 5
+  },
+  "source_hashes": {
+    "training_size_sensitivity.py": "6eee50775ca9a6277908de5b86ef94a600a1c50a277fe5530d3ad693915b39c9",
+    "training_weight_sensitivity.py": "126967bac7f89217f54828ca1d211cf48cb0916fbb9bdcce29acd55be3901aea",
+    "robustness_analysis.py": "911ebd9558a3e6fae3b27ffa00eb290226846ba2389ab7391aed7d92bb70202f"
+  },
+  "adapted_hashes": {
+    "training_size_sensitivity.py": "283c8bec309c28c642066ffbc3be10c8c6bfe9bc4762b22b6a371932300277ec",
+    "training_weight_sensitivity.py": "4d581c1b51c18b7f7b9b644bc5b9d976ece888428c2c1eed7d4862be1361d100",
+    "robustness_analysis.py": "84a1aba8676240d088f5d4ff1a18c7ecd0ec32fcfbc11c35550ef370336ac5bb"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "sklearn": "1.9.1"
+  },
+  "preflight": "All3syntaxchecked; runtimeimportverified",
+  "waiting": [
+    "COHORT.json",
+    "analysis_config.json",
+    "run_validation.py",
+    "saved_results_core/heldout_predictions.csv"
+  ],
+  "frozen_core_rows": 414,
+  "frozen_core_studies": 63,
+  "frozen_category_count": 9,
+  "expected_training_size_fold_repetitions": 180,
+  "expected_training_weight_outer_fits": 180,
+  "launcher": "launch_sensitivities.py",
+  "input_hashes": {
+    "COHORT.json": "114172bcee53c0f61607e82079e5a89d161c23fc494e7e331ebe1f6b6e03583b",
+    "analysis_config.json": "5fbbb4a49e24aa6961f494958180131a4f0919bcf7786ac5e69dcd2980e3539e",
+    "run_validation.py": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53"
+  },
+  "waiting_inputs": []
+}

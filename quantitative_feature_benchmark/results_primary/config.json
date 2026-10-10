@@ -1,0 +1,73 @@
+{
+  "input_sha256": "a6e88c292b570315307d4fbdbb80a4bcb261d700049d7b4b3cb0df67dc38a1bd",
+  "script_sha256": "1b72bcc9de3ebf60cd3e8c43e0c70f90a78e7e0515f7446cf55fdc2bd377f8ca",
+  "features": [
+    "log10_initial_carotenoid_ug_g",
+    "gastric_duration_min",
+    "intestinal_duration_min"
+  ],
+  "categorical_features": [
+    "analyte",
+    "chemical_class",
+    "food_form",
+    "processing",
+    "added_fat",
+    "protocol"
+  ],
+  "seed": 20261005,
+  "outer": "leave-one-original-study-out",
+  "inner": "GroupKFold min(3, number of outer-training studies)",
+  "metric": "Equal original-study MAE",
+  "bootstrap_replicates": 2000,
+  "bootstrap_scope": "Paired study resampling of fixed cross-fitted losses; conditional intervals exclude model refitting uncertainty",
+  "feasibility_min_groups": 5,
+  "feasibility_not_power_adequacy": true,
+  "feature_selection": "None; features fixed before this benchmark fit; post hoc to original analysis",
+  "prediction_policy": "unbounded",
+  "baseline_implementation": "sklearn DummyRegressor(strategy=median), sample_weight=1/n_rows_in_training_study, matching original analysis",
+  "hyperparameters": {
+    "RandomForest": [
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 2
+      },
+      {
+        "max_depth": 6,
+        "min_samples_leaf": 2
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 4
+      }
+    ],
+    "SVR": [
+      {
+        "C": 1.0,
+        "gamma": "scale",
+        "epsilon": 0.1
+      },
+      {
+        "C": 10.0,
+        "gamma": "scale",
+        "epsilon": 0.5
+      },
+      {
+        "C": 100.0,
+        "gamma": "scale",
+        "epsilon": 1.0
+      }
+    ]
+  },
+  "fixed_RF": {
+    "n_estimators": 100,
+    "n_jobs": 1
+  },
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "rows": 81,
+  "groups": 10
+}

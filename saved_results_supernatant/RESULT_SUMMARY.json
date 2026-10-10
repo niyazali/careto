@@ -1,0 +1,4999 @@
+{
+  "summary": [
+    {
+      "scheme": "random_row",
+      "model": "training_mean",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.84590307966291,
+      "row_MAE": 19.623602841660944,
+      "row_RMSE": 24.57807955991894,
+      "R2": -0.005712654353939195,
+      "calibration_slope": -5.036341973849074,
+      "calibration_joint_intercept": 169.3814654058474,
+      "calibration_in_the_large": 0.5128028428029174,
+      "study_MAE_conditional_CI": [
+        18.42199396216644,
+        23.58069310044275
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 20.69193061652561,
+          "row_MAE": 19.492964021887314,
+          "row_RMSE": 23.89754259002109,
+          "R2": -0.029630115036199056,
+          "calibration_slope": -3.149135386108177,
+          "calibration_joint_intercept": 111.34601855290083,
+          "calibration_in_the_large": -4.488827723124509
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 16.917098519516248,
+          "row_MAE": 18.700571182548558,
+          "row_RMSE": 20.252668574088165,
+          "R2": -0.5138813248157903,
+          "calibration_slope": 3.3012185771990867,
+          "calibration_joint_intercept": -74.81969196647981,
+          "calibration_in_the_large": -9.573783189852382
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.22794545084753,
+          "row_MAE": 18.12316823975028,
+          "row_RMSE": 23.016257746788018,
+          "R2": -0.04129543229347665,
+          "calibration_slope": -11.665499276872069,
+          "calibration_joint_intercept": 359.1446603983526,
+          "calibration_in_the_large": 5.496290715433852
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 17.628787622383804,
+          "row_MAE": 17.832061935981553,
+          "row_RMSE": 19.57199743372604,
+          "R2": -0.8260325721283797,
+          "calibration_slope": -1.564579619378658,
+          "calibration_joint_intercept": 59.042417333836184,
+          "calibration_in_the_large": -12.311901208844647
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.101689854244846,
+          "row_MAE": 16.928516100613102,
+          "row_RMSE": 23.321998607264952,
+          "R2": -0.1012348272188035,
+          "calibration_slope": -27.8407239991423,
+          "calibration_joint_intercept": 811.2207522297051,
+          "calibration_in_the_large": 11.182407438554247
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 28.0764542308398,
+          "row_MAE": 25.329271641023222,
+          "row_RMSE": 31.714211311555616,
+          "R2": -0.6582849223123584,
+          "calibration_slope": 11.710273381176902,
+          "calibration_joint_intercept": -289.999448648218,
+          "calibration_in_the_large": 9.164695777714632
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 19.564741245762356,
+          "row_MAE": 17.92373064425559,
+          "row_RMSE": 21.381682214094486,
+          "R2": -0.015851103028921454,
+          "calibration_slope": -1.2305165278911028,
+          "calibration_joint_intercept": 52.98966355008548,
+          "calibration_in_the_large": -9.499673546673023
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 29.615297437249833,
+          "row_MAE": 22.826525824211814,
+          "row_RMSE": 31.591416431471984,
+          "R2": -0.12018773493815349,
+          "calibration_slope": 9.989492107416783,
+          "calibration_joint_intercept": -233.28675492678292,
+          "calibration_in_the_large": 18.704959668068344
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.66720565036538,
+          "row_MAE": 20.590715629298554,
+          "row_RMSE": 24.667157047621636,
+          "R2": -0.003208156973407039,
+          "calibration_slope": 1.9651489491461092,
+          "calibration_joint_intercept": -24.695858327623096,
+          "calibration_in_the_large": 2.1996341375861483
+        }
+      },
+      "category_macro_study_MAE": 22.83235006974838
+    },
+    {
+      "scheme": "random_row",
+      "model": "training_median",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.127252609439346,
+      "row_MAE": 18.651413793103448,
+      "row_RMSE": 25.61094170803592,
+      "R2": -0.09201629406407008,
+      "calibration_slope": -4.309854992561646,
+      "calibration_joint_intercept": 114.44963941805254,
+      "calibration_in_the_large": 8.542797481076544,
+      "study_MAE_conditional_CI": [
+        17.229739764129427,
+        23.334445941996456
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.508024343711845,
+          "row_MAE": 17.37833333333333,
+          "row_RMSE": 24.02789517761942,
+          "R2": -0.040893281250317104,
+          "calibration_slope": -5.634716729436343,
+          "calibration_joint_intercept": 135.51834929725376,
+          "calibration_in_the_large": 3.5363672924297926
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.622722222222222,
+          "row_MAE": 14.965,
+          "row_RMSE": 16.944634218178884,
+          "R2": -0.05972142921216972,
+          "calibration_slope": 0.3707655058464443,
+          "calibration_joint_intercept": 11.23204960997711,
+          "calibration_in_the_large": -1.5760185185185194
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.376253968253966,
+          "row_MAE": 18.85123595505618,
+          "row_RMSE": 25.29941101592701,
+          "R2": -0.25812954177962166,
+          "calibration_slope": -8.207184324778805,
+          "calibration_joint_intercept": 196.3624442377512,
+          "calibration_in_the_large": 13.564650793650793
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.283940828402367,
+          "row_MAE": 12.920384615384616,
+          "row_RMSE": 15.406769740804004,
+          "R2": -0.13151783489542845,
+          "calibration_slope": -1.789803451914746,
+          "calibration_joint_intercept": 50.98895061153083,
+          "calibration_in_the_large": -4.311094674556215
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.638770833333332,
+          "row_MAE": 19.18,
+          "row_RMSE": 26.057387169226246,
+          "R2": -0.37470698520127743,
+          "calibration_slope": -12.739075148772294,
+          "calibration_joint_intercept": 290.0277752694949,
+          "calibration_in_the_large": 19.210854166666664
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.388874458874458,
+          "row_MAE": 30.274210526315784,
+          "row_RMSE": 37.365573868553334,
+          "R2": -1.3019433634607682,
+          "calibration_slope": 12.310097415863567,
+          "calibration_joint_intercept": -207.0952220248375,
+          "calibration_in_the_large": 17.26038961038961
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.513173076923076,
+          "row_MAE": 16.53135593220339,
+          "row_RMSE": 21.933641871853197,
+          "R2": -0.06897564763883746,
+          "calibration_slope": -1.460146350454841,
+          "calibration_joint_intercept": 47.710885822368375,
+          "calibration_in_the_large": -1.4785576923076933
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 31.655601535541752,
+          "row_MAE": 24.263085106382984,
+          "row_RMSE": 35.0052114205263,
+          "R2": -0.37536518431975185,
+          "calibration_slope": 13.864647314950714,
+          "calibration_joint_intercept": -232.70986022587743,
+          "calibration_in_the_large": 26.581431245686684
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.41548941798942,
+          "row_MAE": 19.356551724137937,
+          "row_RMSE": 25.319341863756907,
+          "R2": -0.0569578836444935,
+          "calibration_slope": 4.951383961283261,
+          "calibration_joint_intercept": -68.52281855099919,
+          "calibration_in_the_large": 10.154880952380953
+        }
+      },
+      "category_macro_study_MAE": 21.93365007613916
+    },
+    {
+      "scheme": "random_row",
+      "model": "Ridge",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 17.744014829562847,
+      "row_MAE": 15.468379141729791,
+      "row_RMSE": 21.254586285691676,
+      "R2": 0.24788658469772284,
+      "calibration_slope": 0.662866465816182,
+      "calibration_joint_intercept": 11.6893375812096,
+      "calibration_in_the_large": 3.1454788649272416,
+      "study_MAE_conditional_CI": [
+        15.162689118337955,
+        20.435400796689926
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.385448308643294,
+          "row_MAE": 17.2593135241567,
+          "row_RMSE": 23.090672333309936,
+          "R2": 0.03872443063656161,
+          "calibration_slope": 0.423399319760053,
+          "calibration_joint_intercept": 14.915836874034836,
+          "calibration_in_the_large": 3.322300152711775
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.741409059293728,
+          "row_MAE": 12.648963231633978,
+          "row_RMSE": 17.15301967144645,
+          "R2": -0.08594665386563016,
+          "calibration_slope": 0.05490235947570433,
+          "calibration_joint_intercept": 18.105973574080522,
+          "calibration_in_the_large": 6.52071218617398
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 18.62508932977887,
+          "row_MAE": 15.497392243030308,
+          "row_RMSE": 20.394923693678543,
+          "R2": 0.18238526781334374,
+          "calibration_slope": 0.6890863787827564,
+          "calibration_joint_intercept": 12.26713285521387,
+          "calibration_in_the_large": 2.7237146152421627
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 11.422540635281706,
+          "row_MAE": 10.299772279754183,
+          "row_RMSE": 14.245715247085712,
+          "R2": 0.032598541034068895,
+          "calibration_slope": 0.5523914048438583,
+          "calibration_joint_intercept": 3.8723837338893254,
+          "calibration_in_the_large": -5.558596373768269
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.850436905125207,
+          "row_MAE": 19.19695253031154,
+          "row_RMSE": 27.367687345267502,
+          "R2": -0.516437819478788,
+          "calibration_slope": -0.0775563463667732,
+          "calibration_joint_intercept": 40.57297221093107,
+          "calibration_in_the_large": 17.638662130301697
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.67486291115826,
+          "row_MAE": 16.44885453847539,
+          "row_RMSE": 21.87563861625255,
+          "R2": 0.2110076336015715,
+          "calibration_slope": 1.0512548101237387,
+          "calibration_joint_intercept": -14.791825737164721,
+          "calibration_in_the_large": -12.261935545742109
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.231439977976788,
+          "row_MAE": 14.518316522843024,
+          "row_RMSE": 19.15152755712574,
+          "R2": 0.18500835813956007,
+          "calibration_slope": 0.8460734735399867,
+          "calibration_joint_intercept": -3.1861408670606615,
+          "calibration_in_the_large": -7.134414089934199
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 25.27807043993397,
+          "row_MAE": 18.69572214495341,
+          "row_RMSE": 26.047353646192576,
+          "R2": 0.2384826026090484,
+          "calibration_slope": 0.8285524429650784,
+          "calibration_joint_intercept": 22.87395393540507,
+          "calibration_in_the_large": 17.936160182400005
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 12.968985310369028,
+          "row_MAE": 13.49686098169244,
+          "row_RMSE": 18.247023777192876,
+          "R2": 0.4510447625091495,
+          "calibration_slope": 1.1125188334124665,
+          "calibration_joint_intercept": -5.235086275756164,
+          "calibration_in_the_large": -1.6647450339677314
+        }
+      },
+      "category_macro_study_MAE": 19.130920319728983
+    },
+    {
+      "scheme": "random_row",
+      "model": "ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 18.092050114674475,
+      "row_MAE": 16.26472473419451,
+      "row_RMSE": 21.45948715199351,
+      "R2": 0.23331546895984312,
+      "calibration_slope": 1.2130194986184755,
+      "calibration_joint_intercept": -3.885682179457689,
+      "calibration_in_the_large": 1.7995141328772222,
+      "study_MAE_conditional_CI": [
+        15.838104981488469,
+        20.44948635803466
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.93515372168469,
+          "row_MAE": 17.021276557541384,
+          "row_RMSE": 21.802927383756785,
+          "R2": 0.1429535415493186,
+          "calibration_slope": 0.8509259396954344,
+          "calibration_joint_intercept": 3.2667014631935203,
+          "calibration_in_the_large": -0.2655397636726988
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.351276743217719,
+          "row_MAE": 13.950009498340792,
+          "row_RMSE": 16.564490685387106,
+          "R2": -0.01270625898914024,
+          "calibration_slope": 0.30742251319822983,
+          "calibration_joint_intercept": 12.44752115557213,
+          "calibration_in_the_large": -1.8163232020982574
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 19.57445315386868,
+          "row_MAE": 16.28189585161473,
+          "row_RMSE": 21.108115206194427,
+          "R2": 0.12420300574328424,
+          "calibration_slope": 1.030326150224077,
+          "calibration_joint_intercept": 3.1731288445712096,
+          "calibration_in_the_large": 4.063356493990727
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 12.055852052284962,
+          "row_MAE": 10.70357549238783,
+          "row_RMSE": 12.704962497213883,
+          "R2": 0.23054186660265086,
+          "calibration_slope": 0.9808546698049316,
+          "calibration_joint_intercept": -6.368155872340898,
+          "calibration_in_the_large": -6.795217816998042
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 24.544361882267243,
+          "row_MAE": 15.697352727038492,
+          "row_RMSE": 22.78269226960974,
+          "R2": -0.05089299173680906,
+          "calibration_slope": 0.8396935796311226,
+          "calibration_joint_intercept": 17.809657837153704,
+          "calibration_in_the_large": 13.779031861360371
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.145073226621566,
+          "row_MAE": 19.558194174300784,
+          "row_RMSE": 25.415275578888,
+          "R2": -0.06497881119809068,
+          "calibration_slope": 1.5383539116306257,
+          "calibration_joint_intercept": -22.9586111667208,
+          "calibration_in_the_large": -1.9418283248562869
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.64662996562848,
+          "row_MAE": 16.44414788953392,
+          "row_RMSE": 20.942666552204567,
+          "R2": 0.02543620941662239,
+          "calibration_slope": 0.6957465553077024,
+          "calibration_joint_intercept": 0.5297273417839996,
+          "calibration_in_the_large": -7.33574273440103
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 25.311995120661226,
+          "row_MAE": 19.21177346044985,
+          "row_RMSE": 27.08590702957194,
+          "R2": 0.17654592435126693,
+          "calibration_slope": 1.3413248088706116,
+          "calibration_joint_intercept": 6.717573439635707,
+          "calibration_in_the_large": 16.901194623820363
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 17.80159024689924,
+          "row_MAE": 16.48026970415671,
+          "row_RMSE": 20.696308218517437,
+          "R2": 0.2937822579999966,
+          "calibration_slope": 1.858654736541307,
+          "calibration_joint_intercept": -26.65614308913212,
+          "calibration_in_the_large": -0.45170519822221994
+        }
+      },
+      "category_macro_study_MAE": 19.485154012570423
+    },
+    {
+      "scheme": "random_row",
+      "model": "RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 17.000332811597744,
+      "row_MAE": 15.16474630150855,
+      "row_RMSE": 20.22739384826784,
+      "R2": 0.31882627949839515,
+      "calibration_slope": 1.1445460147458584,
+      "calibration_joint_intercept": -2.0361803370455362,
+      "calibration_in_the_large": 1.8187698863541726,
+      "study_MAE_conditional_CI": [
+        14.68909577716169,
+        19.57704060491333
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 16.78215725053766,
+          "row_MAE": 15.814473032970902,
+          "row_RMSE": 20.66667678728953,
+          "R2": 0.22995511066862429,
+          "calibration_slope": 1.3778874110172117,
+          "calibration_joint_intercept": -8.959235915336471,
+          "calibration_in_the_large": -0.07672021635737503
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.945042015431218,
+          "row_MAE": 12.785725361763713,
+          "row_RMSE": 15.524248395045998,
+          "R2": 0.11049481047098475,
+          "calibration_slope": 0.5488118369000363,
+          "calibration_joint_intercept": 5.747245539971756,
+          "calibration_in_the_large": -4.966380891020339
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 17.876212690949867,
+          "row_MAE": 15.140890832313092,
+          "row_RMSE": 20.025668246746186,
+          "R2": 0.211723511954385,
+          "calibration_slope": 1.223878044100735,
+          "calibration_joint_intercept": -1.6447771632542327,
+          "calibration_in_the_large": 4.769172110592416
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 10.527896142303094,
+          "row_MAE": 9.959614539146518,
+          "row_RMSE": 12.072117162024947,
+          "R2": 0.3052875161095686,
+          "calibration_slope": 0.8397989143956671,
+          "calibration_joint_intercept": -2.583927894826358,
+          "calibration_in_the_large": -6.035759167562499
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.05656978135879,
+          "row_MAE": 16.433190959947748,
+          "row_RMSE": 23.933265390872002,
+          "R2": -0.15971779430893673,
+          "calibration_slope": 0.10681426430496933,
+          "calibration_joint_intercept": 36.47980205963687,
+          "calibration_in_the_large": 16.055592888906446
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 28.700496357569495,
+          "row_MAE": 21.917805354232357,
+          "row_RMSE": 27.724159275587777,
+          "R2": -0.2672668991091174,
+          "calibration_slope": -0.7683421471594135,
+          "calibration_joint_intercept": 65.5228410269057,
+          "calibration_in_the_large": 0.1009969671202895
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 14.374401733373903,
+          "row_MAE": 13.006031914901522,
+          "row_RMSE": 16.799796324624268,
+          "R2": 0.3728746615293569,
+          "calibration_slope": 1.4645918718803037,
+          "calibration_joint_intercept": -17.00372591037867,
+          "calibration_in_the_large": -5.736315243082084
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 27.75380586297298,
+          "row_MAE": 18.999773242910354,
+          "row_RMSE": 25.3674909652799,
+          "R2": 0.2777165808245603,
+          "calibration_slope": 0.5825708905080844,
+          "calibration_joint_intercept": 28.926600554786383,
+          "calibration_in_the_large": 16.165094241983383
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 14.502314778135906,
+          "row_MAE": 14.496253712216994,
+          "row_RMSE": 19.456514767465304,
+          "R2": 0.3758586541923282,
+          "calibration_slope": 1.098567884353683,
+          "calibration_joint_intercept": -6.825020143346013,
+          "calibration_in_the_large": -3.514983168776048
+        }
+      },
+      "category_macro_study_MAE": 18.946544068070324
+    },
+    {
+      "scheme": "random_row",
+      "model": "GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 17.6458929269143,
+      "row_MAE": 15.888461663672354,
+      "row_RMSE": 20.88852352955768,
+      "R2": 0.2735704360836603,
+      "calibration_slope": 1.2719760506069564,
+      "calibration_joint_intercept": -5.245026943352499,
+      "calibration_in_the_large": 1.9678539456397561,
+      "study_MAE_conditional_CI": [
+        15.38592052353334,
+        20.013096744781972
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 17.844337807818707,
+          "row_MAE": 16.21119211143475,
+          "row_RMSE": 20.856541679475896,
+          "R2": 0.21574130336942254,
+          "calibration_slope": 1.4531944394373808,
+          "calibration_joint_intercept": -10.714932211910018,
+          "calibration_in_the_large": -0.06677685853109994
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.495474097584136,
+          "row_MAE": 13.540478067284074,
+          "row_RMSE": 16.201636947949627,
+          "R2": 0.031175501174561582,
+          "calibration_slope": 0.3486806910805673,
+          "calibration_joint_intercept": 11.413647626593413,
+          "calibration_in_the_large": -2.344453349574921
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 19.047188106305732,
+          "row_MAE": 15.775475759643355,
+          "row_RMSE": 20.69367488216207,
+          "R2": 0.15825647972814538,
+          "calibration_slope": 1.1690597245211847,
+          "calibration_joint_intercept": -0.3989237734436628,
+          "calibration_in_the_large": 4.49146765064947
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 12.114152954572175,
+          "row_MAE": 10.6642184792908,
+          "row_RMSE": 12.4064559268906,
+          "R2": 0.26627436303934937,
+          "calibration_slope": 0.9947822983500141,
+          "calibration_joint_intercept": -6.289721540539153,
+          "calibration_in_the_large": -6.404068384741309
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 25.51962065580765,
+          "row_MAE": 16.479924343915314,
+          "row_RMSE": 23.55510903926382,
+          "R2": -0.12335919780476923,
+          "calibration_slope": 0.5172734929806886,
+          "calibration_joint_intercept": 26.563002899620336,
+          "calibration_in_the_large": 15.029150156885613
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.10279632562053,
+          "row_MAE": 18.216554464646844,
+          "row_RMSE": 24.177543370538743,
+          "R2": 0.03622498614789049,
+          "calibration_slope": -0.44654392660207437,
+          "calibration_joint_intercept": 56.8039690241644,
+          "calibration_in_the_large": -7.034744272032591
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.57049652099509,
+          "row_MAE": 16.285739365940955,
+          "row_RMSE": 20.938126814578524,
+          "R2": 0.025858675617348337,
+          "calibration_slope": 0.7135204180502233,
+          "calibration_joint_intercept": -0.14024304046118985,
+          "calibration_in_the_large": -7.630738831939851
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 26.15601160332035,
+          "row_MAE": 19.63020991163053,
+          "row_RMSE": 26.50027744270663,
+          "R2": 0.21176909615984496,
+          "calibration_slope": 1.1919130289114694,
+          "calibration_joint_intercept": 11.877558805033445,
+          "calibration_in_the_large": 17.4903310036727
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 15.603033384984125,
+          "row_MAE": 15.284229423509272,
+          "row_RMSE": 19.335873050363883,
+          "R2": 0.38357473700107625,
+          "calibration_slope": 1.6424130732364624,
+          "calibration_joint_intercept": -21.38405492121493,
+          "calibration_in_the_large": -1.2597711579758233
+        }
+      },
+      "category_macro_study_MAE": 19.605901273000946
+    },
+    {
+      "scheme": "random_row",
+      "model": "SVR",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 17.823945569562312,
+      "row_MAE": 15.492847076130094,
+      "row_RMSE": 22.477030062964648,
+      "R2": 0.15888403529348383,
+      "calibration_slope": 1.1298065513196498,
+      "calibration_joint_intercept": 4.4398166346379355,
+      "calibration_in_the_large": 7.202793244402858,
+      "study_MAE_conditional_CI": [
+        15.103084809071682,
+        20.748506012689685
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 16.832055664584036,
+          "row_MAE": 15.13431436618401,
+          "row_RMSE": 21.296998843106614,
+          "R2": 0.1822669279031508,
+          "calibration_slope": 1.1882953897453146,
+          "calibration_joint_intercept": 1.0963640606373417,
+          "calibration_in_the_large": 4.63515786207183
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 11.89006668221812,
+          "row_MAE": 12.240748196082262,
+          "row_RMSE": 16.804324821849896,
+          "R2": -0.04224412449935855,
+          "calibration_slope": 0.3841199124473125,
+          "calibration_joint_intercept": 13.165427897417812,
+          "calibration_in_the_large": 4.164915919770589
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.448119218319672,
+          "row_MAE": 16.586377391731723,
+          "row_RMSE": 23.037618415052137,
+          "R2": -0.04322911655670558,
+          "calibration_slope": 0.7984620706381683,
+          "calibration_joint_intercept": 14.167799158757411,
+          "calibration_in_the_large": 9.308782142543459
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 9.567043719619726,
+          "row_MAE": 7.900084837057799,
+          "row_RMSE": 10.594790765939525,
+          "R2": 0.46491473895161295,
+          "calibration_slope": 0.9939929124135851,
+          "calibration_joint_intercept": -0.8049843913904855,
+          "calibration_in_the_large": -0.9035889044426109
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.751690702190526,
+          "row_MAE": 18.331485737044005,
+          "row_RMSE": 24.91959389528112,
+          "R2": -0.25727514080120706,
+          "calibration_slope": 0.2679352818599307,
+          "calibration_joint_intercept": 32.7983653363254,
+          "calibration_in_the_large": 16.066300892212848
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 27.60348962672063,
+          "row_MAE": 22.80024269930001,
+          "row_RMSE": 29.742238822119358,
+          "R2": -0.45847380718894715,
+          "calibration_slope": 0.29664960444545396,
+          "calibration_joint_intercept": 27.73223475208711,
+          "calibration_in_the_large": 5.5282212583355355
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.266597726754192,
+          "row_MAE": 15.586270406343687,
+          "row_RMSE": 21.177080351125635,
+          "R2": 0.0034972895734084464,
+          "calibration_slope": 0.745756187988828,
+          "calibration_joint_intercept": 2.0336790010852503,
+          "calibration_in_the_large": -3.5854742965210438
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 29.269490796693262,
+          "row_MAE": 19.464298813416026,
+          "row_RMSE": 29.87398997915646,
+          "R2": -0.0017032399535752418,
+          "calibration_slope": 1.2918108605356042,
+          "calibration_joint_intercept": 18.611493919887984,
+          "calibration_in_the_large": 24.964792622733498
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 16.919695832380068,
+          "row_MAE": 15.013609900115814,
+          "row_RMSE": 20.946663577138974,
+          "R2": 0.27659322428862976,
+          "calibration_slope": 1.3820558482739083,
+          "calibration_joint_intercept": -3.597278640277789,
+          "calibration_in_the_large": 5.708691699514801
+        }
+      },
+      "category_macro_study_MAE": 19.394249996608913
+    },
+    {
+      "scheme": "random_row",
+      "model": "KNN",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.03261254280212,
+      "row_MAE": 15.559495402298854,
+      "row_RMSE": 21.75325924235571,
+      "R2": 0.21218055784857304,
+      "calibration_slope": 0.45593478814256816,
+      "calibration_joint_intercept": 16.662768754031475,
+      "calibration_in_the_large": 2.5516069547201665,
+      "study_MAE_conditional_CI": [
+        16.18666019631974,
+        22.22636407089307
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 17.46763817155067,
+          "row_MAE": 16.491505555555552,
+          "row_RMSE": 21.99540475164958,
+          "R2": 0.12775464735525155,
+          "calibration_slope": 0.5599908035733632,
+          "calibration_joint_intercept": 9.924529564170395,
+          "calibration_in_the_large": -0.6865216880341878
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 12.987634567901232,
+          "row_MAE": 12.293555555555555,
+          "row_RMSE": 16.793450229161564,
+          "R2": -0.04089562485142295,
+          "calibration_slope": 0.3395822182765217,
+          "calibration_joint_intercept": 12.89741620322021,
+          "calibration_in_the_large": 1.4589777777777777
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.788828835978837,
+          "row_MAE": 18.11277902621723,
+          "row_RMSE": 23.385801999739847,
+          "R2": -0.07500151252600751,
+          "calibration_slope": -0.003932984231511021,
+          "calibration_joint_intercept": 33.5358253215668,
+          "calibration_in_the_large": 3.580290211640212
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.211966995397763,
+          "row_MAE": 10.237653846153847,
+          "row_RMSE": 14.023380140164337,
+          "R2": 0.06255967004546148,
+          "calibration_slope": 0.4400389185546739,
+          "calibration_joint_intercept": 6.27899336840815,
+          "calibration_in_the_large": -5.4691130834977
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.97305833333333,
+          "row_MAE": 17.02927536231884,
+          "row_RMSE": 26.64336712048438,
+          "R2": -0.43723116396155937,
+          "calibration_slope": -0.37378918625221935,
+          "calibration_joint_intercept": 46.628422977738985,
+          "calibration_in_the_large": 18.30604166666667
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 30.634308802308805,
+          "row_MAE": 17.50519298245614,
+          "row_RMSE": 23.974446728823928,
+          "R2": 0.05234881962125704,
+          "calibration_slope": -0.539785971329814,
+          "calibration_joint_intercept": 63.62659674207216,
+          "calibration_in_the_large": -12.05095526695527
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.3872094017094,
+          "row_MAE": 11.307887005649718,
+          "row_RMSE": 17.432052073343485,
+          "R2": 0.32478303648910867,
+          "calibration_slope": 0.426394528154376,
+          "calibration_joint_intercept": 8.36130660690922,
+          "calibration_in_the_large": -5.299200854700855
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 32.88842069243156,
+          "row_MAE": 20.753744680851067,
+          "row_RMSE": 28.12574975467163,
+          "R2": 0.11210658876773938,
+          "calibration_slope": -0.43606053123607036,
+          "calibration_joint_intercept": 58.11352081524058,
+          "calibration_in_the_large": 20.646918484011962
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 11.71797266313933,
+          "row_MAE": 12.88736781609195,
+          "row_RMSE": 18.267080186820333,
+          "R2": 0.4498373193487788,
+          "calibration_slope": 1.067994467880247,
+          "calibration_joint_intercept": -2.722714155669312,
+          "calibration_in_the_large": -0.6351825396825397
+        }
+      },
+      "category_macro_study_MAE": 20.45078205152788
+    },
+    {
+      "scheme": "random_row",
+      "model": "XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 17.866587123300746,
+      "row_MAE": 15.77119818069195,
+      "row_RMSE": 20.799934607540845,
+      "R2": 0.2797189940700392,
+      "calibration_slope": 1.118719930294529,
+      "calibration_joint_intercept": -1.428967133922061,
+      "calibration_in_the_large": 1.7458722547628827,
+      "study_MAE_conditional_CI": [
+        15.475740489575738,
+        20.40165397212474
+      ],
+      "by_category": {
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.20115540079261,
+          "row_MAE": 16.581064680576322,
+          "row_RMSE": 21.794393671729647,
+          "R2": 0.14362430985722374,
+          "calibration_slope": 0.8986820920529422,
+          "calibration_joint_intercept": 2.795293297255821,
+          "calibration_in_the_large": 0.4690379959224056
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.409666004110266,
+          "row_MAE": 13.752439115697687,
+          "row_RMSE": 16.409054272545873,
+          "R2": 0.006210456214214566,
+          "calibration_slope": 0.5168489218728756,
+          "calibration_joint_intercept": 7.287924244312036,
+          "calibration_in_the_large": -3.453931756549411
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.067550538426353,
+          "row_MAE": 16.336232755853892,
+          "row_RMSE": 21.055285026830287,
+          "R2": 0.1285814744564916,
+          "calibration_slope": 0.9701945438306668,
+          "calibration_joint_intercept": 4.880904783483274,
+          "calibration_in_the_large": 4.0041989507372415
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 11.09753942309799,
+          "row_MAE": 10.228837745006267,
+          "row_RMSE": 11.755916291050369,
+          "R2": 0.341203641804658,
+          "calibration_slope": 1.0378546408810494,
+          "calibration_joint_intercept": -7.681735360937841,
+          "calibration_in_the_large": -6.83580119500546
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.28559778769811,
+          "row_MAE": 17.114204514544944,
+          "row_RMSE": 24.79263217374318,
+          "R2": -0.24449650710556226,
+          "calibration_slope": -0.6094521598059364,
+          "calibration_joint_intercept": 53.05328685817763,
+          "calibration_in_the_large": 15.735902113119762
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.08901710840531,
+          "row_MAE": 16.973282370316355,
+          "row_RMSE": 22.146255629387163,
+          "R2": 0.191366111349196,
+          "calibration_slope": 1.0562088740193325,
+          "calibration_joint_intercept": -7.548664412615892,
+          "calibration_in_the_large": -5.172722855935368
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.514871704639535,
+          "row_MAE": 15.794206937369655,
+          "row_RMSE": 20.340822694378996,
+          "R2": 0.08064478528464347,
+          "calibration_slope": 0.7083214411107899,
+          "calibration_joint_intercept": 0.3390877301961801,
+          "calibration_in_the_large": -7.145938205474463
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 24.983469496528883,
+          "row_MAE": 18.589642347782217,
+          "row_RMSE": 25.327169642176543,
+          "R2": 0.2800108776858825,
+          "calibration_slope": 1.1531604603197974,
+          "calibration_joint_intercept": 11.579219503624806,
+          "calibration_in_the_large": 16.248774529803942
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 15.240855872441854,
+          "row_MAE": 14.977211458929654,
+          "row_RMSE": 19.186754333437793,
+          "R2": 0.39304584775352047,
+          "calibration_slope": 1.6690117791126933,
+          "calibration_joint_intercept": -22.196603287207058,
+          "calibration_in_the_large": -1.2473776922276412
+        }
+      },
+      "category_macro_study_MAE": 19.32108037068232
+    },
+    {
+      "scheme": "original_study",
+      "model": "training_mean",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.79745825375186,
+      "row_MAE": 19.721130455233865,
+      "row_RMSE": 24.582826436399426,
+      "R2": -0.00610116760169066,
+      "calibration_slope": -4.069897036430914,
+      "calibration_joint_intercept": 144.39478586336043,
+      "calibration_in_the_large": 0.009120045191495785,
+      "study_MAE_conditional_CI": [
+        18.385491430762894,
+        23.470524158089635
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.987344637344677,
+          "row_MAE": 17.93482768836842,
+          "row_RMSE": 22.710606279209408,
+          "R2": -0.013822662799841012,
+          "calibration_slope": -5.600046193891512,
+          "calibration_joint_intercept": 193.10147546366665,
+          "calibration_in_the_large": 4.903885429058718
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 20.671686759079602,
+          "row_MAE": 19.59262238935271,
+          "row_RMSE": 23.888519120139822,
+          "R2": -0.028852706042444387,
+          "calibration_slope": 11.948791051382631,
+          "calibration_joint_intercept": -316.29410255981827,
+          "calibration_in_the_large": -5.002587996642452
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 17.853751359095,
+          "row_MAE": 18.277033698376258,
+          "row_RMSE": 20.038272050525404,
+          "R2": -0.9140741446026812,
+          "calibration_slope": 8.785342150490528,
+          "calibration_joint_intercept": -235.34471423046045,
+          "calibration_in_the_large": -13.042797988210882
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 19.779806374375166,
+          "row_MAE": 18.035040800770012,
+          "row_RMSE": 21.49647262973505,
+          "R2": -0.02678784666509393,
+          "calibration_slope": -15.097023138990199,
+          "calibration_joint_intercept": 446.56055217394635,
+          "calibration_in_the_large": -9.836951926312778
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.641573558170727,
+          "row_MAE": 16.59270480137957,
+          "row_RMSE": 22.814803514947837,
+          "R2": -0.0538574582450253,
+          "calibration_slope": -73.3845277782022,
+          "calibration_joint_intercept": 2154.5305409602565,
+          "calibration_in_the_large": 10.093214021201458
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 28.403252170179826,
+          "row_MAE": 25.52853865880135,
+          "row_RMSE": 31.796509150032072,
+          "R2": -0.6669025313861769,
+          "calibration_slope": -169.313110682433,
+          "calibration_joint_intercept": 4819.058511363693,
+          "calibration_in_the_large": 8.853840556261448
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 17.043061764377256,
+          "row_MAE": 18.86971106120659,
+          "row_RMSE": 20.446511489625227,
+          "R2": -0.5429994167768935,
+          "calibration_slope": 9.264304975516408,
+          "calibration_joint_intercept": -247.24899746556684,
+          "calibration_in_the_large": -9.936392165014809
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.696413249847627,
+          "row_MAE": 20.69727111343869,
+          "row_RMSE": 24.738209373765006,
+          "R2": -0.008995847251883848,
+          "calibration_slope": 522.7418931613882,
+          "calibration_joint_intercept": -14863.41098987357,
+          "calibration_in_the_large": 1.5752367893744867
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 29.845810793045107,
+          "row_MAE": 23.02075589276062,
+          "row_RMSE": 31.573699875301536,
+          "R2": -0.11893167830260198,
+          "calibration_slope": -33.13360661546619,
+          "calibration_joint_intercept": 986.8326616716246,
+          "calibration_in_the_large": 18.363885923469617
+        }
+      },
+      "category_macro_study_MAE": 22.88030007394611
+    },
+    {
+      "scheme": "original_study",
+      "model": "training_median",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.03105457335913,
+      "row_MAE": 18.686931034482757,
+      "row_RMSE": 25.545945761071096,
+      "R2": -0.08648064676140921,
+      "calibration_slope": -0.9794488799093939,
+      "calibration_joint_intercept": 48.260089938015255,
+      "calibration_in_the_large": 8.301315299080668,
+      "study_MAE_conditional_CI": [
+        17.202523274270096,
+        23.217463206598044
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.263099206349207,
+          "row_MAE": 18.807865168539326,
+          "row_RMSE": 25.142246956516676,
+          "R2": -0.242546683196583,
+          "calibration_slope": -3.387457130070279,
+          "calibration_joint_intercept": 101.68783145431713,
+          "calibration_in_the_large": 13.264900793650794
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.37462622100122,
+          "row_MAE": 17.38808333333333,
+          "row_RMSE": 23.76853478515942,
+          "R2": -0.0185434698906628,
+          "calibration_slope": 10.793380341958608,
+          "calibration_joint_intercept": -195.3990770284487,
+          "calibration_in_the_large": 3.1547141330891324
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.31663708086785,
+          "row_MAE": 13.06884615384615,
+          "row_RMSE": 15.545904234284299,
+          "R2": -0.1520469960704689,
+          "calibration_slope": -4.303158350448309,
+          "calibration_joint_intercept": 101.69343790293128,
+          "calibration_in_the_large": -4.516585798816569
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.677243589743588,
+          "row_MAE": 16.55135593220339,
+          "row_RMSE": 21.786425294633446,
+          "R2": -0.05467407316217909,
+          "calibration_slope": -4.204496699669967,
+          "calibration_joint_intercept": 103.23333580858088,
+          "calibration_in_the_large": -1.6332692307692298
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.813958333333332,
+          "row_MAE": 19.373913043478264,
+          "row_RMSE": 25.92794362978995,
+          "R2": -0.36108282947540027,
+          "calibration_slope": -13.705270167427702,
+          "calibration_joint_intercept": 317.8245395738205,
+          "calibration_in_the_large": 18.572291666666658
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.503809523809526,
+          "row_MAE": 30.158947368421053,
+          "row_RMSE": 37.20603374949312,
+          "R2": -1.2823280732291518,
+          "calibration_slope": 303.61904761904816,
+          "calibration_joint_intercept": -6114.224761904775,
+          "calibration_in_the_large": 16.837142857142858
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.42324074074074,
+          "row_MAE": 14.928181818181816,
+          "row_RMSE": 16.90251110983755,
+          "R2": -0.05445919980427005,
+          "calibration_slope": 4.860967301761221,
+          "calibration_joint_intercept": -80.15790633369858,
+          "calibration_in_the_large": -1.5743518518518518
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.747023809523807,
+          "row_MAE": 19.41206896551724,
+          "row_RMSE": 25.514947275719745,
+          "R2": -0.07335209306242829,
+          "calibration_slope": -45.463035714285716,
+          "calibration_joint_intercept": 933.2652857142855,
+          "calibration_in_the_large": 10.199642857142855
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 31.957480331262946,
+          "row_MAE": 24.383617021276596,
+          "row_RMSE": 35.05359619757977,
+          "R2": -0.3791699165926905,
+          "calibration_slope": -15.161188484366216,
+          "calibration_joint_intercept": 353.3970731695915,
+          "calibration_in_the_large": 26.510100759144237
+        }
+      },
+      "category_macro_study_MAE": 22.008568759625803
+    },
+    {
+      "scheme": "original_study",
+      "model": "Ridge",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 22.3846366046751,
+      "row_MAE": 20.206646595583056,
+      "row_RMSE": 25.846321047846285,
+      "R2": -0.1121810534430856,
+      "calibration_slope": 0.3251645082310097,
+      "calibration_joint_intercept": 19.633677289495573,
+      "calibration_in_the_large": 1.2574365036238084,
+      "study_MAE_conditional_CI": [
+        19.560487693642262,
+        25.286277983654387
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.608387259490332,
+          "row_MAE": 18.750729681021415,
+          "row_RMSE": 23.89456898364513,
+          "R2": -0.12228443748634743,
+          "calibration_slope": 0.3643809447786121,
+          "calibration_joint_intercept": 22.177195747051407,
+          "calibration_in_the_large": 2.5681310168095806
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 24.473044315061763,
+          "row_MAE": 22.338867359945265,
+          "row_RMSE": 28.10003901293336,
+          "R2": -0.4236020137907692,
+          "calibration_slope": 0.0868923805051913,
+          "calibration_joint_intercept": 21.12960632613995,
+          "calibration_in_the_large": -3.0335450600870435
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 17.07966044989761,
+          "row_MAE": 14.967068413723394,
+          "row_RMSE": 19.262522076407503,
+          "R2": -0.768742122734942,
+          "calibration_slope": 0.3625539502250985,
+          "calibration_joint_intercept": 5.879482895769646,
+          "calibration_in_the_large": -11.054935888748448
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.5979741046931,
+          "row_MAE": 17.728604118711548,
+          "row_RMSE": 23.665955760800426,
+          "R2": -0.24449859919622474,
+          "calibration_slope": 0.3164239175967819,
+          "calibration_joint_intercept": 9.619711788757817,
+          "calibration_in_the_large": -9.59901098722531
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 39.245039648897986,
+          "row_MAE": 37.40206931617553,
+          "row_RMSE": 41.37294000611697,
+          "R2": -2.465621861000427,
+          "calibration_slope": 0.22154372972159622,
+          "calibration_joint_intercept": 34.799173064192516,
+          "calibration_in_the_large": 20.311434985435
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 38.30450040226171,
+          "row_MAE": 32.095421979095,
+          "row_RMSE": 34.927336500596404,
+          "R2": -1.0113250268548053,
+          "calibration_slope": -0.8550530589085961,
+          "calibration_joint_intercept": 76.90576105066577,
+          "calibration_in_the_large": -9.459755312820178
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 18.997151437455294,
+          "row_MAE": 17.784968431230777,
+          "row_RMSE": 23.01415196070572,
+          "R2": -0.9548672588201472,
+          "calibration_slope": -0.25388764986689305,
+          "calibration_joint_intercept": 20.916744311040972,
+          "calibration_in_the_large": 10.358867975841207
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 14.330914989896756,
+          "row_MAE": 15.910493285443534,
+          "row_RMSE": 19.040431189578673,
+          "R2": 0.40226812565516756,
+          "calibration_slope": 1.3395948263798079,
+          "calibration_joint_intercept": -18.272060720946985,
+          "calibration_in_the_large": -6.0180118641646985
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 27.638587159162935,
+          "row_MAE": 21.05769852366422,
+          "row_RMSE": 27.486860826313173,
+          "R2": 0.1519862316787508,
+          "calibration_slope": 0.6998184826808318,
+          "calibration_joint_intercept": 26.58766500444247,
+          "calibration_in_the_large": 17.944869355068068
+        }
+      },
+      "category_macro_study_MAE": 24.475028862979723
+    },
+    {
+      "scheme": "original_study",
+      "model": "ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.378788455077505,
+      "row_MAE": 18.20580606838231,
+      "row_RMSE": 23.18796520920153,
+      "R2": 0.10483456711349393,
+      "calibration_slope": 0.8966536074624453,
+      "calibration_joint_intercept": 3.550583353104475,
+      "calibration_in_the_large": 0.67633423060827,
+      "study_MAE_conditional_CI": [
+        17.141501172153706,
+        21.77073714478622
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.20330949935514,
+          "row_MAE": 16.999625912641896,
+          "row_RMSE": 21.62086542504168,
+          "R2": 0.08113716548118821,
+          "calibration_slope": 0.8380909601523338,
+          "calibration_joint_intercept": 7.879053012001975,
+          "calibration_in_the_large": 2.945146026724158
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.85652811156663,
+          "row_MAE": 18.48304259150386,
+          "row_RMSE": 23.0559411917095,
+          "R2": 0.041614003448593784,
+          "calibration_slope": 0.5303620812968658,
+          "calibration_joint_intercept": 9.814600637224903,
+          "calibration_in_the_large": -2.24100879438058
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 14.744655545378617,
+          "row_MAE": 14.102826741052066,
+          "row_RMSE": 16.14797415933901,
+          "R2": -0.24300910915833862,
+          "calibration_slope": 0.773360855805872,
+          "calibration_joint_intercept": -3.9992182790056745,
+          "calibration_in_the_large": -9.71686390288101
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 18.248908269478804,
+          "row_MAE": 17.236771432323412,
+          "row_RMSE": 21.919687324592108,
+          "R2": -0.0676158802058846,
+          "calibration_slope": 0.3607074025238452,
+          "calibration_joint_intercept": 8.94730231622793,
+          "calibration_in_the_large": -8.011520723566774
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 25.84111914040605,
+          "row_MAE": 19.736955437156904,
+          "row_RMSE": 24.340850470753914,
+          "R2": -0.1995542795526808,
+          "calibration_slope": 0.8081230164117206,
+          "calibration_joint_intercept": 12.765672608130277,
+          "calibration_in_the_large": 6.55516620762619
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 32.99265745712615,
+          "row_MAE": 27.735058894442115,
+          "row_RMSE": 33.67513966557278,
+          "R2": -0.8696922681980686,
+          "calibration_slope": -0.969996754743251,
+          "calibration_joint_intercept": 73.6696806802021,
+          "calibration_in_the_large": -0.6066305258306186
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.207749742669556,
+          "row_MAE": 16.169626656075046,
+          "row_RMSE": 19.19763489135593,
+          "R2": -0.3602626574028518,
+          "calibration_slope": -0.11549002271408919,
+          "calibration_joint_intercept": 21.050452448507734,
+          "calibration_in_the_large": -0.8891328165785635
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.43904754409033,
+          "row_MAE": 20.23528353430332,
+          "row_RMSE": 24.2994146495317,
+          "R2": 0.02648089019017119,
+          "calibration_slope": 0.690745952684073,
+          "calibration_joint_intercept": 10.060749903448794,
+          "calibration_in_the_large": 1.1040556841396352
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 26.36523034090266,
+          "row_MAE": 19.748524458242596,
+          "row_RMSE": 27.44638900047329,
+          "R2": 0.15448163475709453,
+          "calibration_slope": 1.2245758067735244,
+          "calibration_joint_intercept": 10.738153995862945,
+          "calibration_in_the_large": 17.339964687403047
+        }
+      },
+      "category_macro_study_MAE": 21.87768951677488
+    },
+    {
+      "scheme": "original_study",
+      "model": "RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.33119481112741,
+      "row_MAE": 18.89516988434875,
+      "row_RMSE": 24.896969895365885,
+      "R2": -0.03197936062492901,
+      "calibration_slope": 0.9414298508795184,
+      "calibration_joint_intercept": 4.616278195737113,
+      "calibration_in_the_large": 3.1311137700199443,
+      "study_MAE_conditional_CI": [
+        16.86974273144771,
+        21.93069614795106
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.641146398797797,
+          "row_MAE": 18.01673833903768,
+          "row_RMSE": 22.940961105417443,
+          "R2": -0.034493475287733055,
+          "calibration_slope": 0.6656819737592972,
+          "calibration_joint_intercept": 15.34797154861712,
+          "calibration_in_the_large": 6.272625728053561
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.901251898770077,
+          "row_MAE": 17.989634936982807,
+          "row_RMSE": 23.23663010931025,
+          "R2": 0.026533439992757812,
+          "calibration_slope": 1.1549860690551903,
+          "calibration_joint_intercept": -4.332091344571392,
+          "calibration_in_the_large": -0.6068668489702911
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.423925080762432,
+          "row_MAE": 14.027657661619951,
+          "row_RMSE": 16.028695410318758,
+          "R2": -0.22471368906460465,
+          "calibration_slope": 1.1258993640526518,
+          "calibration_joint_intercept": -9.240489721789487,
+          "calibration_in_the_large": -6.4727377146189475
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 18.542869470143685,
+          "row_MAE": 18.169259881661368,
+          "row_RMSE": 23.777235402097073,
+          "R2": -0.25622962326082677,
+          "calibration_slope": -1.1403546330185093,
+          "calibration_joint_intercept": 46.4686137162265,
+          "calibration_in_the_large": -5.99628348462792
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 22.423414280234052,
+          "row_MAE": 16.651473896081757,
+          "row_RMSE": 21.14587912017865,
+          "R2": 0.09468462077600903,
+          "calibration_slope": 1.8271511761280461,
+          "calibration_joint_intercept": -24.374977207005315,
+          "calibration_in_the_large": 4.279690824077086
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 34.682329277470494,
+          "row_MAE": 27.11984347383139,
+          "row_RMSE": 35.68422265327493,
+          "R2": -1.099441616791002,
+          "calibration_slope": -1.5928511302535981,
+          "calibration_joint_intercept": 92.83339218276596,
+          "calibration_in_the_large": 2.1056434840976745
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.902367449020025,
+          "row_MAE": 16.40653612459637,
+          "row_RMSE": 19.16151746778147,
+          "R2": -0.35514921834498714,
+          "calibration_slope": 0.1823871356401206,
+          "calibration_joint_intercept": 14.524942469409652,
+          "calibration_in_the_large": -4.5452458393846875
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.85321222924112,
+          "row_MAE": 20.215224132705785,
+          "row_RMSE": 24.52600537074075,
+          "R2": 0.008240212615615694,
+          "calibration_slope": 0.19520561957689606,
+          "calibration_joint_intercept": 24.50970430468259,
+          "calibration_in_the_large": 1.6009137469320394
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 28.65443980888958,
+          "row_MAE": 23.850561567603776,
+          "row_RMSE": 33.828468577845555,
+          "R2": -0.28445026231442494,
+          "calibration_slope": 1.495318311437989,
+          "calibration_joint_intercept": 10.076645309608907,
+          "calibration_in_the_large": 22.220166621967742
+        }
+      },
+      "category_macro_study_MAE": 21.89166176592547
+    },
+    {
+      "scheme": "original_study",
+      "model": "GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.626112666140145,
+      "row_MAE": 18.706075673459072,
+      "row_RMSE": 23.694818351660665,
+      "R2": 0.06527299369914064,
+      "calibration_slope": 0.8392847048038334,
+      "calibration_joint_intercept": 5.929134390543943,
+      "calibration_in_the_large": 1.609293724576065,
+      "study_MAE_conditional_CI": [
+        17.18199588447546,
+        22.265823169973146
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.664510688389495,
+          "row_MAE": 17.394776277886237,
+          "row_RMSE": 22.30661153420785,
+          "R2": 0.02192592626224754,
+          "calibration_slope": 0.667336856289683,
+          "calibration_joint_intercept": 14.219739726478068,
+          "calibration_in_the_large": 4.649294684978272
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.306020241035174,
+          "row_MAE": 18.095022812475655,
+          "row_RMSE": 22.63818509177725,
+          "R2": 0.07602980791370362,
+          "calibration_slope": 1.006729687838706,
+          "calibration_joint_intercept": -1.7265719334622354,
+          "calibration_in_the_large": -1.5584144354424532
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 14.579108902201606,
+          "row_MAE": 13.82884034346721,
+          "row_RMSE": 15.498492834005939,
+          "R2": -0.1450307593768656,
+          "calibration_slope": 0.7804802913415648,
+          "calibration_joint_intercept": -2.9427691246349106,
+          "calibration_in_the_large": -8.133149263157083
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 19.243404575067867,
+          "row_MAE": 18.097801058531065,
+          "row_RMSE": 22.854899216022805,
+          "R2": -0.16065978321700136,
+          "calibration_slope": -0.5423653336335668,
+          "calibration_joint_intercept": 32.77433332408357,
+          "calibration_in_the_large": -7.773277285300163
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.75659622683144,
+          "row_MAE": 21.125826760212487,
+          "row_RMSE": 25.584792599638906,
+          "R2": -0.32529393083245606,
+          "calibration_slope": 0.6518338814035329,
+          "calibration_joint_intercept": 16.05019146235858,
+          "calibration_in_the_large": 3.8334433314746845
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 39.02368294826764,
+          "row_MAE": 33.36247241234877,
+          "row_RMSE": 36.73724960354578,
+          "R2": -1.2251771872476795,
+          "calibration_slope": -1.0777790877184994,
+          "calibration_joint_intercept": 85.28184020811608,
+          "calibration_in_the_large": -7.610253955475917
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.566976745636184,
+          "row_MAE": 15.966409130066124,
+          "row_RMSE": 18.904308875098433,
+          "R2": -0.3190125545419453,
+          "calibration_slope": 0.11464230061281389,
+          "calibration_joint_intercept": 16.363770762373115,
+          "calibration_in_the_large": -2.2883793983856515
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 25.63575717154887,
+          "row_MAE": 20.68481979983504,
+          "row_RMSE": 24.896537356734772,
+          "R2": -0.021952605221159383,
+          "calibration_slope": -0.801496037154382,
+          "calibration_joint_intercept": 51.92658285098424,
+          "calibration_in_the_large": 2.791972142445703
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 27.88328449427566,
+          "row_MAE": 20.955665550737994,
+          "row_RMSE": 28.492207199855827,
+          "R2": 0.08881868703050333,
+          "calibration_slope": 0.9039043925021647,
+          "calibration_joint_intercept": 21.107496874857826,
+          "calibration_in_the_large": 18.38280569761664
+        }
+      },
+      "category_macro_study_MAE": 22.96214911036155
+    },
+    {
+      "scheme": "original_study",
+      "model": "SVR",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.33462874592358,
+      "row_MAE": 18.285942959221636,
+      "row_RMSE": 24.839530743326847,
+      "R2": -0.027223147916057844,
+      "calibration_slope": 1.0266694594835017,
+      "calibration_joint_intercept": 6.2513827170783,
+      "calibration_in_the_large": 6.829019577766437,
+      "study_MAE_conditional_CI": [
+        16.58784562201326,
+        22.240473720596604
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.55156661372481,
+          "row_MAE": 17.460648941844862,
+          "row_RMSE": 23.26789029036194,
+          "R2": -0.06418848036586144,
+          "calibration_slope": 1.322511527977559,
+          "calibration_joint_intercept": 2.693352435643071,
+          "calibration_in_the_large": 10.186069981036992
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.93038530722751,
+          "row_MAE": 17.280199364446364,
+          "row_RMSE": 23.3522623843928,
+          "R2": 0.016820824298339643,
+          "calibration_slope": 0.2650460178107743,
+          "calibration_joint_intercept": 17.662908433174717,
+          "calibration_in_the_large": 1.6739421338998217
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 12.816390702009492,
+          "row_MAE": 13.623561406753696,
+          "row_RMSE": 15.665128828832268,
+          "R2": -0.16978530513978973,
+          "calibration_slope": 0.6798414430166769,
+          "calibration_joint_intercept": 2.111236053376185,
+          "calibration_in_the_large": -4.199181225334735
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.01049428626217,
+          "row_MAE": 18.111922408306683,
+          "row_RMSE": 23.56264387662227,
+          "R2": -0.23365679233920944,
+          "calibration_slope": -0.029138902084286853,
+          "calibration_joint_intercept": 19.173412790089998,
+          "calibration_in_the_large": -4.046702275251257
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.77470241246921,
+          "row_MAE": 19.037555779493896,
+          "row_RMSE": 24.667650830910862,
+          "R2": -0.23198094985608586,
+          "calibration_slope": 8.139572260140845,
+          "calibration_joint_intercept": -139.97637379987012,
+          "calibration_in_the_large": 16.943413692624183
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 25.975201487406125,
+          "row_MAE": 24.28004138709563,
+          "row_RMSE": 32.19629452423671,
+          "R2": -0.7090828019038851,
+          "calibration_slope": 0.7290108299348084,
+          "calibration_joint_intercept": 16.146787143374738,
+          "calibration_in_the_large": 8.359084582149048
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.267929310080916,
+          "row_MAE": 14.65725068148129,
+          "row_RMSE": 17.9466348845932,
+          "R2": -0.18875778723643077,
+          "calibration_slope": -0.04801117623938962,
+          "calibration_joint_intercept": 19.59084628766368,
+          "calibration_in_the_large": 1.8690686283960813
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 26.092400056357672,
+          "row_MAE": 19.92473520095964,
+          "row_RMSE": 26.05390183114075,
+          "R2": -0.11917603470490912,
+          "calibration_slope": -5.833064210286141,
+          "calibration_joint_intercept": 149.63607583029346,
+          "calibration_in_the_large": 9.5676895882305
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.795384785496992,
+          "row_MAE": 23.18083899609475,
+          "row_RMSE": 33.32649976868142,
+          "R2": -0.24661406361943872,
+          "calibration_slope": 1.714609553349246,
+          "calibration_joint_intercept": 10.342479862543804,
+          "calibration_in_the_large": 25.510776066917547
+        }
+      },
+      "category_macro_study_MAE": 21.468272773448323
+    },
+    {
+      "scheme": "original_study",
+      "model": "KNN",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 22.787725704689045,
+      "row_MAE": 21.509544827586208,
+      "row_RMSE": 28.01323617261732,
+      "R2": -0.30648548370378537,
+      "calibration_slope": 0.07409735210394323,
+      "calibration_joint_intercept": 26.468505662630154,
+      "calibration_in_the_large": 1.2317233539137618,
+      "study_MAE_conditional_CI": [
+        20.008689748369733,
+        25.768137634010326
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.747289682539684,
+          "row_MAE": 19.76123595505618,
+          "row_RMSE": 24.869967855800784,
+          "R2": -0.21577997686751615,
+          "calibration_slope": 0.035757400681491,
+          "calibration_joint_intercept": 32.355440457362164,
+          "calibration_in_the_large": 3.6894722222222214
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 24.023756807081806,
+          "row_MAE": 22.643872222222225,
+          "row_RMSE": 29.012405769677986,
+          "R2": -0.5175472909331336,
+          "calibration_slope": -0.18331314791228687,
+          "calibration_joint_intercept": 28.522044040957557,
+          "calibration_in_the_large": -4.354300213675213
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 19.188589677843524,
+          "row_MAE": 17.571730769230772,
+          "row_RMSE": 23.88217788158194,
+          "R2": -1.7188551915217882,
+          "calibration_slope": 0.11612071993293215,
+          "calibration_joint_intercept": 12.366910516275215,
+          "calibration_in_the_large": -11.565852662721898
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 22.109038461538464,
+          "row_MAE": 20.246237288135593,
+          "row_RMSE": 27.183902681307867,
+          "R2": -0.6419878110775521,
+          "calibration_slope": -0.39091274284313676,
+          "calibration_joint_intercept": 27.564709475757844,
+          "calibration_in_the_large": -4.631782051282052
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 22.611333333333334,
+          "row_MAE": 16.357652173913046,
+          "row_RMSE": 20.140961676544606,
+          "R2": 0.1786867791575374,
+          "calibration_slope": 1.7614266761893655,
+          "calibration_joint_intercept": -22.42783250111806,
+          "calibration_in_the_large": 4.092500000000002
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 42.55186147186148,
+          "row_MAE": 29.183157894736844,
+          "row_RMSE": 35.10893557876234,
+          "R2": -1.0322945223403903,
+          "calibration_slope": -1.425315098152767,
+          "calibration_joint_intercept": 107.98014821426776,
+          "calibration_in_the_large": -12.634320346320353
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 19.34757654320988,
+          "row_MAE": 19.41672727272727,
+          "row_RMSE": 23.936572540146532,
+          "R2": -1.1147120917451034,
+          "calibration_slope": -0.14751159644510806,
+          "calibration_joint_intercept": 21.2133176439876,
+          "calibration_in_the_large": 2.2763049382716045
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 28.412579365079367,
+          "row_MAE": 23.60727586206896,
+          "row_RMSE": 28.705641381154475,
+          "R2": -0.35858672552845294,
+          "calibration_slope": -0.07239153355123086,
+          "calibration_joint_intercept": 32.14720415573965,
+          "calibration_in_the_large": 1.3213095238095252
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 34.76522612146308,
+          "row_MAE": 24.572673758865257,
+          "row_RMSE": 33.814238923022685,
+          "R2": -0.28336990363743797,
+          "calibration_slope": -1.3511203198889095,
+          "calibration_joint_intercept": 80.64977532788764,
+          "calibration_in_the_large": 21.636850414078676
+        }
+      },
+      "category_macro_study_MAE": 26.195250162661182
+    },
+    {
+      "scheme": "original_study",
+      "model": "XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.36178221100836,
+      "row_MAE": 19.0831788245234,
+      "row_RMSE": 24.813269457475137,
+      "R2": -0.02505225822633883,
+      "calibration_slope": 0.7883808738571825,
+      "calibration_joint_intercept": 7.510834703562736,
+      "calibration_in_the_large": 1.8800567594229647,
+      "study_MAE_conditional_CI": [
+        16.936336707557928,
+        21.828549472626566
+      ],
+      "by_category": {
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.55608559834011,
+          "row_MAE": 18.06757531241085,
+          "row_RMSE": 23.010062461299075,
+          "R2": -0.040734936809969424,
+          "calibration_slope": 0.5017924050408715,
+          "calibration_joint_intercept": 18.14109440188274,
+          "calibration_in_the_large": 2.9728583251862304
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.91196674250392,
+          "row_MAE": 18.717665380795793,
+          "row_RMSE": 23.851124219322738,
+          "R2": -0.025634111254152936,
+          "calibration_slope": 0.2456411265187365,
+          "calibration_joint_intercept": 17.45581160418768,
+          "calibration_in_the_large": -0.8877272733646431
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 14.791877247067363,
+          "row_MAE": 14.661259412765505,
+          "row_RMSE": 16.375119871116635,
+          "R2": -0.2782246706084288,
+          "calibration_slope": 0.6488759971392999,
+          "calibration_joint_intercept": 0.2665315042390013,
+          "calibration_in_the_large": -7.98271214344845
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.23898332155668,
+          "row_MAE": 17.12609441207627,
+          "row_RMSE": 21.77038220073112,
+          "R2": -0.053121362692278185,
+          "calibration_slope": 0.559680456637568,
+          "calibration_joint_intercept": 4.9121352255333885,
+          "calibration_in_the_large": -5.790455009753889
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 23.584774487813313,
+          "row_MAE": 17.00508218848187,
+          "row_RMSE": 21.935723737212356,
+          "R2": 0.025790537891191234,
+          "calibration_slope": 1.653787886836123,
+          "calibration_joint_intercept": -17.135831006369102,
+          "calibration_in_the_large": 5.025488382975261
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 42.15492361820105,
+          "row_MAE": 36.27417290135433,
+          "row_RMSE": 39.39749034097884,
+          "R2": -1.5591069502409267,
+          "calibration_slope": -1.1438312455272035,
+          "calibration_joint_intercept": 90.57133599845298,
+          "calibration_in_the_large": -9.652929192745326
+        },
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.635571637471518,
+          "row_MAE": 15.982770998983673,
+          "row_RMSE": 18.754746150541052,
+          "R2": -0.298224200420685,
+          "calibration_slope": 0.13648532020735052,
+          "calibration_joint_intercept": 15.806926125205703,
+          "calibration_in_the_large": -2.996659677293565
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.899431597795438,
+          "row_MAE": 19.789227596151417,
+          "row_RMSE": 24.68184924739744,
+          "R2": -0.004403570302647264,
+          "calibration_slope": -0.16238861645184016,
+          "calibration_joint_intercept": 34.3874375088763,
+          "calibration_in_the_large": 3.4565133479284853
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 27.952165829678915,
+          "row_MAE": 22.960854765709417,
+          "row_RMSE": 32.73116179212045,
+          "R2": -0.20247334501055625,
+          "calibration_slope": 0.9265346845146862,
+          "calibration_joint_intercept": 22.041885723839712,
+          "calibration_in_the_large": 20.083818416237413
+        }
+      },
+      "category_macro_study_MAE": 22.747308897825366
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "training_mean",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 21.00729986842093,
+      "row_MAE": 19.892704344078453,
+      "row_RMSE": 24.830602134903494,
+      "R2": -0.026484806684115236,
+      "calibration_slope": -4.58022831141822,
+      "calibration_joint_intercept": 156.98686057993447,
+      "calibration_in_the_large": 0.43304138457334274,
+      "study_MAE_conditional_CI": [
+        18.590911419859996,
+        23.750599285384954
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 17.58627048920173,
+          "row_MAE": 19.571434929204237,
+          "row_RMSE": 21.206496629724057,
+          "R2": -0.6598359848815771,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -10.87930023766272
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.637103120323424,
+          "row_MAE": 16.730304083217504,
+          "row_RMSE": 22.91151101655391,
+          "R2": -0.06281058577249454,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 11.161690449467184
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.690288884314153,
+          "row_MAE": 20.611188657173027,
+          "row_RMSE": 24.72381501365891,
+          "R2": -0.007821985079930371,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 1.9202571840297662
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.14170159466845,
+          "row_MAE": 17.877739283548696,
+          "row_RMSE": 23.075193035915778,
+          "R2": -0.046634929152586935,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 7.31807096750015
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 28.312848137720014,
+          "row_MAE": 25.591800177363233,
+          "row_RMSE": 31.86644140149563,
+          "R2": -0.6742428615415399,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 9.104797708952075
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 20.8840561205189,
+          "row_MAE": 19.755389054069283,
+          "row_RMSE": 23.999701808354256,
+          "R2": -0.03845202940136372,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -5.400445069013589
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 20.345926857837547,
+          "row_MAE": 18.355428292334107,
+          "row_RMSE": 21.589534041270618,
+          "R2": -0.035697323342330334,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -10.776432235239048
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 29.8184407518352,
+          "row_MAE": 22.972057140003308,
+          "row_RMSE": 31.840506871971712,
+          "R2": -0.13792217810671525,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 19.435938820849778
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 18.430284225605224,
+          "row_MAE": 18.758741378959872,
+          "row_RMSE": 20.47279013667911,
+          "R2": -0.9979853013750282,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -13.856118536016714
+        }
+      },
+      "category_macro_study_MAE": 23.094102242447185
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "training_median",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.242044359816877,
+      "row_MAE": 18.839137931034482,
+      "row_RMSE": 25.809002492447714,
+      "R2": -0.10897169715501076,
+      "calibration_slope": -4.626916522537228,
+      "calibration_joint_intercept": 119.3756431210254,
+      "calibration_in_the_large": 8.844919863920252,
+      "study_MAE_conditional_CI": [
+        17.34321844633062,
+        23.49497147264943
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.14338888888889,
+          "row_MAE": 15.689090909090906,
+          "row_RMSE": 17.358759818150673,
+          "R2": -0.11215343719970416,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -3.0210185185185194
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.62395833333333,
+          "row_MAE": 19.282608695652176,
+          "row_RMSE": 26.176233827487568,
+          "R2": -0.38727554500206796,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 19.422291666666663
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.420727513227515,
+          "row_MAE": 19.266551724137933,
+          "row_RMSE": 25.340462056588063,
+          "R2": -0.05872194725206015,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 10.066309523809524
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.805623015873017,
+          "row_MAE": 19.277303370786516,
+          "row_RMSE": 26.019078868563724,
+          "R2": -0.3307251770710702,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 15.418472222222217
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.618354978354983,
+          "row_MAE": 30.383157894736847,
+          "row_RMSE": 37.45125280737756,
+          "R2": -1.3125121392240158,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 17.097142857142856
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.338858821733822,
+          "row_MAE": 17.35058333333333,
+          "row_RMSE": 23.92472756724027,
+          "R2": -0.03197398713836952,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 3.428999847374847
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.71544871794872,
+          "row_MAE": 16.569999999999997,
+          "row_RMSE": 21.769208428264456,
+          "R2": -0.05300780551861717,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -1.8840384615384607
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 32.06969082125604,
+          "row_MAE": 24.45936170212767,
+          "row_RMSE": 35.3430284738324,
+          "R2": -0.40203913978754846,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 27.2767674258109
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.332021696252466,
+          "row_MAE": 13.046538461538463,
+          "row_RMSE": 15.493548533303986,
+          "R2": -0.1443003046923974,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -4.88889349112426
+        }
+      },
+      "category_macro_study_MAE": 22.11867475409653
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "Ridge",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.883158533683254,
+      "row_MAE": 20.221460361906576,
+      "row_RMSE": 27.404438017866912,
+      "R2": -0.25031610169104024,
+      "calibration_slope": 0.3555432978670413,
+      "calibration_joint_intercept": 19.42023619964618,
+      "calibration_in_the_large": 2.9837931216447817,
+      "study_MAE_conditional_CI": [
+        16.678227605233335,
+        23.259518492140604
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 18.651549922148035,
+          "row_MAE": 22.794439307732844,
+          "row_RMSE": 27.474253324999854,
+          "R2": -1.7859871999485777,
+          "calibration_slope": -0.0923035846141996,
+          "calibration_joint_intercept": 21.28690203109123,
+          "calibration_in_the_large": -8.391366886808655
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 34.5261696500489,
+          "row_MAE": 29.12787710117029,
+          "row_RMSE": 36.756544779087264,
+          "R2": -1.7353806285828348,
+          "calibration_slope": -0.158198438510198,
+          "calibration_joint_intercept": 43.01443352488539,
+          "calibration_in_the_large": 13.055147232400179
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 18.665445004938174,
+          "row_MAE": 17.111468302052295,
+          "row_RMSE": 22.445579984087907,
+          "R2": 0.169356787260046,
+          "calibration_slope": 0.8529701693940799,
+          "calibration_joint_intercept": -5.54466181939576,
+          "calibration_in_the_large": -11.683065332408566
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.17173566337366,
+          "row_MAE": 17.294564211774894,
+          "row_RMSE": 22.60510040106505,
+          "R2": -0.0044247815675937385,
+          "calibration_slope": 0.5291346631081638,
+          "calibration_joint_intercept": 18.294810144888253,
+          "calibration_in_the_large": 4.836594806562452
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 27.83254410029659,
+          "row_MAE": 31.72786112691282,
+          "row_RMSE": 38.12789909729123,
+          "R2": -1.3968291186631379,
+          "calibration_slope": 2.281624574064633,
+          "calibration_joint_intercept": 2.094100965219141,
+          "calibration_in_the_large": 21.75586266152897
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 17.89329281023354,
+          "row_MAE": 18.091551935814188,
+          "row_RMSE": 23.14735625680597,
+          "R2": 0.03399908086802328,
+          "calibration_slope": 0.5299078695041296,
+          "calibration_joint_intercept": 11.5846096079191,
+          "calibration_in_the_large": 1.0772082981394338
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 14.243267919458695,
+          "row_MAE": 16.443359683043415,
+          "row_RMSE": 23.081334014650768,
+          "R2": -0.18377217367766496,
+          "calibration_slope": 0.7575844199077738,
+          "calibration_joint_intercept": 2.423157525814805,
+          "calibration_in_the_large": -2.726296868338624
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 32.01100692456431,
+          "row_MAE": 26.956223630432074,
+          "row_RMSE": 38.35714198011719,
+          "R2": -0.6513726848144035,
+          "calibration_slope": 0.22146853599025945,
+          "calibration_joint_intercept": 41.999446393982744,
+          "calibration_in_the_large": 25.346275044371733
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 15.287566334797223,
+          "row_MAE": 14.317935185236706,
+          "row_RMSE": 18.78083911665807,
+          "R2": -0.6813890104186362,
+          "calibration_slope": 0.38983772390511234,
+          "calibration_joint_intercept": 6.2595369684064455,
+          "calibration_in_the_large": -8.2207413169164
+        }
+      },
+      "category_macro_study_MAE": 22.142508703317684
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.851705854292838,
+      "row_MAE": 18.930138964863566,
+      "row_RMSE": 25.06463419736858,
+      "R2": -0.045925532143433756,
+      "calibration_slope": 0.4610245438278874,
+      "calibration_joint_intercept": 16.78469445567879,
+      "calibration_in_the_large": 3.102415557843404,
+      "study_MAE_conditional_CI": [
+        17.21434746371179,
+        22.65810838032947
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 17.468681246431597,
+          "row_MAE": 20.547185327573608,
+          "row_RMSE": 23.733326048370674,
+          "R2": -1.0789523308598619,
+          "calibration_slope": -0.06412625504278348,
+          "calibration_joint_intercept": 20.581641794503653,
+          "calibration_in_the_large": -9.332130134493617
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.116114363191777,
+          "row_MAE": 18.722672083281235,
+          "row_RMSE": 25.88129027260794,
+          "R2": -0.35618911666316966,
+          "calibration_slope": 0.055440166393496075,
+          "calibration_joint_intercept": 37.44576523339794,
+          "calibration_in_the_large": 12.289499427393235
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 19.696583061889385,
+          "row_MAE": 17.61567266559599,
+          "row_RMSE": 21.816445804422607,
+          "R2": 0.21526891542967974,
+          "calibration_slope": 2.2242672060403645,
+          "calibration_joint_intercept": -39.69749662925116,
+          "calibration_in_the_large": -1.2985399707141347
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.15898610756675,
+          "row_MAE": 17.450631994474183,
+          "row_RMSE": 23.249108613264156,
+          "R2": -0.06247116286275611,
+          "calibration_slope": 0.6037834232272778,
+          "calibration_joint_intercept": 18.600976491528044,
+          "calibration_in_the_large": 8.877394808249335
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.63146336430762,
+          "row_MAE": 26.344847110112262,
+          "row_RMSE": 32.84043331507235,
+          "R2": -0.7781528021028354,
+          "calibration_slope": 3.047644885471249,
+          "calibration_joint_intercept": -34.065742704829354,
+          "calibration_in_the_large": 13.747018995527494
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.912022281290565,
+          "row_MAE": 18.761543883748164,
+          "row_RMSE": 23.40624284477446,
+          "R2": 0.012270189836737444,
+          "calibration_slope": 0.23797065507312698,
+          "calibration_joint_intercept": 17.44959006312797,
+          "calibration_in_the_large": -1.6976687429580224
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.06005669034874,
+          "row_MAE": 16.246157794933602,
+          "row_RMSE": 21.350553373082644,
+          "R2": -0.012895372204136724,
+          "calibration_slope": 0.9326364110241739,
+          "calibration_joint_intercept": -2.9133333949003806,
+          "calibration_in_the_large": -4.461154388021924
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.137045989147936,
+          "row_MAE": 24.144704196176395,
+          "row_RMSE": 34.522660660534505,
+          "R2": -0.33770741780900027,
+          "calibration_slope": 1.6201968460502756,
+          "calibration_joint_intercept": 9.649089095467666,
+          "calibration_in_the_large": 23.845920291553263
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.269084764072726,
+          "row_MAE": 12.266668894022994,
+          "row_RMSE": 14.493765860850162,
+          "R2": -0.0013841250737995914,
+          "calibration_slope": 0.8238875413157355,
+          "calibration_joint_intercept": -4.4724270539333055,
+          "calibration_in_the_large": -8.744064932235823
+        }
+      },
+      "category_macro_study_MAE": 21.27222642980523
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.704065643091965,
+      "row_MAE": 18.711306574802098,
+      "row_RMSE": 24.70529636660179,
+      "R2": -0.01615079063418845,
+      "calibration_slope": 0.4691766145200842,
+      "calibration_joint_intercept": 16.839523986771177,
+      "calibration_in_the_large": 3.660362586897847,
+      "study_MAE_conditional_CI": [
+        16.975860867925785,
+        22.712425273632185
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.784748079570395,
+          "row_MAE": 17.86924003132624,
+          "row_RMSE": 19.768025907100473,
+          "R2": -0.4422944197723231,
+          "calibration_slope": 0.7680497504725774,
+          "calibration_joint_intercept": -1.654109936928343,
+          "calibration_in_the_large": -7.824882924225883
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.616933475952525,
+          "row_MAE": 18.803516492076938,
+          "row_RMSE": 26.91406106362965,
+          "R2": -0.4665837696274939,
+          "calibration_slope": -0.4864038516420187,
+          "calibration_joint_intercept": 51.29038955959211,
+          "calibration_in_the_large": 13.49466018066428
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 17.13217985229692,
+          "row_MAE": 16.742584385207667,
+          "row_RMSE": 21.307092414466737,
+          "R2": 0.25148374492072667,
+          "calibration_slope": 1.2041285976595881,
+          "calibration_joint_intercept": -16.891753535270237,
+          "calibration_in_the_large": -8.93123870347292
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.269861434970522,
+          "row_MAE": 18.366159223233854,
+          "row_RMSE": 23.771689288652997,
+          "R2": -0.11077124607156863,
+          "calibration_slope": 0.4477676263359772,
+          "calibration_joint_intercept": 23.112856714072784,
+          "calibration_in_the_large": 10.402928216776989
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 27.487081506142157,
+          "row_MAE": 27.060288344872003,
+          "row_RMSE": 33.74913316470526,
+          "R2": -0.8779177464349301,
+          "calibration_slope": 5.365393808386793,
+          "calibration_joint_intercept": -85.31293022068101,
+          "calibration_in_the_large": 14.2824013023885
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.244077750024474,
+          "row_MAE": 18.423229929561163,
+          "row_RMSE": 23.802122519852507,
+          "R2": -0.02142414721698227,
+          "calibration_slope": 0.48745902058569324,
+          "calibration_joint_intercept": 11.530158911930783,
+          "calibration_in_the_large": -0.9809309015675596
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 17.270547212106706,
+          "row_MAE": 16.81473965465381,
+          "row_RMSE": 21.869796549499185,
+          "R2": -0.06276147088585682,
+          "calibration_slope": -0.034630442307741635,
+          "calibration_joint_intercept": 19.340083580169356,
+          "calibration_in_the_large": -5.281656591399291
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.214164685255763,
+          "row_MAE": 23.209392532166877,
+          "row_RMSE": 33.2809874327939,
+          "R2": -0.24321151145215403,
+          "calibration_slope": 2.2646496006132333,
+          "calibration_joint_intercept": -5.538181693731694,
+          "calibration_in_the_large": 23.653748708307184
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.764217785469421,
+          "row_MAE": 14.160834981574757,
+          "row_RMSE": 15.790632228354676,
+          "R2": -0.18860419093620973,
+          "calibration_slope": 2.180168253575767,
+          "calibration_joint_intercept": -39.91191455282621,
+          "calibration_in_the_large": -9.91033560725488
+        }
+      },
+      "category_macro_study_MAE": 21.198201309087654
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.61988567966787,
+      "row_MAE": 18.681642792645306,
+      "row_RMSE": 24.772792091552205,
+      "R2": -0.02171069347368193,
+      "calibration_slope": 0.5719826967396913,
+      "calibration_joint_intercept": 14.356089132464735,
+      "calibration_in_the_large": 3.78101484079496,
+      "study_MAE_conditional_CI": [
+        16.971294524177686,
+        22.45587303114649
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 17.597397852377433,
+          "row_MAE": 20.397812238667992,
+          "row_RMSE": 22.933460281894597,
+          "R2": -0.9411830712447045,
+          "calibration_slope": -0.00896023859595594,
+          "calibration_joint_intercept": 19.038824347218902,
+          "calibration_in_the_large": -10.220566125956065
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.812253932817637,
+          "row_MAE": 19.376378038931207,
+          "row_RMSE": 26.260756365883896,
+          "R2": -0.39624897945564297,
+          "calibration_slope": -0.10793463070501785,
+          "calibration_joint_intercept": 42.031781053940726,
+          "calibration_in_the_large": 10.113286003116503
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 19.482167281149778,
+          "row_MAE": 17.501939180619996,
+          "row_RMSE": 21.911025286234533,
+          "R2": 0.20845017515345043,
+          "calibration_slope": 1.8557100119469556,
+          "calibration_joint_intercept": -28.80123917019309,
+          "calibration_in_the_large": -1.656076147990853
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.157637228818185,
+          "row_MAE": 17.579996754802032,
+          "row_RMSE": 23.467685585832083,
+          "R2": -0.08254276214798772,
+          "calibration_slope": 0.6955080772816518,
+          "calibration_joint_intercept": 17.0657501718559,
+          "calibration_in_the_large": 9.906564043844364
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.1575705640129,
+          "row_MAE": 25.98398003008841,
+          "row_RMSE": 31.860275398209353,
+          "R2": -0.6735950083286033,
+          "calibration_slope": 4.532523594850081,
+          "calibration_joint_intercept": -70.00017689015212,
+          "calibration_in_the_large": 13.468513572348726
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.3309753987931,
+          "row_MAE": 18.51573651449929,
+          "row_RMSE": 23.632792978929114,
+          "R2": -0.006942911921202777,
+          "calibration_slope": 0.34234733589896305,
+          "calibration_joint_intercept": 15.328865355341726,
+          "calibration_in_the_large": -0.2315742031377388
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.581390885455935,
+          "row_MAE": 16.401009034214443,
+          "row_RMSE": 21.59083806415627,
+          "R2": -0.03582244079946828,
+          "calibration_slope": 0.40190899583288014,
+          "calibration_joint_intercept": 9.20853509721777,
+          "calibration_in_the_large": -4.642083038161829
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 28.999637623127388,
+          "row_MAE": 23.182824440599745,
+          "row_RMSE": 33.51397494955556,
+          "R2": -0.2606789401324954,
+          "calibration_slope": 2.2558349486800697,
+          "calibration_joint_intercept": -6.23551212110101,
+          "calibration_in_the_large": 23.254429066833467
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 12.995563755586392,
+          "row_MAE": 11.563063474746327,
+          "row_RMSE": 13.240293115123274,
+          "R2": 0.16433267934441187,
+          "calibration_slope": 0.9314546077336957,
+          "calibration_joint_intercept": -6.280057144419718,
+          "calibration_in_the_large": -7.883660635295807
+        }
+      },
+      "category_macro_study_MAE": 21.123843835793195
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "SVR",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.973190970513944,
+      "row_MAE": 18.941689488265258,
+      "row_RMSE": 26.22154958503158,
+      "R2": -0.144708030297531,
+      "calibration_slope": 0.4154764417369637,
+      "calibration_joint_intercept": 20.216589879547985,
+      "calibration_in_the_large": 8.579559202245662,
+      "study_MAE_conditional_CI": [
+        16.96171356684684,
+        23.144160093819437
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.27993289438111,
+          "row_MAE": 17.099151690679882,
+          "row_RMSE": 20.552550938735813,
+          "R2": -0.5590454877315598,
+          "calibration_slope": 0.042765523922053586,
+          "calibration_joint_intercept": 17.833250741009227,
+          "calibration_in_the_large": -3.3353445863105198
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.712547284610057,
+          "row_MAE": 18.878256589725275,
+          "row_RMSE": 26.721126013721516,
+          "R2": -0.44563254857204804,
+          "calibration_slope": -0.4876001475960878,
+          "calibration_joint_intercept": 47.649099990514294,
+          "calibration_in_the_large": 21.02482308124567
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 23.658530865135447,
+          "row_MAE": 18.798094250319256,
+          "row_RMSE": 24.928290686657974,
+          "R2": -0.02456108780487387,
+          "calibration_slope": 6.962007003260811,
+          "calibration_joint_intercept": -111.32700474901729,
+          "calibration_in_the_large": 9.757034596823361
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.779177178016116,
+          "row_MAE": 18.662561490023748,
+          "row_RMSE": 25.606272549085983,
+          "R2": -0.2888348359707922,
+          "calibration_slope": 0.4777883403151351,
+          "calibration_joint_intercept": 24.020704981871916,
+          "calibration_in_the_large": 13.749161677406878
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.292224369563073,
+          "row_MAE": 29.743869053969554,
+          "row_RMSE": 36.811246265863275,
+          "R2": -1.2341501785601912,
+          "calibration_slope": 47.229056859798156,
+          "calibration_joint_intercept": -940.4531423638529,
+          "calibration_in_the_large": 16.399073697665393
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.001359713523176,
+          "row_MAE": 16.988952306812237,
+          "row_RMSE": 23.24942861392444,
+          "R2": 0.02546079328581874,
+          "calibration_slope": 3.2573667645109565,
+          "calibration_joint_intercept": -43.74417814526864,
+          "calibration_in_the_large": 2.8070733500286056
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.310958444567975,
+          "row_MAE": 17.884799578051354,
+          "row_RMSE": 23.93100252823909,
+          "R2": -0.2725302082143328,
+          "calibration_slope": 0.6374464673933424,
+          "calibration_joint_intercept": 7.467169100894743,
+          "calibration_in_the_large": 1.183066930467678
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 32.60240651945031,
+          "row_MAE": 25.182173455204335,
+          "row_RMSE": 36.4258622883521,
+          "R2": -0.4892660843170227,
+          "calibration_slope": -0.09212620018254913,
+          "calibration_joint_intercept": 48.41418409182372,
+          "calibration_in_the_large": 28.528953984151286
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 12.53828847011737,
+          "row_MAE": 12.423909272644952,
+          "row_RMSE": 14.523429272751534,
+          "R2": -0.005487250117391929,
+          "calibration_slope": 4.264526575615248,
+          "calibration_joint_intercept": -70.90897919887594,
+          "calibration_in_the_large": -4.753765611257254
+        }
+      },
+      "category_macro_study_MAE": 21.908380637707182
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "KNN",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 22.728647946978064,
+      "row_MAE": 21.46674827586207,
+      "row_RMSE": 28.961003527454665,
+      "R2": -0.3963851971207659,
+      "calibration_slope": 0.08142055223475635,
+      "calibration_joint_intercept": 26.477108611884393,
+      "calibration_in_the_large": 3.788904431012806,
+      "study_MAE_conditional_CI": [
+        19.483814711385953,
+        26.11785427500616
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 16.87085925925926,
+          "row_MAE": 19.95942424242424,
+          "row_RMSE": 26.532246889969628,
+          "R2": -1.5982167598157058,
+          "calibration_slope": -0.08878237969415154,
+          "calibration_joint_intercept": 20.69706264710784,
+          "calibration_in_the_large": -2.8253185185185177
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 30.27633333333333,
+          "row_MAE": 19.408608695652173,
+          "row_RMSE": 27.850389637427366,
+          "R2": -0.5704024299540578,
+          "calibration_slope": -1.0197327749624163,
+          "calibration_joint_intercept": 60.729812418944796,
+          "calibration_in_the_large": 17.53676666666667
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 22.30135185185185,
+          "row_MAE": 20.42179310344828,
+          "row_RMSE": 27.55740437454277,
+          "R2": -0.2520724947467188,
+          "calibration_slope": 0.6611673826907947,
+          "calibration_joint_intercept": -0.4276117224001901,
+          "calibration_in_the_large": -16.05502380952381
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 24.177140873015873,
+          "row_MAE": 20.11256179775281,
+          "row_RMSE": 27.35128639498834,
+          "R2": -0.4704831511963372,
+          "calibration_slope": 0.2046682346052256,
+          "calibration_joint_intercept": 28.702525034398132,
+          "calibration_in_the_large": 10.376561507936506
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 24.95745454545455,
+          "row_MAE": 24.386105263157898,
+          "row_RMSE": 32.395713634595815,
+          "R2": -0.7303199835784724,
+          "calibration_slope": 1.4020407552320748,
+          "calibration_joint_intercept": 3.5232072939007253,
+          "calibration_in_the_large": 13.150666666666666
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 21.39707960927961,
+          "row_MAE": 21.584800000000005,
+          "row_RMSE": 27.31687795972788,
+          "R2": -0.3453549246154122,
+          "calibration_slope": 0.07546163239956881,
+          "calibration_joint_intercept": 21.470785733264915,
+          "calibration_in_the_large": -2.5207981074481087
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 19.928846153846152,
+          "row_MAE": 21.195220338983052,
+          "row_RMSE": 27.119423026460858,
+          "R2": -0.6342075271253476,
+          "calibration_slope": -0.18765654883737992,
+          "calibration_joint_intercept": 22.153152044119114,
+          "calibration_in_the_large": -0.8662051282051264
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 36.42483847481021,
+          "row_MAE": 27.83863829787234,
+          "row_RMSE": 38.035810033916334,
+          "R2": -0.6238202607897039,
+          "calibration_slope": -1.2310100421142118,
+          "calibration_joint_intercept": 72.31556126754077,
+          "calibration_in_the_large": 25.958062974465143
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 17.398099211045363,
+          "row_MAE": 15.224038461538463,
+          "row_RMSE": 20.88057953623967,
+          "R2": -1.078372159654744,
+          "calibration_slope": 0.23448337617148404,
+          "calibration_joint_intercept": 9.452235839192992,
+          "calibration_in_the_large": -10.328126824457595
+        }
+      },
+      "category_macro_study_MAE": 23.748000367988464
+    },
+    {
+      "scheme": "category_unpurged",
+      "model": "XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 19.725594164669893,
+      "row_MAE": 18.634275391414246,
+      "row_RMSE": 24.613394350141682,
+      "R2": -0.008604828832331046,
+      "calibration_slope": 0.6173758183580123,
+      "calibration_joint_intercept": 13.574549284877445,
+      "calibration_in_the_large": 4.331722179131412,
+      "study_MAE_conditional_CI": [
+        17.093604211059233,
+        22.656385368902495
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 16.914399563824688,
+          "row_MAE": 19.10328311573375,
+          "row_RMSE": 20.82502515154195,
+          "R2": -0.6006574094348212,
+          "calibration_slope": 0.6924940065897989,
+          "calibration_joint_intercept": -1.3261574012997528,
+          "calibration_in_the_large": -10.253961318687155
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.61694534619649,
+          "row_MAE": 16.842696065488067,
+          "row_RMSE": 24.145460728340012,
+          "R2": -0.18037336491585476,
+          "calibration_slope": -0.17992523833170115,
+          "calibration_joint_intercept": 43.906397484787064,
+          "calibration_in_the_large": 11.221309501330058
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 23.390957622427162,
+          "row_MAE": 19.500998628550562,
+          "row_RMSE": 23.65210230327344,
+          "R2": 0.07765721547523685,
+          "calibration_slope": 7.8834292180820595,
+          "calibration_joint_intercept": -189.326571306631,
+          "calibration_in_the_large": 2.2366842730083154
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.491106127557305,
+          "row_MAE": 17.711274376344146,
+          "row_RMSE": 23.350001530624088,
+          "R2": -0.07171267082778754,
+          "calibration_slope": 0.7452692655109402,
+          "calibration_joint_intercept": 16.056572540344966,
+          "calibration_in_the_large": 10.122328820985459
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.64434125429624,
+          "row_MAE": 26.731878124036292,
+          "row_RMSE": 33.06357179446394,
+          "R2": -0.8023986623935198,
+          "calibration_slope": 4.715551207387289,
+          "calibration_joint_intercept": -69.78213431856659,
+          "calibration_in_the_large": 14.431865252209947
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 18.98985681791853,
+          "row_MAE": 17.96985876337687,
+          "row_RMSE": 23.533953542983525,
+          "R2": 0.0014621501818025129,
+          "calibration_slope": 0.2893059766231685,
+          "calibration_joint_intercept": 16.983143016706073,
+          "calibration_in_the_large": 1.1485861970729159
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.53179982601068,
+          "row_MAE": 16.623734465776863,
+          "row_RMSE": 22.005729290783876,
+          "R2": -0.07601381563060428,
+          "calibration_slope": 0.2617224694266858,
+          "calibration_joint_intercept": 12.526412327572567,
+          "calibration_in_the_large": -4.369154989780524
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 29.537801733746864,
+          "row_MAE": 23.175733720495355,
+          "row_RMSE": 33.13858195640879,
+          "R2": -0.23259515814653597,
+          "calibration_slope": 3.812314386425047,
+          "calibration_joint_intercept": -44.51231172610955,
+          "calibration_in_the_large": 22.801417425075996
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.004913939703613,
+          "row_MAE": 12.090608706841103,
+          "row_RMSE": 13.402714227457688,
+          "R2": 0.14370435531619175,
+          "calibration_slope": 1.0823045340749116,
+          "calibration_joint_intercept": -10.501496340282337,
+          "calibration_in_the_large": -8.523351474239043
+        }
+      },
+      "category_macro_study_MAE": 21.45801358129795
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "training_mean",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 21.202798049162574,
+      "row_MAE": 20.07679717718541,
+      "row_RMSE": 24.866240151003478,
+      "R2": -0.029433437076839875,
+      "calibration_slope": -5.96369509040594,
+      "calibration_joint_intercept": 201.42107212485976,
+      "calibration_in_the_large": -0.5094822627641244,
+      "study_MAE_conditional_CI": [
+        18.76602694004899,
+        23.835626549842292
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 17.401067807220663,
+          "row_MAE": 19.36196959207815,
+          "row_RMSE": 20.971938669979586,
+          "R2": -0.6233212661162875,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -10.504073881772907
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.61400811778759,
+          "row_MAE": 16.701614639073615,
+          "row_RMSE": 22.879786615634586,
+          "R2": -0.0598693842101361,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 11.029719006405285
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.72168677408293,
+          "row_MAE": 20.698886211354782,
+          "row_RMSE": 24.750310549229543,
+          "R2": -0.009983228512516318,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 1.6376761761107888
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.01970050816411,
+          "row_MAE": 17.894091355450595,
+          "row_RMSE": 22.79923850675725,
+          "R2": -0.021751354979657744,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 5.773762010521324
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 28.28884096547453,
+          "row_MAE": 25.50006750867787,
+          "row_RMSE": 31.766127005623932,
+          "R2": -0.6637185417528428,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 8.946350372131906
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 21.35317146199815,
+          "row_MAE": 20.18577332380621,
+          "row_RMSE": 24.233798819221633,
+          "R2": -0.0588092929436943,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -6.493558462140683
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 21.07515276566789,
+          "row_MAE": 18.777031924761776,
+          "row_RMSE": 21.83065379636915,
+          "R2": -0.05896059580198387,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -11.919468181579548
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 29.78191840495928,
+          "row_MAE": 22.9357719054906,
+          "row_RMSE": 31.69459466106226,
+          "R2": -0.12751679720105158,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 19.009587315325504
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 19.176178603426994,
+          "row_MAE": 19.592388036525378,
+          "row_RMSE": 21.294335707754787,
+          "R2": -1.161555608575648,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -14.996898172685304
+        }
+      },
+      "category_macro_study_MAE": 23.270191712086906
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "training_median",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.475919692625425,
+      "row_MAE": 19.11596551724138,
+      "row_RMSE": 25.658296191451917,
+      "R2": -0.0960582910784391,
+      "calibration_slope": -2.7472400607473184,
+      "calibration_joint_intercept": 87.79333187486546,
+      "calibration_in_the_large": 6.900941578261084,
+      "study_MAE_conditional_CI": [
+        17.737995899681287,
+        23.617347716037198
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 14.06264814814815,
+          "row_MAE": 15.598181818181818,
+          "row_RMSE": 17.296287830840257,
+          "R2": -0.10416284177937762,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -2.82101851851852
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.46395833333333,
+          "row_MAE": 19.069565217391304,
+          "row_RMSE": 25.915531686783808,
+          "R2": -0.35978001586493225,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 18.922291666666663
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 24.41369047619047,
+          "row_MAE": 19.274137931034485,
+          "row_RMSE": 25.294106918956164,
+          "R2": -0.054852064124349065,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 9.866309523809523
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.48159920634921,
+          "row_MAE": 18.94067415730337,
+          "row_RMSE": 25.535269594394865,
+          "R2": -0.28169719366373447,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 14.418472222222217
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.618354978354983,
+          "row_MAE": 30.383157894736847,
+          "row_RMSE": 37.45125280737756,
+          "R2": -1.3125121392240158,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 17.097142857142856
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 19.360835317460317,
+          "row_MAE": 18.19675,
+          "row_RMSE": 23.55212493951802,
+          "R2": -8.045780554644111e-05,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -0.5710001526251522
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.807115384615386,
+          "row_MAE": 16.658135593220337,
+          "row_RMSE": 21.336832044493278,
+          "R2": -0.01159387860858585,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -4.484038461538462
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 31.942237750172538,
+          "row_MAE": 24.365319148936173,
+          "row_RMSE": 35.16213319237469,
+          "R2": -0.3877238294313985,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": 26.9367674258109
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 15.09786785009862,
+          "row_MAE": 15.028846153846153,
+          "row_RMSE": 17.106253017762025,
+          "R2": -0.3949158289824499,
+          "calibration_slope": null,
+          "calibration_joint_intercept": null,
+          "calibration_in_the_large": -8.488893491124259
+        }
+      },
+      "category_macro_study_MAE": 22.47203416052478
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "Ridge",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 21.608394599861455,
+      "row_MAE": 21.038014978809738,
+      "row_RMSE": 28.021703352511402,
+      "R2": -0.3072753902585956,
+      "calibration_slope": 0.22406280419250516,
+      "calibration_joint_intercept": 22.57716273965654,
+      "calibration_in_the_large": 2.107267801096595,
+      "study_MAE_conditional_CI": [
+        18.376354852660356,
+        25.019566568690845
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 15.190738598274512,
+          "row_MAE": 18.435350588647196,
+          "row_RMSE": 21.485753316190166,
+          "R2": -0.7038387475487153,
+          "calibration_slope": 0.051417954203145835,
+          "calibration_joint_intercept": 17.600067430989032,
+          "calibration_in_the_large": -4.149080685961186
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 33.24603945192919,
+          "row_MAE": 26.085714850078705,
+          "row_RMSE": 33.24368558059127,
+          "R2": -1.237519040977089,
+          "calibration_slope": 0.11703087796459624,
+          "calibration_joint_intercept": 36.62646121853741,
+          "calibration_in_the_large": 19.304986489961152
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 18.64545556410047,
+          "row_MAE": 17.08949327184485,
+          "row_RMSE": 22.451585818162744,
+          "R2": 0.16891221218233454,
+          "calibration_slope": 0.85110793488784,
+          "calibration_joint_intercept": -5.398932456910284,
+          "calibration_in_the_large": -11.60319034449268
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 20.624925353982746,
+          "row_MAE": 16.326386354361954,
+          "row_RMSE": 22.659268752394752,
+          "R2": -0.009244333099808433,
+          "calibration_slope": 0.38474120975932435,
+          "calibration_joint_intercept": 22.036908842091645,
+          "calibration_in_the_large": 3.8360851749643
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 28.5354790453018,
+          "row_MAE": 32.87743344913302,
+          "row_RMSE": 39.15637253929367,
+          "R2": -1.5278786646379627,
+          "calibration_slope": 2.0813911862284455,
+          "calibration_joint_intercept": 7.084907410518568,
+          "calibration_in_the_large": 22.677827715808213
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 24.203104507104594,
+          "row_MAE": 23.126008536239127,
+          "row_RMSE": 28.38465468172772,
+          "R2": -0.4525864149108223,
+          "calibration_slope": -0.021241513990926605,
+          "calibration_joint_intercept": 23.997745680202694,
+          "calibration_in_the_large": -3.346202384951439
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 14.247609383202002,
+          "row_MAE": 14.936066877979247,
+          "row_RMSE": 20.405959544673472,
+          "R2": 0.07474730648869299,
+          "calibration_slope": 0.6670354125050004,
+          "calibration_joint_intercept": 3.7174670407605745,
+          "calibration_in_the_large": -3.6695090081865858
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 36.95064738003881,
+          "row_MAE": 28.0079456977064,
+          "row_RMSE": 39.01671584832833,
+          "R2": -0.7086536475383771,
+          "calibration_slope": 0.26817268769681657,
+          "calibration_joint_intercept": 42.070941700047314,
+          "calibration_in_the_large": 29.338180844024002
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 22.442774843364894,
+          "row_MAE": 19.756500206432836,
+          "row_RMSE": 24.466603737258414,
+          "R2": -1.8535507190641654,
+          "calibration_slope": 0.19348640235510337,
+          "calibration_joint_intercept": 9.734609788050719,
+          "calibration_in_the_large": -14.343687680865225
+        }
+      },
+      "category_macro_study_MAE": 23.78741934747767
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.297180478816564,
+      "row_MAE": 19.17186523529741,
+      "row_RMSE": 25.06990950638311,
+      "R2": -0.04636584665051635,
+      "calibration_slope": 0.3176644156232489,
+      "calibration_joint_intercept": 20.082421980953903,
+      "calibration_in_the_large": 2.027154263402385,
+      "study_MAE_conditional_CI": [
+        17.582844769421204,
+        23.205293529874922
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 15.412403403530826,
+          "row_MAE": 18.152533759414283,
+          "row_RMSE": 20.667149681622693,
+          "R2": -0.5764800884941641,
+          "calibration_slope": 0.17465566129452523,
+          "calibration_joint_intercept": 14.296073493066462,
+          "calibration_in_the_large": -6.888139499243012
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 26.59163587133076,
+          "row_MAE": 18.274152003556388,
+          "row_RMSE": 25.591959677117302,
+          "R2": -0.3260365449970144,
+          "calibration_slope": 0.14343098626646314,
+          "calibration_joint_intercept": 35.18520834501733,
+          "calibration_in_the_large": 12.867368536551233
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 19.763082045827787,
+          "row_MAE": 17.68129008178634,
+          "row_RMSE": 21.896295129277128,
+          "R2": 0.20951409012605504,
+          "calibration_slope": 2.1864716840023584,
+          "calibration_joint_intercept": -38.842539206917266,
+          "calibration_in_the_large": -1.4496937406775183
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.54965047532079,
+          "row_MAE": 17.47281176773312,
+          "row_RMSE": 23.025934855357168,
+          "R2": -0.04217123473062623,
+          "calibration_slope": 0.12478540921606407,
+          "calibration_joint_intercept": 30.051040623109476,
+          "calibration_in_the_large": 6.432692231854198
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.702867728510867,
+          "row_MAE": 26.46680347159225,
+          "row_RMSE": 33.0579451129435,
+          "R2": -0.8017852585919698,
+          "calibration_slope": 2.9304518504017705,
+          "calibration_joint_intercept": -30.773641918678045,
+          "calibration_in_the_large": 13.936624192925358
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 21.60545246565829,
+          "row_MAE": 20.472809389955422,
+          "row_RMSE": 24.784421337917784,
+          "R2": -0.1074708783975542,
+          "calibration_slope": -0.09230981246782334,
+          "calibration_joint_intercept": 25.95321400008387,
+          "calibration_in_the_large": -3.916025402122827
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.222318579895017,
+          "row_MAE": 16.10816257415909,
+          "row_RMSE": 20.765501661740302,
+          "R2": 0.04185514851246552,
+          "calibration_slope": 1.2798101493044647,
+          "calibration_joint_intercept": -11.922731673435287,
+          "calibration_in_the_large": -5.267795160482651
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.98144851800593,
+          "row_MAE": 24.302676813359685,
+          "row_RMSE": 34.61033818699085,
+          "R2": -0.34451082244599207,
+          "calibration_slope": 0.7525153812032631,
+          "calibration_joint_intercept": 29.625612967833685,
+          "calibration_in_the_large": 23.998156514474225
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 15.709073401968054,
+          "row_MAE": 13.966816059834688,
+          "row_RMSE": 16.2689255159944,
+          "R2": -0.2616995885496769,
+          "calibration_slope": 0.5866952159921487,
+          "calibration_joint_intercept": 0.0777326295829095,
+          "calibration_in_the_large": -10.794500659223901
+        }
+      },
+      "category_macro_study_MAE": 21.61532583222759
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.338570036908592,
+      "row_MAE": 19.015782644237742,
+      "row_RMSE": 24.783370746128643,
+      "R2": -0.022583476177166606,
+      "calibration_slope": 0.289603709868314,
+      "calibration_joint_intercept": 21.119930416647158,
+      "calibration_in_the_large": 3.0457692667038785,
+      "study_MAE_conditional_CI": [
+        17.556865594378362,
+        23.375358769111365
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 18.076776368822635,
+          "row_MAE": 18.67405683370454,
+          "row_RMSE": 20.539538933047837,
+          "R2": -0.557072021071197,
+          "calibration_slope": 0.23714432853301656,
+          "calibration_joint_intercept": 11.606929939110806,
+          "calibration_in_the_large": -11.46442170988829
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 28.203841224788004,
+          "row_MAE": 18.47914504707482,
+          "row_RMSE": 26.4524717764857,
+          "R2": -0.416709894151269,
+          "calibration_slope": -0.4196299267019835,
+          "calibration_joint_intercept": 49.56876703334772,
+          "calibration_in_the_large": 13.551185629603555
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 17.337613308484862,
+          "row_MAE": 16.712044646631867,
+          "row_RMSE": 21.56599732471797,
+          "R2": 0.23318261403032525,
+          "calibration_slope": 1.167502200729024,
+          "calibration_joint_intercept": -15.358690267362991,
+          "calibration_in_the_large": -8.841539868515172
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.621047777207874,
+          "row_MAE": 18.22522711782993,
+          "row_RMSE": 23.93643940201486,
+          "R2": -0.12622103828198927,
+          "calibration_slope": 0.06498620261675123,
+          "calibration_joint_intercept": 31.916364578063455,
+          "calibration_in_the_large": 10.30421744698515
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 27.66303286238812,
+          "row_MAE": 28.585723689043515,
+          "row_RMSE": 34.64764047214291,
+          "R2": -0.9792408655003613,
+          "calibration_slope": 6.659207871274587,
+          "calibration_joint_intercept": -103.10332212539615,
+          "calibration_in_the_large": 16.04351790764802
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 20.08361510957036,
+          "row_MAE": 19.035051046545206,
+          "row_RMSE": 23.584956250496617,
+          "R2": -0.0028705956481671624,
+          "calibration_slope": 0.7916467523028267,
+          "calibration_joint_intercept": 2.8636441048183734,
+          "calibration_in_the_large": -2.5489450917457477
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.12933100244206,
+          "row_MAE": 16.30748408821226,
+          "row_RMSE": 20.71215524811813,
+          "R2": 0.046771758491622406,
+          "calibration_slope": 1.1167041202531838,
+          "calibration_joint_intercept": -5.220648546238461,
+          "calibration_in_the_large": -2.7399912732092426
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.030722408748428,
+          "row_MAE": 23.3980428824315,
+          "row_RMSE": 33.2837038436303,
+          "R2": -0.2434144628247754,
+          "calibration_slope": 1.7595477883859763,
+          "calibration_joint_intercept": 4.896733722639837,
+          "calibration_in_the_large": 22.957911301902676
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 15.04430560434606,
+          "row_MAE": 15.219414917861965,
+          "row_RMSE": 17.173502053985114,
+          "R2": -0.40590492567287173,
+          "calibration_slope": 1.2902033077048403,
+          "calibration_joint_intercept": -18.72014983976848,
+          "calibration_in_the_large": -11.020569657370231
+        }
+      },
+      "category_macro_study_MAE": 21.576698407422043
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.2424084389895,
+      "row_MAE": 19.336931145941723,
+      "row_RMSE": 25.03758601327673,
+      "R2": -0.04366935545158945,
+      "calibration_slope": 0.2645731525696041,
+      "calibration_joint_intercept": 21.593357144336206,
+      "calibration_in_the_large": 2.428133554229181,
+      "study_MAE_conditional_CI": [
+        17.58594567677353,
+        23.156293827846714
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 15.281424241017508,
+          "row_MAE": 17.87483717409257,
+          "row_RMSE": 19.87722514189002,
+          "R2": -0.4582729963180088,
+          "calibration_slope": 0.40794008945570165,
+          "calibration_joint_intercept": 8.090582327779245,
+          "calibration_in_the_large": -7.421922597260435
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.564601307192028,
+          "row_MAE": 19.721552270608644,
+          "row_RMSE": 26.460491607239486,
+          "R2": -0.41756905740823913,
+          "calibration_slope": 0.013380561178775124,
+          "calibration_joint_intercept": 38.53418662609269,
+          "calibration_in_the_large": 9.917152391221684
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 23.424421189757634,
+          "row_MAE": 19.55996968566702,
+          "row_RMSE": 23.669824144814054,
+          "R2": 0.07627452770287102,
+          "calibration_slope": 7.974537921227583,
+          "calibration_joint_intercept": -192.7793216769069,
+          "calibration_in_the_large": 2.121664529706587
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 21.64764541791651,
+          "row_MAE": 17.723714015554783,
+          "row_RMSE": 23.33353589082055,
+          "R2": -0.07020173191415124,
+          "calibration_slope": 0.09841762751308304,
+          "calibration_joint_intercept": 30.920772049176634,
+          "calibration_in_the_large": 8.039886737487215
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.358268093678166,
+          "row_MAE": 26.32955290740515,
+          "row_RMSE": 32.01804615316421,
+          "R2": -0.6902111934019288,
+          "calibration_slope": 4.526020971234942,
+          "calibration_joint_intercept": -68.91513274939842,
+          "calibration_in_the_large": 13.674300523821671
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 21.243485175150226,
+          "row_MAE": 20.114549006514903,
+          "row_RMSE": 24.704203524720477,
+          "R2": -0.10031354985946961,
+          "calibration_slope": -0.3013241075929045,
+          "calibration_joint_intercept": 31.595706342686853,
+          "calibration_in_the_large": -3.673732026788392
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 16.890394081756792,
+          "row_MAE": 16.331828731868374,
+          "row_RMSE": 21.037397388900125,
+          "R2": 0.01659969919202464,
+          "calibration_slope": 0.7315385465807932,
+          "calibration_joint_intercept": 0.7942678169280342,
+          "calibration_in_the_large": -5.709274171077754
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.598795658698545,
+          "row_MAE": 23.145260481113198,
+          "row_RMSE": 33.512116454686236,
+          "R2": -0.26053912380919475,
+          "calibration_slope": 0.01296881911846404,
+          "calibration_joint_intercept": 46.43524552704007,
+          "calibration_in_the_large": 23.487009987099988
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 15.477018175028844,
+          "row_MAE": 15.710702949070516,
+          "row_RMSE": 17.57706205601742,
+          "R2": -0.4727559697212742,
+          "calibration_slope": 3.3023950950353025,
+          "calibration_joint_intercept": -70.61084924965601,
+          "calibration_in_the_large": -10.567528324371285
+        }
+      },
+      "category_macro_study_MAE": 22.054005926688472
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "SVR",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.511706481825442,
+      "row_MAE": 19.637324676558006,
+      "row_RMSE": 26.471645761815846,
+      "R2": -0.16664818124657965,
+      "calibration_slope": 0.13330541836971235,
+      "calibration_joint_intercept": 25.56800934865644,
+      "calibration_in_the_large": 6.582616301216969,
+      "study_MAE_conditional_CI": [
+        17.627947532092023,
+        23.706081196707988
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 13.686017873722326,
+          "row_MAE": 16.097870304936244,
+          "row_RMSE": 19.66761901769604,
+          "R2": -0.42768006046702056,
+          "calibration_slope": 0.1426643604761343,
+          "calibration_joint_intercept": 15.760528451621534,
+          "calibration_in_the_large": -2.3787415811392716
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 30.199450572861785,
+          "row_MAE": 19.644237283998898,
+          "row_RMSE": 27.150626508831614,
+          "R2": -0.49247862044544344,
+          "calibration_slope": -1.7181193197665148,
+          "calibration_joint_intercept": 72.19161553564825,
+          "calibration_in_the_large": 19.558488765304293
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 23.644953464976368,
+          "row_MAE": 18.79480683367983,
+          "row_RMSE": 24.905004530366185,
+          "R2": -0.022647844197932976,
+          "calibration_slope": 6.850772676806879,
+          "calibration_joint_intercept": -109.75113974633514,
+          "calibration_in_the_large": 9.657305187190213
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.494565183291375,
+          "row_MAE": 17.858947967346676,
+          "row_RMSE": 24.341827193661967,
+          "R2": -0.16469145342694658,
+          "calibration_slope": 0.2501285781014475,
+          "calibration_joint_intercept": 27.724868010086148,
+          "calibration_in_the_large": 10.655762517668377
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 29.33769061835132,
+          "row_MAE": 29.815507270405806,
+          "row_RMSE": 36.81223462633979,
+          "R2": -1.2342701514273324,
+          "calibration_slope": 70.99507306783184,
+          "calibration_joint_intercept": -1431.492515013117,
+          "calibration_in_the_large": 16.411346020690495
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 21.592041521680923,
+          "row_MAE": 21.27220401685647,
+          "row_RMSE": 26.342054090581865,
+          "R2": -0.2510481422698827,
+          "calibration_slope": -0.46497843722837595,
+          "calibration_joint_intercept": 35.39461264607753,
+          "calibration_in_the_large": -2.3046941063207482
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.95822563729491,
+          "row_MAE": 17.581032627396294,
+          "row_RMSE": 23.241019501416204,
+          "R2": -0.20020841005864898,
+          "calibration_slope": 0.48975189353312215,
+          "calibration_joint_intercept": 9.889032721271864,
+          "calibration_in_the_large": 0.9010652387165832
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 32.62334897363077,
+          "row_MAE": 24.958264493424966,
+          "row_RMSE": 36.03473214985161,
+          "R2": -0.4574551964500948,
+          "calibration_slope": -4.6428710261633706,
+          "calibration_joint_intercept": 133.49038050456068,
+          "calibration_in_the_large": 28.05142971346041
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 13.488675678342476,
+          "row_MAE": 13.33287195653419,
+          "row_RMSE": 15.377221878318974,
+          "R2": -0.12718183541935368,
+          "calibration_slope": 4.1190589725424145,
+          "calibration_joint_intercept": -73.69957637531361,
+          "calibration_in_the_large": -6.146918656305539
+        }
+      },
+      "category_macro_study_MAE": 22.55832994712803
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "KNN",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 23.52622144360528,
+      "row_MAE": 22.111520689655173,
+      "row_RMSE": 29.218220782646032,
+      "R2": -0.42129934565563243,
+      "calibration_slope": 0.023958335902755513,
+      "calibration_joint_intercept": 27.818166401844383,
+      "calibration_in_the_large": 0.52429318022858,
+      "study_MAE_conditional_CI": [
+        20.284588712609445,
+        26.95963856855412
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 15.637755555555556,
+          "row_MAE": 18.630212121212118,
+          "row_RMSE": 25.240141089986487,
+          "R2": -1.3513153367122213,
+          "calibration_slope": -0.06051801321889471,
+          "calibration_joint_intercept": 20.000551250893043,
+          "calibration_in_the_large": -1.406244444444444
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 31.12583333333333,
+          "row_MAE": 19.881652173913047,
+          "row_RMSE": 28.125938722884936,
+          "R2": -0.601630977830506,
+          "calibration_slope": -1.0182795540226122,
+          "calibration_joint_intercept": 65.1206134895493,
+          "calibration_in_the_large": 13.194266666666666
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 22.573732804232804,
+          "row_MAE": 20.61903448275862,
+          "row_RMSE": 27.754221462068024,
+          "R2": -0.27002115687273953,
+          "calibration_slope": 0.6585770006179018,
+          "calibration_joint_intercept": -0.48752367800010177,
+          "calibration_in_the_large": -16.327404761904763
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 24.184408730158733,
+          "row_MAE": 18.641932584269664,
+          "row_RMSE": 25.738235662361085,
+          "R2": -0.30215320640133414,
+          "calibration_slope": 0.058054903002302705,
+          "calibration_joint_intercept": 31.768121305032846,
+          "calibration_in_the_large": 4.991055555555554
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 25.52006060606061,
+          "row_MAE": 25.36326315789474,
+          "row_RMSE": 32.715985865596274,
+          "R2": -0.7647018649147392,
+          "calibration_slope": 1.432802317546587,
+          "calibration_joint_intercept": 4.081569059904247,
+          "calibration_in_the_large": 14.054484848484847
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 25.7340873015873,
+          "row_MAE": 24.50731666666667,
+          "row_RMSE": 30.946910183409262,
+          "R2": -0.7266699740565583,
+          "calibration_slope": -0.28942090591844294,
+          "calibration_joint_intercept": 32.744781364308125,
+          "calibration_in_the_large": -8.758659462759464
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 19.961012820512817,
+          "row_MAE": 20.980169491525423,
+          "row_RMSE": 26.024668822523637,
+          "R2": -0.5049315208340677,
+          "calibration_slope": 0.04925364750989129,
+          "calibration_joint_intercept": 17.539943681921304,
+          "calibration_in_the_large": -1.3001923076923065
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 35.26060514147688,
+          "row_MAE": 26.84710638297872,
+          "row_RMSE": 35.82645136909498,
+          "R2": -0.44065570329860804,
+          "calibration_slope": 0.37232620142153633,
+          "calibration_joint_intercept": 37.82752102512285,
+          "calibration_in_the_large": 22.808162974465144
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 20.922518145956605,
+          "row_MAE": 21.125692307692304,
+          "row_RMSE": 26.09087324953071,
+          "R2": -2.245005593438705,
+          "calibration_slope": 0.10972392822027717,
+          "calibration_joint_intercept": 12.294445520963611,
+          "calibration_in_the_large": -13.804841617357004
+        }
+      },
+      "category_macro_study_MAE": 24.54666827098607
+    },
+    {
+      "scheme": "category_study_purged",
+      "model": "XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "study_MAE": 20.401293115835585,
+      "row_MAE": 19.31199044589339,
+      "row_RMSE": 25.2238695371858,
+      "R2": -0.059257252525485526,
+      "calibration_slope": 0.12405786994728152,
+      "calibration_joint_intercept": 25.387982516526023,
+      "calibration_in_the_large": 3.498578479751059,
+      "study_MAE_conditional_CI": [
+        17.66689181263239,
+        23.38411699849608
+      ],
+      "by_category": {
+        "algae_microbial": {
+          "rows": 66,
+          "studies": 9,
+          "study_MAE": 16.378162888986093,
+          "row_MAE": 18.50573951952385,
+          "row_RMSE": 20.138975450632387,
+          "R2": -0.49693197480159923,
+          "calibration_slope": 0.8793062789807137,
+          "calibration_joint_intercept": -5.9438167870045575,
+          "calibration_in_the_large": -9.337272046407064
+        },
+        "animal_dairy": {
+          "rows": 23,
+          "studies": 4,
+          "study_MAE": 27.74250559409459,
+          "row_MAE": 17.29255203578783,
+          "row_RMSE": 25.313294751272416,
+          "R2": -0.2973159568189121,
+          "calibration_slope": -0.5273630215671081,
+          "calibration_joint_intercept": 51.10157984587139,
+          "calibration_in_the_large": 15.827596587340036
+        },
+        "cereals_legumes": {
+          "rows": 58,
+          "studies": 3,
+          "study_MAE": 23.414449486909092,
+          "row_MAE": 19.575495193744526,
+          "row_RMSE": 23.665846440720124,
+          "R2": 0.07658496497840794,
+          "calibration_slope": 7.8611383024191746,
+          "calibration_joint_intercept": -190.87342275895548,
+          "calibration_in_the_large": 1.960999098883735
+        },
+        "engineered_carriers": {
+          "rows": 89,
+          "studies": 28,
+          "study_MAE": 22.142559401648388,
+          "row_MAE": 17.917555211099344,
+          "row_RMSE": 23.52729302669474,
+          "R2": -0.08804901906759377,
+          "calibration_slope": -0.049067618669491074,
+          "calibration_joint_intercept": 34.62732433627864,
+          "calibration_in_the_large": 8.78201855205354
+        },
+        "extracted_oils": {
+          "rows": 19,
+          "studies": 3,
+          "study_MAE": 26.968642606528807,
+          "row_MAE": 27.113741567511312,
+          "row_RMSE": 33.77011122810105,
+          "R2": -0.8802530550843353,
+          "calibration_slope": 4.241438403471754,
+          "calibration_joint_intercept": -56.768758347842144,
+          "calibration_in_the_large": 14.966466356417834
+        },
+        "fruits_fruiting_vegetables": {
+          "rows": 120,
+          "studies": 28,
+          "study_MAE": 20.69166251628652,
+          "row_MAE": 19.67341607538859,
+          "row_RMSE": 24.39083810409367,
+          "R2": -0.07257629661880327,
+          "calibration_slope": -0.16536890932588647,
+          "calibration_joint_intercept": 27.6616107604654,
+          "calibration_in_the_large": -2.1659619283571345
+        },
+        "leafy_brassica": {
+          "rows": 59,
+          "studies": 13,
+          "study_MAE": 15.665771548931417,
+          "row_MAE": 16.412381516149487,
+          "row_RMSE": 21.43011907291555,
+          "R2": -0.020458819921696847,
+          "calibration_slope": 0.7565995590822481,
+          "calibration_joint_intercept": 2.056161656288346,
+          "calibration_in_the_large": -3.2390073675987057
+        },
+        "mixed_meals": {
+          "rows": 94,
+          "studies": 12,
+          "study_MAE": 30.538731577348017,
+          "row_MAE": 23.34638634742575,
+          "row_RMSE": 34.1632556188077,
+          "R2": -0.30999946254488187,
+          "calibration_slope": 0.012449706026269085,
+          "calibration_joint_intercept": 46.445093629438844,
+          "calibration_in_the_large": 23.308600065345182
+        },
+        "roots_tubers": {
+          "rows": 52,
+          "studies": 13,
+          "study_MAE": 15.417299399562136,
+          "row_MAE": 15.633537952716534,
+          "row_RMSE": 17.488216548284267,
+          "R2": -0.45790513081153317,
+          "calibration_slope": 2.9899922433367787,
+          "calibration_joint_intercept": -62.351956318841346,
+          "calibration_in_the_large": -10.530119183677659
+        }
+      },
+      "category_macro_study_MAE": 22.106642780032782
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "A": "random_row/training_mean",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.718650470223566,
+      "conditional_CI": [
+        -0.5486041435405085,
+        1.9641112028845238
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/Ridge",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -2.3832377798764948,
+      "conditional_CI": [
+        -5.051374149347152,
+        0.1405579007074382
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/ElasticNet",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -2.035202494764869,
+      "conditional_CI": [
+        -3.7314924512114853,
+        -0.4802453696334293
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/RandomForest",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -3.1269197978415986,
+      "conditional_CI": [
+        -4.793093251371689,
+        -1.518239677658973
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/GradientBoosting",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -2.4813596825250452,
+      "conditional_CI": [
+        -4.301400496791185,
+        -0.7585641355292958
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/SVR",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -2.303307039877033,
+      "conditional_CI": [
+        -3.6361442363073255,
+        -1.074828408191729
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/KNN",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -1.0946400666372234,
+      "conditional_CI": [
+        -3.2409491135026256,
+        0.9269554975177902
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "random_row/XGBoost",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -2.2606654861385964,
+      "conditional_CI": [
+        -4.0770994214607645,
+        -0.6327757884325621
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/training_mean",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.7664036803927321,
+      "conditional_CI": [
+        -0.5361711786352659,
+        2.0609531478676097
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/Ridge",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 2.3535820313159723,
+      "conditional_CI": [
+        -0.40042168127057154,
+        5.267153472607785
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/ElasticNet",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.6522661182816232,
+      "conditional_CI": [
+        -2.4109261227656704,
+        0.9962016601042833
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/RandomForest",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.6998597622317172,
+      "conditional_CI": [
+        -2.0189381758961917,
+        0.5859171232804425
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/GradientBoosting",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.40494190721897994,
+      "conditional_CI": [
+        -1.855011488595991,
+        1.0865487317417926
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/SVR",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.6964258274355427,
+      "conditional_CI": [
+        -1.7629211388474364,
+        0.22836404953545728
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/KNN",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 2.756671131329918,
+      "conditional_CI": [
+        0.35798838875022654,
+        5.132089353560276
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/XGBoost",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.6692723623507685,
+      "conditional_CI": [
+        -2.3727030862445844,
+        0.9469783215180705
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/training_mean",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.7652555086040492,
+      "conditional_CI": [
+        -0.5667645519131237,
+        2.0815521267425448
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/Ridge",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.358885826133625,
+      "conditional_CI": [
+        -2.7227026622854016,
+        1.8720820113927026
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/ElasticNet",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.39033850552404076,
+      "conditional_CI": [
+        -1.7906850749762242,
+        0.9890245914005107
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/RandomForest",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.5379787167249132,
+      "conditional_CI": [
+        -2.1804353488230355,
+        0.9787600840400996
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/GradientBoosting",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.6221586801490043,
+      "conditional_CI": [
+        -2.0064135066777893,
+        0.6511259536912785
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/SVR",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.2688533893029337,
+      "conditional_CI": [
+        -1.5040520701063997,
+        0.7982673330272971
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/KNN",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 2.4866035871611847,
+      "conditional_CI": [
+        -0.015816717714966982,
+        4.909163120397421
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_unpurged/XGBoost",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.5164501951469843,
+      "conditional_CI": [
+        -1.721774350372293,
+        0.5916106376284314
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/training_mean",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.726878356537154,
+      "conditional_CI": [
+        -0.45183786296757583,
+        1.89475294339522
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/Ridge",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.1324749072360332,
+      "conditional_CI": [
+        -1.404493656289316,
+        3.848044313519129
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/ElasticNet",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.17873921380885696,
+      "conditional_CI": [
+        -1.6982395062999325,
+        1.4617640168345452
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/RandomForest",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.13734965571682703,
+      "conditional_CI": [
+        -1.6092970077330246,
+        1.3422670677036077
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/GradientBoosting",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.2335112536359216,
+      "conditional_CI": [
+        -1.5401975657844276,
+        1.1097125493615465
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/SVR",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.03578678920001947,
+      "conditional_CI": [
+        -1.4884424656849928,
+        1.3878920488859932
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/KNN",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 3.0503017509798585,
+      "conditional_CI": [
+        0.5966514343099547,
+        5.775756446695921
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/XGBoost",
+      "B": "category_study_purged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.07462657678983656,
+      "conditional_CI": [
+        -1.268221705182746,
+        1.1813351052945467
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/ElasticNet",
+      "B": "category_unpurged/ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.4454746245237264,
+      "conditional_CI": [
+        -0.12204458384736314,
+        1.1142026850612392
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/ElasticNet",
+      "B": "random_row/ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.286738340403029,
+      "conditional_CI": [
+        0.4591695550061645,
+        2.133856782165138
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/ElasticNet",
+      "B": "original_study/ElasticNet",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.9183920237390601,
+      "conditional_CI": [
+        -0.3124153934751608,
+        2.165439082554624
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/GradientBoosting",
+      "B": "category_unpurged/GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.6225227593216253,
+      "conditional_CI": [
+        -0.10987851852117064,
+        1.4566093502975062
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/GradientBoosting",
+      "B": "random_row/GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.9802197392258478,
+      "conditional_CI": [
+        0.8174166895467113,
+        3.2163246695678724
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/GradientBoosting",
+      "B": "original_study/GradientBoosting",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.6162957728493521,
+      "conditional_CI": [
+        -0.3685372451937696,
+        1.6737623587771273
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/KNN",
+      "B": "category_unpurged/KNN",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.7975734966272163,
+      "conditional_CI": [
+        -0.9818148831320215,
+        2.7731998207585473
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/KNN",
+      "B": "random_row/KNN",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 3.7551131618869236,
+      "conditional_CI": [
+        1.5004696604557266,
+        5.827083329775684
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/KNN",
+      "B": "original_study/KNN",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.7384957389162351,
+      "conditional_CI": [
+        -1.4080755245739391,
+        3.2148143990939677
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/RandomForest",
+      "B": "category_unpurged/RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.6345043938166283,
+      "conditional_CI": [
+        -0.16408689345711044,
+        1.4951817637105382
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/RandomForest",
+      "B": "random_row/RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 2.3308619995296644,
+      "conditional_CI": [
+        0.9829073498001093,
+        3.5794973255098097
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/RandomForest",
+      "B": "original_study/RandomForest",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.0073752257811834,
+      "conditional_CI": [
+        -0.2592241580321463,
+        2.382562097013269
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/Ridge",
+      "B": "category_unpurged/Ridge",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.7252360661782007,
+      "conditional_CI": [
+        0.37255532661685925,
+        3.1170521186492377
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/Ridge",
+      "B": "random_row/Ridge",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 4.64062177511225,
+      "conditional_CI": [
+        2.899517357473842,
+        6.545804703861195
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/Ridge",
+      "B": "original_study/Ridge",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.7762420048136451,
+      "conditional_CI": [
+        -3.057797043692188,
+        1.4830007041613118
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/SVR",
+      "B": "category_unpurged/SVR",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.5385155113114957,
+      "conditional_CI": [
+        -0.23326926526252448,
+        1.302622574553048
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/SVR",
+      "B": "random_row/SVR",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.5106831763612725,
+      "conditional_CI": [
+        0.4211493415553489,
+        2.5762695587062976
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/SVR",
+      "B": "original_study/SVR",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.177077735901856,
+      "conditional_CI": [
+        -0.0033128175566404,
+        2.3462036548117156
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/XGBoost",
+      "B": "category_unpurged/XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.6756989511656901,
+      "conditional_CI": [
+        0.042632007669211665,
+        1.477553091637327
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/XGBoost",
+      "B": "random_row/XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.4951950877076108,
+      "conditional_CI": [
+        0.2880638047281372,
+        2.6047865403446657
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/XGBoost",
+      "B": "original_study/XGBoost",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 1.0395109048272255,
+      "conditional_CI": [
+        -0.2700319704034195,
+        2.461047658509529
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/training_mean",
+      "B": "category_unpurged/training_mean",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.19549818074164707,
+      "conditional_CI": [
+        0.011985255335840656,
+        0.380381684777913
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/training_mean",
+      "B": "random_row/training_mean",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.04844482591105128,
+      "conditional_CI": [
+        -0.1956065894854121,
+        0.08164358596151013
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/training_mean",
+      "B": "original_study/training_mean",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.4053397954107157,
+      "conditional_CI": [
+        0.20351882291116924,
+        0.6158786582227371
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/training_median",
+      "B": "category_unpurged/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.23387533280854236,
+      "conditional_CI": [
+        -0.18007402062222666,
+        0.6196801596852046
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "original_study/training_median",
+      "B": "random_row/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": -0.09619803608021735,
+      "conditional_CI": [
+        -0.25067000844089604,
+        0.04324483266997868
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    },
+    {
+      "A": "category_study_purged/training_median",
+      "B": "original_study/training_median",
+      "rows": 580,
+      "studies": 88,
+      "delta_study_MAE": 0.44486511926629385,
+      "conditional_CI": [
+        0.02145439086802292,
+        0.8361470773713193
+      ],
+      "direction": "A minus B; positive means A has larger error"
+    }
+  ],
+  "failures": []
+}

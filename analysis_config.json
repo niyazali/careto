@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-07-source-expansion-round3",
-  "input_sha256": "edb0b6cafcf865650858f52c12a4082825016adb3de996ce4981e2a746f730e8",
+  "version": "2026-10-10-source-expansion-round4",
+  "input_sha256": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
   "seed": 20261005,
   "target": "100 times terminal isolated micellar same-analyte amount / initial food same-analyte amount",
   "features": [

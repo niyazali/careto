@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "rows": 81,
+  "studies": 10,
+  "feature_evidence_records": 243,
+  "original_fields_and_targets_unchanged": true,
+  "source_hashes_verified": true,
+  "outer_and_inner_study_disjointness": true,
+  "independent_MAE_and_deltas": true,
+  "median_recomputed": true,
+  "categorical_and_baseline_predictions_identical_across_feature_comparisons": true
+}

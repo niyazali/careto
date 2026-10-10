@@ -1,0 +1,74 @@
+{
+  "doi": "10.1039/D2FO00611A",
+  "date": "2026-10-10",
+  "status": "hold_amount_basis_clarification",
+  "main_pdf_received_and_reviewed": true,
+  "main_pdf_sha256": "8d5c38f9679a376ac05b7f1dcb32b57bf0ea2f26f7d92935e584dbaa4c187847",
+  "supplement_pdf_sha256": "b16e57e0d5d1e4539890924fa4a64b1c102447a9f1e790e09e6494607d4c80b8",
+  "relevant_main_sections_reviewed": [
+    "2.3.2",
+    "2.4.2",
+    "2.4.3",
+    "2.5.1",
+    "2.5.3",
+    "2.5.4",
+    "3.1",
+    "3.2",
+    "Tables 3 and 4"
+  ],
+  "visual_pages_reviewed": [
+    4,
+    5,
+    6
+  ],
+  "fraction": {
+    "status": "confirmed_isolated_micellar",
+    "centrifugal_force_g": 4270,
+    "centrifugation_min": 20,
+    "temperature_C": 4,
+    "syringe_filter_um": 0.22,
+    "source_locator": "Section 2.4.3; printed p5956 / PDF p5"
+  },
+  "nominal_response": {
+    "reported_definition": "Micellar-fraction carotenoid content divided by undigested-pasta carotenoid content, multiplied by 100",
+    "status": "initial-food denominator confirmed nominally",
+    "source_locator": "Section 2.5.4 equation1; printed p5957 / PDF p6; Section3.2 printed p5960 / PDF p9",
+    "distinct_other_outcomes": "Equation2 is digesta-normalized micellization; equation3 is digestion recovery. Neither substitutes for equation1."
+  },
+  "normalization_adjudication": {
+    "status": "ambiguous_not_proven_incompatible",
+    "supporting_evidence": "Tables3 and4 label digestion concentrations per100g dry-weight pasta, which could indicate a common initial-pasta basis.",
+    "unresolved_evidence": "Section2.4.3 freeze-dries aliquots of pasta, digesta and isolated fractions; Section2.5.1 describes extracting weighed samples of each. Supplementary S1/S2 values are labeled mg/100g dry weight. No explicit calculation returning fraction concentrations to total carotenoid amounts, or stating that fraction dry-weight values use initial-pasta mass, was identified.",
+    "why_it_matters": "A ratio of concentrations per gram of two different dried materials is not necessarily an amount ratio. If both values are already normalized to the same initial-pasta mass, the ratio is compatible. That distinction cannot be resolved confidently from the reported equations and method alone.",
+    "information_needed": "Confirm whether Filtrate concentrations are per100g of initial dry pasta or per100g of the isolated freeze-dried micellar material. If the latter, provide total fraction dry mass or equivalent back-normalization data.",
+    "decision_rule": "Established compatible-amount-basis eligibility; independent of response magnitude or fitted performance."
+  },
+  "protocol": {
+    "gastric_duration_min": 120,
+    "intestinal_duration_min": 120,
+    "oral_duration_min": 2,
+    "temperature_C": 37,
+    "initial_test_material": "Approximately2g freeze-dried cooked and milled pasta; particle size below500um",
+    "source_locator": "Sections2.3.2 and2.4.2; printed p5955 / PDF p4; intestinal phase printed p5956 / PDF p5"
+  },
+  "replication": {
+    "cooking": "Duplicate cooking in two pasta batches for each type, n4",
+    "digestion": "Quadruplicate; supplementary means not independent individual replicate records",
+    "source_locator": "Section2.3.2 and2.4.2; supplement table footnotes"
+  },
+  "candidate_summary": {
+    "reported_means": 117,
+    "distinct_flour_cultivar_cooking_combinations": 18,
+    "minimum_reported_percent": 74.56,
+    "maximum_reported_percent": 204.96,
+    "values_above100": 80,
+    "above100_not_exclusion_reason": true,
+    "ND_not_zero": true,
+    "overlapping_aggregate_pools_excluded": true
+  },
+  "related_reports": {
+    "2021": "10.1016/j.foodchem.2021.130016; author-cited precursor with same cultivars; not retained in current fitted cohort",
+    "2024": "10.1016/j.jcs.2024.104037; previously identified related cell-uptake paper; sample linkage unresolved; not retained in current fitted cohort"
+  },
+  "action": "Preserve117 source-reported means separately; add0 rows to fitted cohorts until common amount basis clarified; do not rerun unchanged models."
+}

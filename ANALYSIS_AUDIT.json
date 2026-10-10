@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "baseline_rows_preserved_exactly": true,
+  "new_rows": 36,
+  "cohorts": [
+    {
+      "cohort": "core",
+      "rows": 450,
+      "studies": 64,
+      "partitions": 28,
+      "all_predictions_complete": true
+    },
+    {
+      "cohort": "numeric",
+      "rows": 382,
+      "studies": 58,
+      "partitions": 28,
+      "all_predictions_complete": true
+    },
+    {
+      "cohort": "supernatant",
+      "rows": 580,
+      "studies": 88,
+      "partitions": 28,
+      "all_predictions_complete": true
+    },
+    {
+      "cohort": "converted",
+      "rows": 585,
+      "studies": 92,
+      "partitions": 28,
+      "all_predictions_complete": true
+    }
+  ],
+  "model_replays": 1008,
+  "max_replay_error": 0,
+  "study_and_category_exclusions_verified": true,
+  "all_model_MAEs_recomputed": true
+}

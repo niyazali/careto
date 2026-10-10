@@ -1,5 +1,8 @@
 {
-  "cohort_sha256": "edb0b6cafcf865650858f52c12a4082825016adb3de996ce4981e2a746f730e8",
-  "config_sha256": "34428cb6e6f7f7a4ee5c7836daed1b0ac09d29ce7bbc94fa05fd0f9ab7de115a",
-  "release_runner_sha256": "a2eb7006ec666249d138cdd73bd3e9635657ebd376b67b450903e0a270e0c046"
+  "cohort_sha256": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+  "config_sha256": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+  "runner_sha256": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53",
+  "source_decisions_before_fitting": true,
+  "new_observations_sha256": "238afe3c285dee14900c437065f520c7fc74439cec8df9adc04c83c7c11f6f53",
+  "timestamp_utc": "2026-10-10T15:40:03.220977+00:00"
 }

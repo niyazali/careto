@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-10",
+  "cohorts": [
+    {
+      "name": "core",
+      "rows": 450,
+      "studies": 64,
+      "scheme_model_combinations": 36
+    },
+    {
+      "name": "numeric",
+      "rows": 382,
+      "studies": 58,
+      "scheme_model_combinations": 36
+    },
+    {
+      "name": "supernatant",
+      "rows": 580,
+      "studies": 88,
+      "scheme_model_combinations": 36
+    },
+    {
+      "name": "converted",
+      "rows": 585,
+      "studies": 92,
+      "scheme_model_combinations": 36
+    }
+  ],
+  "saved_metric_comparisons": 144,
+  "maximum_MAE_difference": 0.0,
+  "portable_code": [
+    {
+      "file": "run_validation.py",
+      "function_and_class_AST_matches_completed_analysis": true,
+      "completed_analysis_sha256": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53",
+      "published_sha256": "35e0320fd0dbafdfae604c3d8481b068f73b94be9b2b3448275bfb96f11bb7de"
+    },
+    {
+      "file": "quantitative_feature_benchmark/run_benchmark.py",
+      "function_and_class_AST_matches_completed_analysis": true,
+      "completed_analysis_sha256": "1b72bcc9de3ebf60cd3e8c43e0c70f90a78e7e0515f7446cf55fdc2bd377f8ca",
+      "published_sha256": "075df085b7960d81600f0e4ff0f5292c559e8e65bd4506185d59e7b8a0df2a55"
+    },
+    {
+      "file": "robustness_analysis.py",
+      "function_and_class_AST_matches_completed_analysis": true,
+      "completed_analysis_sha256": "84a1aba8676240d088f5d4ff1a18c7ecd0ec32fcfbc11c35550ef370336ac5bb",
+      "published_sha256": "f7caf72eec1f4fdbbee18c7a7eea872016a8147228fa4fa964943ec6ac5cd858"
+    },
+    {
+      "file": "training_weight_sensitivity.py",
+      "function_and_class_AST_matches_completed_analysis": true,
+      "completed_analysis_sha256": "63a12d42fc00de1d0125893737136ed178e9f903e68f34588360c113fbcdc9f8",
+      "published_sha256": "51a417118b73db78b8781682410b4445c047502e7ac73ea715c00a2be2369451"
+    },
+    {
+      "file": "training_size_sensitivity.py",
+      "function_and_class_AST_matches_completed_analysis": true,
+      "completed_analysis_sha256": "283c8bec309c28c642066ffbc3be10c8c6bfe9bc4762b22b6a371932300277ec",
+      "published_sha256": "a97fe9a9df06ae5790fde0f603e229d7a3430c10876e9f3802b8188c71686276"
+    }
+  ],
+  "quantitative": {
+    "rows": 81,
+    "studies": 10,
+    "feature_evidence_records": 243,
+    "targets_match_main_cohort": true
+  },
+  "learning_curves": {
+    "status": "complete",
+    "prediction_rows": 13500,
+    "study_exclusions_verified": true,
+    "all_repeat_MAEs_recomputed": true
+  },
+  "status": "pass",
+  "synthetic_quantitative_tests": "pass",
+  "python_compilation": "pass",
+  "figure_1_render_and_visual_review": "pass",
+  "publication_scan": "pass"
+}

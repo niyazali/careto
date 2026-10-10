@@ -1,3 +1,4 @@
+# Python 3.12.14 used for the expanded analysis
 numpy==2.3.5
 pandas==2.2.3
 scipy==1.18.1

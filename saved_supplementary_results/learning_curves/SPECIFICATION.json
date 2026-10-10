@@ -1,0 +1,23 @@
+{
+  "models": [
+    "RandomForest",
+    "SVR",
+    "training_median"
+  ],
+  "fractions": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "subset_repeats": 3,
+  "seed": 20261010,
+  "outer_scheme": "original_study",
+  "selection": "Nested target-independent subsets of whole training studies within each repeat and outer fold",
+  "uncertainty": "Observed training-subset variation; not confidence intervals or prospective experimental validation",
+  "timing": "After main analysis was specified; before learning curve fits",
+  "inputs": {
+    "COHORT.json": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+    "analysis_config.json": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2"
+  }
+}

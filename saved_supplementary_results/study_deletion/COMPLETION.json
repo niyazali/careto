@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "deletions": 5,
+  "fold_model_fits": 135,
+  "prediction_rows": 6303,
+  "plan": {
+    "design": "post hoc largest-study deletion; retune and refit within every remaining primary fold",
+    "selection": "five largest original-study groups, count descending, identifier ascending for ties",
+    "selected_studies": [
+      {
+        "study_group": "doi:10.1021/acs.jafc.6c01729",
+        "observations": 36
+      },
+      {
+        "study_group": "doi:10.1002/jsfa.5768",
+        "observations": 32
+      },
+      {
+        "study_group": "doi:10.1016/j.foodchem.2026.149627",
+        "observations": 31
+      },
+      {
+        "study_group": "doi:10.1016/j.foodchem.2025.147332",
+        "observations": 26
+      },
+      {
+        "study_group": "doi:10.1039/d1fo00600b",
+        "observations": 24
+      }
+    ],
+    "models": [
+      "RandomForest",
+      "SVR",
+      "training_median"
+    ],
+    "seed": 20261005,
+    "scope": "Results for the previously specified random forest and SVR sensitivity families; conditional intervals omit refitting uncertainty",
+    "input_hashes": {
+      "COHORT.json": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+      "analysis_config.json": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+      "saved_results_core/heldout_predictions.csv": "f7ec6c81df06622e3273fb7128e5012e042902300ddc929204f6aecdb138c51d"
+    }
+  }
+}

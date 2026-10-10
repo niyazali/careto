@@ -26,7 +26,7 @@ plt.rcParams.update(
 fig = plt.figure(figsize=(11, 8))
 ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, 110)
-ax.set_ylim(0, 80)
+ax.set_ylim(-2, 80)
 ax.axis("off")
 ink = "#18324A"
 blue = "#DDECF6"
@@ -174,11 +174,11 @@ for i, (label, train, test, excluded) in enumerate(rows):
         box(x, y - 2.4, 20, 4.8, c)
         for j, (study, shape) in enumerate(items):
             token(x + 10 + (j - (len(items) - 1) / 2) * 4.5, y, study, shape, c == grey)
-token(8, 1.7, "", "circle")
-token(13, 1.7, "", "triangle")
-text(17, 1.7, "Matrix categories; S1–S3 = study identifiers.", ha="left", fontsize=9)
+token(8, 3, "", "circle")
+token(13, 3, "", "triangle")
+text(17, 3, "Matrix categories; S1–S3 = study identifiers.", ha="left", fontsize=9)
 text(
-    105, 1.7, "Illustrative partitions, not actual fold counts.", ha="right", fontsize=9
+    105, 3, "Illustrative partitions, not actual fold counts.", ha="right", fontsize=9
 )
 for ext in ["pdf", "svg", "png"]:
     fig.savefig(OUT / f"Figure_1.{ext}", dpi=350, facecolor="white")

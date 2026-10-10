@@ -1,0 +1,43 @@
+{
+  "analysis": "Post hoc training-row-count-matched category holdout",
+  "models": [
+    "RandomForest",
+    "SVR",
+    "training_median"
+  ],
+  "sampling_seeds": [
+    20261010,
+    20261011,
+    20261012,
+    20261013,
+    20261014,
+    20261015,
+    20261016,
+    20261017,
+    20261018,
+    20261019,
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029
+  ],
+  "sampling": "Uniform rows without replacement from category-unpurged training pool; no target-based selection; preserve original input order",
+  "reference": "Saved primary category/study-purged predictions",
+  "test": "Exactly the same held-out category observations in both arms",
+  "tuning": "Original nested, study-purged inner rule and candidates; fixed original seed",
+  "aggregation": "Mean absolute loss per row across 20 repetitions, then equal original-study mean; not ensemble predictions",
+  "interval": "2000 paired original-study resamples of repetition-averaged fixed losses; conditional, unadjusted; does not include refitting uncertainty",
+  "limits": "Matches observation count only; study count, feature support and composition differ; not a pure leakage estimate",
+  "inputs": {
+    "COHORT.json": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+    "analysis_config.json": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+    "saved_results_core/heldout_predictions.csv": "f7ec6c81df06622e3273fb7128e5012e042902300ddc929204f6aecdb138c51d",
+    "run_validation.py": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53"
+  }
+}

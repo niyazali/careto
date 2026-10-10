@@ -1,0 +1,28 @@
+{
+  "scope": "Post hoc sensitivity; no changes to original analysis",
+  "rows": 450,
+  "studies": 64,
+  "models": [
+    "RandomForest",
+    "SVR"
+  ],
+  "inner_seeds": [
+    20261005,
+    20261006,
+    20261007,
+    20261008,
+    20261009
+  ],
+  "model_seed": 20261005,
+  "outer_scheme": "category_study_purged",
+  "weight_formula": "N/(G*n_g), recomputed within each training partition",
+  "preprocessing": "Training-fitted encoding and scaling unchanged and unweighted",
+  "RF_behavior": "scikit-learn 1.9.1 uses weighted bootstrap draw probabilities; tree weights are draw counts",
+  "SVR_behavior": "sample weights multiply per-observation C",
+  "intervals": "2000 paired fixed-prediction study resamples; conditional and unadjusted",
+  "inputs": {
+    "COHORT.json": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+    "analysis_config.json": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+    "run_validation.py": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53"
+  }
+}
