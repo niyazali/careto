@@ -1,0 +1,41 @@
+{
+  "mapping": {
+    "all-E-beta-carotene": "all-trans-beta-carotene",
+    "all-E beta-carotene": "all-trans-beta-carotene",
+    "beta-carotene all-E": "all-trans-beta-carotene",
+    "all-E-lycopene": "all-trans-lycopene",
+    "all-E lycopene": "all-trans-lycopene",
+    "all-E-lutein": "all-trans-lutein",
+    "E-lutein": "all-trans-lutein",
+    "all-trans lutein (default nomenclature per section 2.6)": "all-trans-lutein",
+    "all-E-equinenone": "all-E-echinenone"
+  },
+  "scope": "Conservative model labels; original source labels and response values preserved. Every unlisted label maps to itself. Unspecified isomers, position-specific cis labels, total/free/ester pools and mixtures stay distinct.",
+  "primary_support": {
+    "beta_carotene_and_lycopene": {
+      "doi": "10.3390/molecules26133989",
+      "locator": "primary article explicitly equates all-trans-beta-carotene (all-E-betaC) and all-trans-lycopene (all-E-L)"
+    },
+    "lutein_E": {
+      "doi": "10.1371/journal.pone.0187102",
+      "locator": "analytical method distinguishes E/Z-lutein and lutein esters; all-E analytical standards"
+    },
+    "lutein_annotation": {
+      "doi": "10.1016/j.foodchem.2012.08.076",
+      "locator": "Section 2.6 defines lutein as all-trans"
+    },
+    "echinenone_typo": {
+      "doi": "10.3390/molecules27103305",
+      "locator": "Tables 1 and 2 identify all-E-echinenone; prose spelling equinenone"
+    }
+  },
+  "unmerged_pool_example": {
+    "labels": [
+      "lutein+zeaxanthin",
+      "zeaxanthin+lutein"
+    ],
+    "reason": "10.3390/antiox8080291 explicitly includes observed cis isomers; 10.1021/jf071687a does not establish equivalent cis coverage"
+  },
+  "nomenclature_url": "https://iupac.qmul.ac.uk/carot/car8t13.html",
+  "source_dataset_unchanged": true
+}

@@ -1,19 +1,15 @@
-# 10 October 2026 update
+# Release notes
 
-The primary cohort expands from 414 observations in 63 study groups to 450 observations in 64 study groups. The 36 added quinoa observations come from DOI 10.1021/acs.jafc.6c01729. The quantitative subset expands from 40 observations in seven studies to 81 observations in 10 studies already represented in the main cohort. Original outcome records are preserved.
+## 11 October 2026 revision
 
-All four cohort analyses, quantitative comparisons, deletion and weighting sensitivities, matched training-size analysis and whole-study learning curves are complete. Saved summaries, predictions and source evidence accompany the inputs. Full-text articles, fitted model binaries and working caches are excluded.
+Confirmed stereochemical synonyms and spelling variants now share conservative model labels. Original source labels, response values, endpoint definitions, cohort membership, non-analyte predictors, validation folds, candidate grids and random seeds are preserved. The core has 38 source labels and 33 model labels; 20 model-label entries changed among its 450 observations.
 
-The scientific functions and classes in the existing portable analysis scripts are identical to those used for the completed expanded analysis. Differences in script hashes reflect formatting, documentation and repository-relative output paths. `FREEZE*.json` and saved quantitative configurations retain the historical fitting-script hashes; `RELEASE_CHECKS.json` records the published script hashes and the comparison. The learning-curve command adds an output-directory option and a main guard to the original calculation.
+All four main endpoint cohorts and the post hoc weighting, matched-size, deletion and learning-curve analyses were refitted. Both quantitative-feature comparisons were rerun and retain identical predictions and metrics. The primary conclusion remains unchanged: no learner established a clear advantage over the median baseline under category holdout with contributing-study exclusion.
 
-Release checks confirmed:
+Source-to-model mappings, primary-source locators, retrieval-limit reporting and the author-confirmed search-date correction are provided. The correction record retains original API execution timestamps. These records do not establish dual-human screening or extraction.
 
-- All 144 cohort/scheme/model summaries have complete, unique predictions and exactly matching recomputed study-balanced MAEs.
-- The quantitative subset has 81 observations, 10 study groups and 243 unique feature evidence records; its outcomes match the primary cohort.
-- All 13,500 learning-curve predictions cover the expected observations; training and test studies are disjoint and repeat MAEs agree with the saved summary.
-- The quantitative benchmark's synthetic tests pass deterministic reruns, study separation, training-only imputation, weighted-median agreement and rejection of insufficient study groups.
-- Python files compile, frozen cohort/configuration hashes match, and Figure 1 renders with the legend fully visible.
+The independent main audit recomputed 144 MAEs and 128 paired intervals, checked 112 outer and 2352 inner partitions, and replayed 1008 fitted models in the source workspace. Saved-model replay requires the single-thread environment used for fitting; tied nearest-neighbor choices differ under multiple threads. Fitted-model binaries and copyrighted source texts are excluded from this public release.
 
-`ANALYSIS_AUDIT.json` records the prior independent replay of 1,008 fitted models, with zero prediction difference. Release verification checks the distributed artifacts and does not repeat that full fitting audit. `SHA256SUMS` covers every distributed file except itself.
+Post hoc results were independently checked from their saved predictions and losses; the audit receipt identifies its scope and counts. Conditional intervals exclude refitting uncertainty and remain unadjusted. This release adds no new experiments or clinical validation.
 
-The expanded analyses do not establish a clear primary learner advantage, a clear incremental quantitative-feature advantage or consistent improvement with additional training studies under the current predictors. The manuscript and submission documents remain in the local submission package.
+The earlier 10 October expansion added 36 quinoa observations and quantitative covariates for existing observations; SOURCE_EXPANSION.md retains those extraction decisions.

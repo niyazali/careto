@@ -8,6 +8,9 @@ The analysis compares seven regression models with mean and median baselines. Ad
 
 The 10 October 2026 update adds 36 quinoa observations from one independent study and quantitative covariates for 41 existing observations from three studies. Earlier outcome records are preserved. See [SOURCE_EXPANSION.md](SOURCE_EXPANSION.md) for extraction decisions and [RELEASE_NOTES.md](RELEASE_NOTES.md) for the release checks.
 
+
+The 11 October 2026 revision assigns common model labels to confirmed analyte synonyms, while retaining source_analyte and all original response values. Unspecified isomers and distinct carotenoid pools remain separate. See ANALYTE_CANONICALIZATION.json, analyte_model_labels.csv and PROVENANCE_REPORTING.md. All affected main and post hoc models were refitted with unchanged cohorts, folds, candidate grids and seeds.
+
 ## Installation
 
 Use Python 3.12 or newer.
@@ -27,9 +30,9 @@ python run_validation.py --sensitivity core_plus_supernatant --output results/aq
 python run_validation.py --cohort COHORT_with_conversions.json --sensitivity core_plus_supernatant --output results/converted
 ```
 
-`analysis_config.json` contains the features, models, tuning grids, validation designs and random seeds. Preprocessing and tuning use only training data. Study holdouts and category holdouts with study exclusion remove test studies from training. Full runs can take several hours. Use a new output directory after changing inputs or code.
+`analysis_config.json` contains the features, models, tuning grids, validation designs and random seeds. Preprocessing and tuning use only training data. Study holdouts and category holdouts with study exclusion remove test studies from training. The driver sets OMP_NUM_THREADS=1 and OPENBLAS_NUM_THREADS=1 before NumPy import. Retain single-thread numerical execution when replaying nearest-neighbor models because equal-distance ties may be resolved differently with multiple threads. Full runs can take several hours. Use a new output directory after changing inputs or code.
 
-Summaries and held-out predictions are supplied in `saved_results_core/` (450 observations/64 studies), `saved_results_numeric/` (382/58), `saved_results_supernatant/` (580/88) and `saved_results_converted/` (585/92). The supplementary analyses below use the primary predictions. To replace them after rerunning the primary analysis, copy `results/core/RESULT_SUMMARY.json` and `results/core/oof_predictions.intermediate.csv` to `saved_results_core/RESULT_SUMMARY.json` and `saved_results_core/heldout_predictions.csv`, respectively.
+Summaries and held-out predictions are supplied in `saved_results_core/` (450 observations/64 studies), `saved_results_numeric/` (382/58), `saved_results_supernatant/` (580/88) and `saved_results_converted/` (585/92). The supplementary analyses below use the primary predictions. To replace them after rerunning the primary analysis, copy `results/core/RESULTS.json`, `results/core/RESULT_SUMMARY.json` and `results/core/oof_predictions.intermediate.csv` to `saved_results_core/RESULTS.json`, `saved_results_core/RESULT_SUMMARY.json` and `saved_results_core/heldout_predictions.csv`, respectively.
 
 ## Quantitative-feature comparison
 
@@ -51,7 +54,7 @@ Completed results for both feature sets are supplied in `quantitative_feature_be
 python robustness_analysis.py
 python training_weight_sensitivity.py
 python training_size_sensitivity.py
-python run_learning_curves.py --output results/learning_curves
+python run_learning_curves.py
 python draw_endpoint_schematic.py
 python plot_validation_diagnostics.py
 python plot_heldout_predictions.py

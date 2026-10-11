@@ -1,39 +1,128 @@
 {
   "status": "pass",
-  "baseline_rows_preserved_exactly": true,
-  "new_rows": 36,
-  "cohorts": [
-    {
-      "cohort": "core",
-      "rows": 450,
-      "studies": 64,
-      "partitions": 28,
-      "all_predictions_complete": true
-    },
-    {
-      "cohort": "numeric",
-      "rows": 382,
-      "studies": 58,
-      "partitions": 28,
-      "all_predictions_complete": true
-    },
-    {
-      "cohort": "supernatant",
-      "rows": 580,
-      "studies": 88,
-      "partitions": 28,
-      "all_predictions_complete": true
-    },
-    {
-      "cohort": "converted",
-      "rows": 585,
-      "studies": 92,
-      "partitions": 28,
-      "all_predictions_complete": true
+  "revision": "2026-10-11 conservative canonical analyte labels",
+  "scope": "Main endpoint cohorts and quantitative-feature reruns; post hoc checks supplied separately",
+  "independent_checks": 8746,
+  "coverage": {
+    "full_cohort_design_model_MAEs": 144,
+    "baseline_paired_intervals": 128,
+    "outer_folds": 112,
+    "inner_partitions_checked": 2352,
+    "saved_models_replayed": 1008,
+    "saved_models_expected": 1008,
+    "support_corrections": [
+      {
+        "cohort": "core",
+        "fold": "fruits_fruiting_vegetables",
+        "old_unseen": "all-E lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "core",
+        "fold": "mixed_meals",
+        "old_unseen": "all-E-lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "core",
+        "fold": "roots_tubers",
+        "old_unseen": "all-E beta-carotene",
+        "canonical": "all-trans-beta-carotene",
+        "training_support": true
+      },
+      {
+        "cohort": "core",
+        "fold": "roots_tubers",
+        "old_unseen": "all-E-beta-carotene",
+        "canonical": "all-trans-beta-carotene",
+        "training_support": true
+      },
+      {
+        "cohort": "numeric",
+        "fold": "fruits_fruiting_vegetables",
+        "old_unseen": "all-E lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "numeric",
+        "fold": "mixed_meals",
+        "old_unseen": "all-E-lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "numeric",
+        "fold": "roots_tubers",
+        "old_unseen": "all-E beta-carotene",
+        "canonical": "all-trans-beta-carotene",
+        "training_support": true
+      },
+      {
+        "cohort": "supernatant",
+        "fold": "fruits_fruiting_vegetables",
+        "old_unseen": "all-E lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "supernatant",
+        "fold": "mixed_meals",
+        "old_unseen": "all-E-lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "supernatant",
+        "fold": "roots_tubers",
+        "old_unseen": "all-E beta-carotene",
+        "canonical": "all-trans-beta-carotene",
+        "training_support": true
+      },
+      {
+        "cohort": "converted",
+        "fold": "fruits_fruiting_vegetables",
+        "old_unseen": "all-E lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "converted",
+        "fold": "mixed_meals",
+        "old_unseen": "all-E-lycopene",
+        "canonical": "all-trans-lycopene",
+        "training_support": true
+      },
+      {
+        "cohort": "converted",
+        "fold": "roots_tubers",
+        "old_unseen": "all-E beta-carotene",
+        "canonical": "all-trans-beta-carotene",
+        "training_support": true
+      }
+    ],
+    "quantitative_reruns": {
+      "results_primary": {
+        "models": 5,
+        "rows": 81,
+        "studies": 10
+      },
+      "results_loading_only": {
+        "models": 5,
+        "rows": 81,
+        "studies": 10
+      }
     }
-  ],
-  "model_replays": 1008,
-  "max_replay_error": 0,
-  "study_and_category_exclusions_verified": true,
-  "all_model_MAEs_recomputed": true
+  },
+  "raw_records_and_targets_unchanged": true,
+  "numerical_threading": "OMP_NUM_THREADS=1 and OPENBLAS_NUM_THREADS=1 before NumPy import, matching the driver; necessary for tied nearest-neighbor replay",
+  "current_inputs": {
+    "COHORT.json": "fe57c41b88cc427d806b251a250dc36e8b69dec798d707ba4936c01a2966a53e",
+    "COHORT_with_conversions.json": "7733c13d8c46e09946bb82d45fae42a0bdb87252696bb08027843b7d4cdd0974",
+    "analysis_config.json": "2ef88a51220912cc4358200db20669cccb357d83f0fa4ecc108b9cb613643555",
+    "ANALYTE_CANONICALIZATION.json": "6f1df8ed9636e4b1e4224922cc60024853c3818d55291694b7453389b7590be9",
+    "run_validation.py": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53"
+  }
 }

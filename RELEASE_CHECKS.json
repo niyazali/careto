@@ -1,80 +1,161 @@
 {
-  "date": "2026-10-10",
-  "cohorts": [
-    {
-      "name": "core",
-      "rows": 450,
-      "studies": 64,
-      "scheme_model_combinations": 36
-    },
-    {
-      "name": "numeric",
-      "rows": 382,
-      "studies": 58,
-      "scheme_model_combinations": 36
-    },
-    {
-      "name": "supernatant",
-      "rows": 580,
-      "studies": 88,
-      "scheme_model_combinations": 36
-    },
-    {
-      "name": "converted",
-      "rows": 585,
-      "studies": 92,
-      "scheme_model_combinations": 36
+  "date": "2026-10-11",
+  "status": "PASS",
+  "main_audit": {
+    "checks": 8746,
+    "coverage": {
+      "source_check_scope": "Independent local primary-text confirmation of E/all-trans nomenclature, lutein isomer distinction and echinenone table/prose spelling. No new source-wide endpoint audit; generic/total/free/mixture labels remain unmerged.",
+      "full_cohort_design_model_MAEs": 144,
+      "baseline_paired_intervals": 128,
+      "outer_folds": 112,
+      "inner_partitions_checked": 2352,
+      "saved_models_replayed": 1008,
+      "saved_models_expected": 1008,
+      "support_corrections": [
+        {
+          "cohort": "core",
+          "fold": "fruits_fruiting_vegetables",
+          "old_unseen": "all-E lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "core",
+          "fold": "mixed_meals",
+          "old_unseen": "all-E-lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "core",
+          "fold": "roots_tubers",
+          "old_unseen": "all-E beta-carotene",
+          "canonical": "all-trans-beta-carotene",
+          "training_support": true
+        },
+        {
+          "cohort": "core",
+          "fold": "roots_tubers",
+          "old_unseen": "all-E-beta-carotene",
+          "canonical": "all-trans-beta-carotene",
+          "training_support": true
+        },
+        {
+          "cohort": "numeric",
+          "fold": "fruits_fruiting_vegetables",
+          "old_unseen": "all-E lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "numeric",
+          "fold": "mixed_meals",
+          "old_unseen": "all-E-lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "numeric",
+          "fold": "roots_tubers",
+          "old_unseen": "all-E beta-carotene",
+          "canonical": "all-trans-beta-carotene",
+          "training_support": true
+        },
+        {
+          "cohort": "supernatant",
+          "fold": "fruits_fruiting_vegetables",
+          "old_unseen": "all-E lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "supernatant",
+          "fold": "mixed_meals",
+          "old_unseen": "all-E-lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "supernatant",
+          "fold": "roots_tubers",
+          "old_unseen": "all-E beta-carotene",
+          "canonical": "all-trans-beta-carotene",
+          "training_support": true
+        },
+        {
+          "cohort": "converted",
+          "fold": "fruits_fruiting_vegetables",
+          "old_unseen": "all-E lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "converted",
+          "fold": "mixed_meals",
+          "old_unseen": "all-E-lycopene",
+          "canonical": "all-trans-lycopene",
+          "training_support": true
+        },
+        {
+          "cohort": "converted",
+          "fold": "roots_tubers",
+          "old_unseen": "all-E beta-carotene",
+          "canonical": "all-trans-beta-carotene",
+          "training_support": true
+        }
+      ],
+      "quantitative_reruns": {
+        "results_primary": {
+          "models": 5,
+          "rows": 81,
+          "studies": 10
+        },
+        "results_loading_only": {
+          "models": 5,
+          "rows": 81,
+          "studies": 10
+        }
+      }
     }
-  ],
-  "saved_metric_comparisons": 144,
-  "maximum_MAE_difference": 0.0,
-  "portable_code": [
-    {
-      "file": "run_validation.py",
-      "function_and_class_AST_matches_completed_analysis": true,
-      "completed_analysis_sha256": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53",
-      "published_sha256": "35e0320fd0dbafdfae604c3d8481b068f73b94be9b2b3448275bfb96f11bb7de"
-    },
-    {
-      "file": "quantitative_feature_benchmark/run_benchmark.py",
-      "function_and_class_AST_matches_completed_analysis": true,
-      "completed_analysis_sha256": "1b72bcc9de3ebf60cd3e8c43e0c70f90a78e7e0515f7446cf55fdc2bd377f8ca",
-      "published_sha256": "075df085b7960d81600f0e4ff0f5292c559e8e65bd4506185d59e7b8a0df2a55"
-    },
-    {
-      "file": "robustness_analysis.py",
-      "function_and_class_AST_matches_completed_analysis": true,
-      "completed_analysis_sha256": "84a1aba8676240d088f5d4ff1a18c7ecd0ec32fcfbc11c35550ef370336ac5bb",
-      "published_sha256": "f7caf72eec1f4fdbbee18c7a7eea872016a8147228fa4fa964943ec6ac5cd858"
-    },
-    {
-      "file": "training_weight_sensitivity.py",
-      "function_and_class_AST_matches_completed_analysis": true,
-      "completed_analysis_sha256": "63a12d42fc00de1d0125893737136ed178e9f903e68f34588360c113fbcdc9f8",
-      "published_sha256": "51a417118b73db78b8781682410b4445c047502e7ac73ea715c00a2be2369451"
-    },
-    {
-      "file": "training_size_sensitivity.py",
-      "function_and_class_AST_matches_completed_analysis": true,
-      "completed_analysis_sha256": "283c8bec309c28c642066ffbc3be10c8c6bfe9bc4762b22b6a371932300277ec",
-      "published_sha256": "a97fe9a9df06ae5790fde0f603e229d7a3430c10876e9f3802b8188c71686276"
-    }
-  ],
-  "quantitative": {
-    "rows": 81,
-    "studies": 10,
-    "feature_evidence_records": 243,
-    "targets_match_main_cohort": true
   },
-  "learning_curves": {
-    "status": "complete",
-    "prediction_rows": 13500,
-    "study_exclusions_verified": true,
-    "all_repeat_MAEs_recomputed": true
+  "posthoc_audit": {
+    "status": "PASS",
+    "scope": "Post hoc output metrics, source-bound inputs, response-blind assignments and replay against completed main predictions; no independent estimator fitting.",
+    "coverage": {
+      "weight_scope": "No weighted estimators independently refitted; use of weights is checked through source code preservation, documented arithmetic, frozen inputs and logs.",
+      "inner_partitions": 2190,
+      "weight_partitions": 720,
+      "weight_fits": 180,
+      "weight_summary_MAEs": 20,
+      "paired_intervals": 747,
+      "original_seed_replayed_predictions": 900,
+      "matched_size_fold_repetitions": 180,
+      "matched_size_repetition_MAEs": 60,
+      "matched_size_summary_MAEs": 6,
+      "learning_outer_folds": 50,
+      "learning_full_pool_replayed_predictions": 1350,
+      "learning_repetition_MAEs": 30,
+      "learning_summary_MAEs": 12,
+      "robustness_deletion_fits": 135,
+      "robustness_refit_MAEs": 15,
+      "robustness_source_MAEs": 576,
+      "fixed_prediction_deletions": 576
+    },
+    "scientific_inputs_at_audit": {
+      "COHORT.json": "fe57c41b88cc427d806b251a250dc36e8b69dec798d707ba4936c01a2966a53e",
+      "analysis_config.json": "2ef88a51220912cc4358200db20669cccb357d83f0fa4ecc108b9cb613643555",
+      "saved_results_core/RESULTS.json": "3031bfb149d2c69835d978f33113974bed4d01d324b73325f4d340be78f836d9"
+    },
+    "script_sha256": "19deb1b562455aaa01b91c8ac44340c498dbce690d392b6c7866fe94c583e231",
+    "checks": 56641
   },
-  "status": "pass",
-  "synthetic_quantitative_tests": "pass",
-  "python_compilation": "pass",
-  "figure_1_render_and_visual_review": "pass",
-  "publication_scan": "pass"
+  "scientific_drivers_exact": {
+    "run_validation.py": true,
+    "robustness_analysis.py": true,
+    "training_weight_sensitivity.py": true,
+    "training_size_sensitivity.py": true,
+    "run_learning_curves.py": true,
+    "quantitative_feature_benchmark/run_benchmark.py": true
+  },
+  "frozen_inputs_match": true
 }

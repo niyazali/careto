@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-10-source-expansion-round4",
-  "input_sha256": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
+  "version": "2026-10-10-reviewed-canonical-analyte-labels",
+  "input_sha256": "fe57c41b88cc427d806b251a250dc36e8b69dec798d707ba4936c01a2966a53e",
   "seed": 20261005,
   "target": "100 times terminal isolated micellar same-analyte amount / initial food same-analyte amount",
   "features": [
@@ -151,7 +151,8 @@
       "protocol"
     ]
   },
-  "feature_normalization": "Explicit reviewed aliases frozen before fitting; commodity identity removed from physical form and detailed processing kept in evidence ledger",
+  "feature_normalization": "Source-documented canonical analyte labels plus existing reviewed aliases; source labels retained; no response, membership, fold, grid or seed changes",
   "baseline_config_sha256": "1afdefcf1c29ece2ecd06b8f1ea2275f36d085a5d224c1b64b93deb6350016c9",
-  "expansion_evidence_sha256": "8003a5f98fe9aa9d59d270202c13ae127422a2454c5a5b54fdb4250b77748b97"
+  "expansion_evidence_sha256": "8003a5f98fe9aa9d59d270202c13ae127422a2454c5a5b54fdb4250b77748b97",
+  "analyte_canonicalization_sha256": "6f1df8ed9636e4b1e4224922cc60024853c3818d55291694b7453389b7590be9"
 }

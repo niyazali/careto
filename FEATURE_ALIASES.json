@@ -196,5 +196,16 @@
     "INFOGEST_modified_Brodkorb_Minekus": "adapted_INFOGEST_version_unknown",
     "custom_static": "other_static",
     "infant_adapted_static": "infant_adapted_static"
+  },
+  "analyte": {
+    "all-E-beta-carotene": "all-trans-beta-carotene",
+    "all-E beta-carotene": "all-trans-beta-carotene",
+    "beta-carotene all-E": "all-trans-beta-carotene",
+    "all-E-lycopene": "all-trans-lycopene",
+    "all-E lycopene": "all-trans-lycopene",
+    "all-E-lutein": "all-trans-lutein",
+    "E-lutein": "all-trans-lutein",
+    "all-trans lutein (default nomenclature per section 2.6)": "all-trans-lutein",
+    "all-E-equinenone": "all-E-echinenone"
   }
 }

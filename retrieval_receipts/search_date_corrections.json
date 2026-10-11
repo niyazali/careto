@@ -1,0 +1,86 @@
+{
+  "basis": "Author correction on 2026-10-06: searches started in July 2026; day numbers unchanged.",
+  "corrections": [
+    {
+      "search_id": "E01",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "E02",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "E03",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "E04",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "E05",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "E06",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "C01",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "C02",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "OA1",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "OA2",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "CONS01",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "CONS02",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "CONS03",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "CONS04",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "CONS05",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    },
+    {
+      "search_id": "CONS06",
+      "corrected_search_date": "2026-07-21",
+      "previously_reported_search_date": "2026-09-21"
+    }
+  ],
+  "note": "Raw API execution timestamps remain unchanged; corrected author-confirmed search dates are used for manuscript reporting."
+}

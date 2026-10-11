@@ -1,8 +1,9 @@
 {
-  "cohort_sha256": "4a6b52ee67002de87588e66663f60ad73a2305f9100d863cc78ffa3ec6d5a36d",
-  "config_sha256": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+  "cohort_sha256": "7733c13d8c46e09946bb82d45fae42a0bdb87252696bb08027843b7d4cdd0974",
+  "config_sha256": "2ef88a51220912cc4358200db20669cccb357d83f0fa4ecc108b9cb613643555",
   "runner_sha256": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53",
+  "analyte_canonicalization_sha256": "6f1df8ed9636e4b1e4224922cc60024853c3818d55291694b7453389b7590be9",
   "source_decisions_before_fitting": true,
-  "new_observations_sha256": "238afe3c285dee14900c437065f520c7fc74439cec8df9adc04c83c7c11f6f53",
-  "timestamp_utc": "2026-10-10T15:40:03.222967+00:00"
+  "timestamp_utc": "2026-10-10T18:00:32.251545+00:00",
+  "previous_release": "/home/niyaz/Downloads/resear/gravity/food_bioscience_submission_updated_2026-10-10/data_and_code"
 }

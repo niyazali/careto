@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "Post hoc output metrics, source-bound inputs, response-blind assignments and replay against completed main predictions; no independent estimator fitting.",
+  "coverage": {
+    "weight_scope": "No weighted estimators independently refitted; use of weights is checked through source code preservation, documented arithmetic, frozen inputs and logs.",
+    "inner_partitions": 2190,
+    "weight_partitions": 720,
+    "weight_fits": 180,
+    "weight_summary_MAEs": 20,
+    "paired_intervals": 747,
+    "original_seed_replayed_predictions": 900,
+    "matched_size_fold_repetitions": 180,
+    "matched_size_repetition_MAEs": 60,
+    "matched_size_summary_MAEs": 6,
+    "learning_outer_folds": 50,
+    "learning_full_pool_replayed_predictions": 1350,
+    "learning_repetition_MAEs": 30,
+    "learning_summary_MAEs": 12,
+    "robustness_deletion_fits": 135,
+    "robustness_refit_MAEs": 15,
+    "robustness_source_MAEs": 576,
+    "fixed_prediction_deletions": 576
+  },
+  "scientific_inputs_at_audit": {
+    "COHORT.json": "fe57c41b88cc427d806b251a250dc36e8b69dec798d707ba4936c01a2966a53e",
+    "analysis_config.json": "2ef88a51220912cc4358200db20669cccb357d83f0fa4ecc108b9cb613643555",
+    "saved_results_core/RESULTS.json": "3031bfb149d2c69835d978f33113974bed4d01d324b73325f4d340be78f836d9"
+  },
+  "script_sha256": "19deb1b562455aaa01b91c8ac44340c498dbce690d392b6c7866fe94c583e231",
+  "checks": 56641
+}

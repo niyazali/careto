@@ -1,0 +1,586 @@
+Observation ID,Source analyte,Model analyte,Changed
+X-P0001-0001,zeaxanthin,zeaxanthin,False
+X-P0001-0002,lutein,lutein,False
+X-P0001-0003,beta-carotene,beta-carotene,False
+X-P0001-0004,alpha-carotene,alpha-carotene,False
+X-P0001-0005,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0004-0008,lutein,lutein,False
+X-P0004-0009,lutein,lutein,False
+X-P0041-0016,beta-carotene,beta-carotene,False
+X-P0041-0017,beta-carotene,beta-carotene,False
+X-P0051-0018,total carotenoids,total carotenoids,False
+X-P0051-0019,total carotenoids,total carotenoids,False
+X-P0055-0020,lutein,lutein,False
+X-P0055-0021,zeaxanthin,zeaxanthin,False
+X-P0087-0024,alpha-carotene,alpha-carotene,False
+X-P0087-0025,alpha-carotene,alpha-carotene,False
+X-P0103-0036,beta-carotene,beta-carotene,False
+X-P0119-0040,all-E-zeaxanthin,all-E-zeaxanthin,False
+X-P0119-0041,neochrome,neochrome,False
+X-P0119-0042,all-E-beta-carotene,all-trans-beta-carotene,True
+X-P0119-0043,all-E-lutein,all-trans-lutein,True
+X-P0119-0044,all-E-equinenone,all-E-echinenone,True
+X-P0143-0054,lutein,lutein,False
+X-P0164-0059,total carotenoids,total carotenoids,False
+X-P0164-0060,total carotenoids,total carotenoids,False
+X-P0223-0066,astaxanthin,astaxanthin,False
+X-P0259-0072,lutein,lutein,False
+X-P0313-0073,beta-carotene,beta-carotene,False
+X-P0496-0090,lutein,lutein,False
+X-P0655-0112,E-lutein,all-trans-lutein,True
+X-P0655-0113,beta-carotene,beta-carotene,False
+X-P0655-0114,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0230-0152,total carotenoids,total carotenoids,False
+X-P0230-0153,total carotenoids,total carotenoids,False
+X-P0230-0154,total carotenoids,total carotenoids,False
+X-P0661-0155,carotenoids,carotenoids,False
+X-P0661-0156,carotenoids,carotenoids,False
+X-P0902-0159,lutein+zeaxanthin,lutein+zeaxanthin,False
+X-P0902-0160,beta-carotene,beta-carotene,False
+X-P0902-0161,alpha-carotene,alpha-carotene,False
+X-P0902-0162,lycopene,lycopene,False
+X-P0656-0166,beta-carotene,beta-carotene,False
+X-P0360-0169,zeaxanthin,zeaxanthin,False
+X-P0360-0170,lutein,lutein,False
+X-P0254-0203,zeaxanthin+lutein,zeaxanthin+lutein,False
+X-P0254-0204,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0254-0205,lycopene,lycopene,False
+X-P0254-0206,alpha+beta-carotene,alpha+beta-carotene,False
+X-P0254-0207,zeaxanthin+lutein,zeaxanthin+lutein,False
+X-P0254-0208,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0254-0209,lycopene,lycopene,False
+X-P0254-0210,alpha+beta-carotene,alpha+beta-carotene,False
+X-P0328-0211,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0328-0212,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0328-0213,zeaxanthin,zeaxanthin,False
+X-P0328-0214,lutein,lutein,False
+X-P0328-0215,free zeaxanthin,free zeaxanthin,False
+X-P0328-0216,lutein,lutein,False
+X-P0328-0217,zeaxanthin,zeaxanthin,False
+X-P0328-0218,15-cis-beta-carotene,15-cis-beta-carotene,False
+X-P0328-0219,alpha-carotene,alpha-carotene,False
+X-P0328-0221,15-cis-beta-carotene,15-cis-beta-carotene,False
+X-P0328-0222,alpha-carotene,alpha-carotene,False
+X-P0328-0223,lutein,lutein,False
+X-P0328-0224,zeaxanthin,zeaxanthin,False
+X-P0328-0225,15-cis-beta-carotene,15-cis-beta-carotene,False
+X-P0328-0226,alpha-carotene,alpha-carotene,False
+X-P0328-0227,lutein,lutein,False
+X-P0328-0228,15-cis-beta-carotene,15-cis-beta-carotene,False
+X-P0328-0229,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0328-0230,alpha-carotene,alpha-carotene,False
+X-P0525-0238,total carotenoids,total carotenoids,False
+X-P0525-0239,total carotenoids,total carotenoids,False
+X-P0525-0240,total carotenoids,total carotenoids,False
+X-P0525-0241,total carotenoids,total carotenoids,False
+X-P0602-0249,total carotenoids,total carotenoids,False
+X-P0602-0250,total carotenoids,total carotenoids,False
+X-P0602-0251,total carotenoids,total carotenoids,False
+X-P0602-0252,total carotenoids,total carotenoids,False
+X-P1004-0261,lycopene,lycopene,False
+X-P1004-0262,lycopene,lycopene,False
+X-P1004-0263,lycopene,lycopene,False
+X-P1004-0264,lycopene,lycopene,False
+X-P1004-0265,lycopene,lycopene,False
+X-P1004-0266,lycopene,lycopene,False
+X-P1004-0267,beta-carotene,beta-carotene,False
+X-P1004-0268,beta-carotene,beta-carotene,False
+X-P1004-0269,beta-carotene,beta-carotene,False
+X-P1004-0270,zeta-carotene,zeta-carotene,False
+X-P1004-0271,zeta-carotene,zeta-carotene,False
+X-P2085-0276,beta-carotene,beta-carotene,False
+X-P2085-0277,beta-carotene,beta-carotene,False
+X-P0328-0296,total carotenoids,total carotenoids,False
+X-P0328-0297,total carotenoids,total carotenoids,False
+X-P0328-0298,total carotenoids,total carotenoids,False
+X-P0328-0299,total carotenoids,total carotenoids,False
+X-P0009-0001,beta-carotene,beta-carotene,False
+X-P0009-0002,beta-carotene,beta-carotene,False
+X-P0009-0003,beta-carotene,beta-carotene,False
+X-P0009-0004,lutein,lutein,False
+X-P0009-0005,lutein,lutein,False
+X-P0009-0006,lycopene,lycopene,False
+X-P0009-0007,lycopene,lycopene,False
+X-P0009-0008,lycopene,lycopene,False
+X-P0009-0009,lycopene,lycopene,False
+X-P0607-0027,beta-carotene all-E,all-trans-beta-carotene,True
+X-P0607-0029,total carotenoids,total carotenoids,False
+X-P0607-0030,total carotenoids,total carotenoids,False
+X-P0607-0031,total carotenoids,total carotenoids,False
+X-P0678-0038,total carotenoids,total carotenoids,False
+X-P0678-0039,total carotenoids,total carotenoids,False
+X-P0744-0052,lutein,lutein,False
+X-P0744-0053,beta-carotene,beta-carotene,False
+X-P0744-0054,total carotenoids,total carotenoids,False
+X-P0866-0085,beta-carotene,beta-carotene,False
+X-P0866-0086,beta-carotene,beta-carotene,False
+X-P0866-0087,beta-carotene,beta-carotene,False
+X-P0866-0088,beta-carotene,beta-carotene,False
+X-P0878-0093,beta-carotene,beta-carotene,False
+X-P0904-0097,beta-carotene,beta-carotene,False
+X-P0904-0098,beta-carotene,beta-carotene,False
+X-P0904-0099,beta-carotene,beta-carotene,False
+X-P0904-0100,beta-carotene,beta-carotene,False
+X-P0907-0105,"selected nutritionally relevant carotenoids (lutein, beta-cryptoxanthin, alpha-carotene, beta-carotene)","selected nutritionally relevant carotenoids (lutein, beta-cryptoxanthin, alpha-carotene, beta-carotene)",False
+X-P0909-0111,zeaxanthin,zeaxanthin,False
+X-P0909-0112,lutein,lutein,False
+X-P0909-0113,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0909-0114,beta-carotene,beta-carotene,False
+X-P0910-0116,beta-carotene,beta-carotene,False
+X-P0910-0117,beta-carotene,beta-carotene,False
+X-P0912-0123,beta-carotene,beta-carotene,False
+X-P0913-0124,lutein,lutein,False
+X-P0913-0126,beta-carotene,beta-carotene,False
+X-P0913-0127,lutein,lutein,False
+X-P0919-0130,beta-carotene,beta-carotene,False
+X-P0928-0136,beta-carotene,beta-carotene,False
+X-P0928-0137,beta-carotene,beta-carotene,False
+X-P0945-0162,total carotenoids,total carotenoids,False
+X-P0945-0163,zeaxanthin,zeaxanthin,False
+X-P0945-0164,lutein,lutein,False
+X-P0945-0165,total beta-carotene,total beta-carotene,False
+X-P0950-0168,lutein,lutein,False
+X-P0951-0170,total carotenoids,total carotenoids,False
+X-P0951-0171,9-cis-beta-carotene,9-cis-beta-carotene,False
+X-P0951-0172,9-cis-zeaxanthin,9-cis-zeaxanthin,False
+X-P0951-0173,9-cis-lutein,9-cis-lutein,False
+X-P0953-0174,all-trans-canthaxanthin,all-trans-canthaxanthin,False
+X-P0953-0175,all-trans-alpha-carotene,all-trans-alpha-carotene,False
+X-P0953-0176,all-trans-beta-cryptoxanthin,all-trans-beta-cryptoxanthin,False
+X-P0953-0177,all-trans-lutein,all-trans-lutein,False
+X-P0953-0178,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0953-0179,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0955-0180,total carotenoids,total carotenoids,False
+X-P0955-0181,lutein,lutein,False
+X-P0955-0182,phytoene,phytoene,False
+X-P0955-0183,alpha-carotene,alpha-carotene,False
+X-P0955-0184,beta-carotene,beta-carotene,False
+X-P0963-0190,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0986-0197,beta-carotene,beta-carotene,False
+X-P1010-0206,beta-carotene,beta-carotene,False
+X-P1010-0207,beta-carotene,beta-carotene,False
+X-P1010-0208,beta-carotene,beta-carotene,False
+X-P1011-0210,total carotenoids,total carotenoids,False
+X-P1011-0211,alpha-carotene,alpha-carotene,False
+X-P1011-0212,beta-carotene,beta-carotene,False
+X-P1024-0220,lutein,lutein,False
+X-P1024-0221,alpha-carotene,alpha-carotene,False
+X-P1024-0222,beta-carotene,beta-carotene,False
+X-P1039-0228,beta-carotene,beta-carotene,False
+X-P1039-0229,alpha-carotene,alpha-carotene,False
+X-P1039-0230,lutein,lutein,False
+X-P1041-0231,phytoene,phytoene,False
+X-P1041-0232,lycopene,lycopene,False
+X-P1048-0238,lutein,lutein,False
+X-P1048-0239,beta-carotene,beta-carotene,False
+X-P1048-0240,lycopene,lycopene,False
+X-P1051-0243,beta-carotene,beta-carotene,False
+X-P1051-0244,beta-carotene,beta-carotene,False
+X-P1051-0245,lutein,lutein,False
+X-P1054-0248,total carotenoids,total carotenoids,False
+X-P1058-0254,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P1075-0260,total carotenoids (beta-carotene plus lutein),total carotenoids (beta-carotene plus lutein),False
+X-P1075-0261,beta-carotene,beta-carotene,False
+X-P2027-0273,15-cis-phytoene,15-cis-phytoene,False
+X-P2027-0274,alpha-carotene,alpha-carotene,False
+X-P2027-0275,beta-carotene,beta-carotene,False
+X-P1039-0281,beta-carotene,beta-carotene,False
+X-P0363-0288,lutein,lutein,False
+X-P0363-0289,lutein,lutein,False
+X-P0512-0305,phytoene,phytoene,False
+X-P0512-0306,phytoene,phytoene,False
+X-P0512-0307,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0512-0308,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0512-0309,zeaxanthin,zeaxanthin,False
+X-P0512-0310,antheraxanthin,antheraxanthin,False
+X-P0512-0311,antheraxanthin,antheraxanthin,False
+X-P0512-0312,all-E-violaxanthin,all-E-violaxanthin,False
+X-P0512-0313,all-E-violaxanthin,all-E-violaxanthin,False
+X-P0512-0314,9-Z-violaxanthin,9-Z-violaxanthin,False
+X-P0512-0315,9-Z-violaxanthin,9-Z-violaxanthin,False
+X-P0512-0316,total carotenoids,total carotenoids,False
+X-P0512-0317,total carotenoids,total carotenoids,False
+X-P0677-0330,alpha-carotene,alpha-carotene,False
+X-P0677-0331,alpha-carotene,alpha-carotene,False
+X-P0677-0332,alpha-carotene,alpha-carotene,False
+X-P0677-0333,alpha-carotene,alpha-carotene,False
+X-P0677-0334,alpha-carotene,alpha-carotene,False
+X-P0677-0335,alpha-carotene,alpha-carotene,False
+X-P0677-0336,beta-carotene,beta-carotene,False
+X-P0677-0337,beta-carotene,beta-carotene,False
+X-P0677-0338,beta-carotene,beta-carotene,False
+X-P0677-0339,beta-carotene,beta-carotene,False
+X-P0677-0340,beta-carotene,beta-carotene,False
+X-P0677-0341,beta-carotene,beta-carotene,False
+X-P0677-0342,lycopene,lycopene,False
+X-P0677-0343,lycopene,lycopene,False
+X-P0677-0344,all-E-lycopene,all-trans-lycopene,True
+X-P0677-0345,lutein,lutein,False
+X-P0677-0346,lutein,lutein,False
+X-P0677-0347,lutein,lutein,False
+X-P0677-0348,lutein,lutein,False
+X-P0677-0349,lutein,lutein,False
+X-P0677-0350,lutein,lutein,False
+X-P0677-0351,astaxanthin,astaxanthin,False
+X-P0677-0352,astaxanthin,astaxanthin,False
+X-P0929-0353,total lutein,total lutein,False
+X-P0929-0354,total lutein,total lutein,False
+X-P0929-0355,total lutein,total lutein,False
+X-P0929-0356,total lutein,total lutein,False
+X-P0929-0357,total lutein,total lutein,False
+X-P0929-0358,total zeaxanthin,total zeaxanthin,False
+X-P0929-0359,total zeaxanthin,total zeaxanthin,False
+X-P0929-0360,total zeaxanthin,total zeaxanthin,False
+X-P0929-0361,alpha-carotene,alpha-carotene,False
+X-P0929-0362,alpha-carotene,alpha-carotene,False
+X-P0929-0363,total beta-carotene,total beta-carotene,False
+X-P0929-0364,total beta-carotene,total beta-carotene,False
+X-P0929-0365,total beta-carotene,total beta-carotene,False
+X-P0929-0366,total lycopene,total lycopene,False
+X-P0950-0378,lutein,lutein,False
+X-P0950-0379,fucoxanthin + fucoxanthinol,fucoxanthin + fucoxanthinol,False
+X-P0950-0380,zeaxanthin,zeaxanthin,False
+X-P0950-0381,beta-carotene,beta-carotene,False
+X-P0926-0391,zeaxanthin,zeaxanthin,False
+X-P0926-0392,free zeaxanthin,free zeaxanthin,False
+X-P0932-0394,total carotenoids,total carotenoids,False
+X-P0932-0395,total carotenoids,total carotenoids,False
+X-P0932-0396,total carotenoids,total carotenoids,False
+X-P0932-0397,total carotenoids,total carotenoids,False
+X-P0932-0398,total carotenoids,total carotenoids,False
+X-P0932-0399,total carotenoids,total carotenoids,False
+X-P0932-0400,total carotenoids,total carotenoids,False
+X-P0957-0426,beta-carotene,beta-carotene,False
+X-P0957-0427,beta-carotene,beta-carotene,False
+X-P0363-0463,lutein,lutein,False
+X-P0011-0464,lutein,lutein,False
+X-P0011-0465,lutein,lutein,False
+X-P0011-0466,beta-carotene,beta-carotene,False
+X-P0011-0470,phytoene,phytoene,False
+X-P0011-0472,lutein,lutein,False
+X-P0011-0473,beta-carotene,beta-carotene,False
+X-P0433-0474,total carotenoids,total carotenoids,False
+X-P0433-0475,total carotenoids,total carotenoids,False
+X-P0433-0476,total carotenoids,total carotenoids,False
+X-P0433-0477,total carotenoids,total carotenoids,False
+X-P0433-0478,total carotenoids,total carotenoids,False
+X-P0433-0479,total carotenoids,total carotenoids,False
+X-P0433-0480,total carotenoids,total carotenoids,False
+X-P0433-0481,total carotenoids,total carotenoids,False
+X-P0649-0485,total carotenoids,total carotenoids,False
+X-P0649-0486,total carotenoids,total carotenoids,False
+X-P0649-0487,total carotenoids,total carotenoids,False
+X-P0649-0488,total carotenoids,total carotenoids,False
+X-P0649-0489,total carotenoids,total carotenoids,False
+X-P0649-0490,total carotenoids,total carotenoids,False
+X-P0649-0491,total carotenoids,total carotenoids,False
+X-P0649-0492,total carotenoids,total carotenoids,False
+X-P0649-0493,total carotenoids,total carotenoids,False
+X-P0737-0498,lycopene,lycopene,False
+X-P0737-0499,alpha-carotene,alpha-carotene,False
+X-P0737-0500,beta-carotene,beta-carotene,False
+X-P0737-0501,lutein,lutein,False
+X-P0737-0502,phytoene,phytoene,False
+X-P0737-0503,lycopene,lycopene,False
+X-P0737-0504,beta-carotene,beta-carotene,False
+X-P0737-0505,lutein,lutein,False
+X-P0737-0506,violaxanthin,violaxanthin,False
+X-P0737-0507,phytoene,phytoene,False
+X-P0737-0508,beta-carotene,beta-carotene,False
+X-P0737-0509,lutein,lutein,False
+X-P0737-0510,violaxanthin,violaxanthin,False
+X-P0737-0511,beta-carotene,beta-carotene,False
+X-P0737-0512,lutein,lutein,False
+X-P0737-0513,phytoene,phytoene,False
+X-P0737-0514,beta-carotene,beta-carotene,False
+X-P0737-0515,lutein,lutein,False
+X-P0737-0516,violaxanthin,violaxanthin,False
+X-P0737-0517,phytoene,phytoene,False
+X-P0737-0518,beta-carotene,beta-carotene,False
+X-P0737-0519,lycopene,lycopene,False
+X-P0737-0520,beta-carotene,beta-carotene,False
+X-P0737-0521,lutein,lutein,False
+X-P0737-0522,phytoene,phytoene,False
+X-P0737-0523,lycopene,lycopene,False
+X-P0737-0524,beta-carotene,beta-carotene,False
+X-P0737-0525,phytoene,phytoene,False
+X-P0737-0526,alpha-carotene,alpha-carotene,False
+X-P0737-0527,beta-carotene,beta-carotene,False
+X-P0737-0528,lutein,lutein,False
+X-P0737-0529,violaxanthin,violaxanthin,False
+X-P0756-0530,beta-carotene,beta-carotene,False
+X-P0756-0531,beta-carotene,beta-carotene,False
+X-P0756-0533,all-trans lutein (default nomenclature per section 2.6),all-trans-lutein,True
+X-P0776-0542,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0776-0543,beta-carotene,beta-carotene,False
+X-P0776-0544,phytoene,phytoene,False
+X-P0776-0545,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0776-0546,phytoene,phytoene,False
+X-P0776-0547,beta-cryptoxanthin,beta-cryptoxanthin,False
+X-P0776-0548,beta-carotene,beta-carotene,False
+X-P0935-0551,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0552,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0553,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0554,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0555,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0556,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0557,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0558,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0559,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0560,all-E lycopene,all-trans-lycopene,True
+X-P0935-0561,all-E lycopene,all-trans-lycopene,True
+X-P0935-0562,all-E lycopene,all-trans-lycopene,True
+X-P0935-0563,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0564,all-E beta-carotene,all-trans-beta-carotene,True
+X-P0935-0565,all-E lycopene,all-trans-lycopene,True
+X-P0935-0566,all-E lycopene,all-trans-lycopene,True
+X-P0935-0567,beta-carotene,beta-carotene,False
+X-P0935-0568,all-E-beta-carotene,all-trans-beta-carotene,True
+X-P0941-0570,alpha-carotene,alpha-carotene,False
+X-P0941-0571,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0941-0572,cis-beta-carotene,cis-beta-carotene,False
+X-P0941-0573,all-trans-lycopene,all-trans-lycopene,False
+X-P0941-0574,cis-lycopene,cis-lycopene,False
+X-P0941-0575,alpha-carotene,alpha-carotene,False
+X-P0941-0576,all-trans-beta-carotene,all-trans-beta-carotene,False
+X-P0941-0577,cis-beta-carotene,cis-beta-carotene,False
+X-P0941-0578,all-trans-lycopene,all-trans-lycopene,False
+X-P0941-0579,cis-lycopene,cis-lycopene,False
+X-P0973-0580,beta-carotene,beta-carotene,False
+X-P0973-0581,beta-carotene,beta-carotene,False
+X-P0973-0582,beta-carotene,beta-carotene,False
+X-P0973-0583,lutein,lutein,False
+X-P0973-0584,lutein,lutein,False
+X-P0973-0585,lutein,lutein,False
+X-P1059-0605,total carotenoids,total carotenoids,False
+X-P1059-0606,total carotenoids,total carotenoids,False
+X-P1059-0607,total carotenoids,total carotenoids,False
+X-P1059-0608,total carotenoids,total carotenoids,False
+X-P1059-0609,total carotenoids,total carotenoids,False
+X-P1059-0610,total carotenoids,total carotenoids,False
+X-P1059-0611,total carotenoids,total carotenoids,False
+X-P1059-0612,total carotenoids,total carotenoids,False
+X-P1059-0613,total carotenoids,total carotenoids,False
+X-P1059-0614,total carotenoids,total carotenoids,False
+X-P1059-0615,total carotenoids,total carotenoids,False
+X-P1059-0616,total carotenoids,total carotenoids,False
+X-P1059-0617,lutein,lutein,False
+X-P1059-0618,lutein,lutein,False
+X-P1059-0619,lutein,lutein,False
+X-P1059-0620,lutein,lutein,False
+X-P1059-0621,lutein,lutein,False
+X-P1059-0622,lutein,lutein,False
+X-P1059-0623,beta-carotene,beta-carotene,False
+X-P1059-0624,beta-carotene,beta-carotene,False
+X-P1059-0625,beta-carotene,beta-carotene,False
+X-P1059-0626,beta-carotene,beta-carotene,False
+X-P1059-0627,beta-carotene,beta-carotene,False
+X-P1059-0628,beta-carotene,beta-carotene,False
+X-P1059-0629,beta-carotene,beta-carotene,False
+X-P1059-0630,beta-carotene,beta-carotene,False
+X-P1059-0631,beta-carotene,beta-carotene,False
+X-P1059-0632,beta-carotene,beta-carotene,False
+X-P1059-0633,beta-carotene,beta-carotene,False
+X-P1059-0634,beta-carotene,beta-carotene,False
+X-P1077-0646,beta-carotene,beta-carotene,False
+X-P1077-0647,beta-carotene,beta-carotene,False
+X-P1077-0648,beta-carotene,beta-carotene,False
+X-P1077-0649,beta-carotene,beta-carotene,False
+X-P1077-0650,beta-carotene,beta-carotene,False
+X-P0011-0671,violaxanthin,violaxanthin,False
+X-P0649-0673,carotenoids (total),carotenoids (total),False
+X-P0649-0674,carotenoids (total),carotenoids (total),False
+X-P0756-0675,lutein,lutein,False
+X-P0756-0676,lutein,lutein,False
+X-P0128-0048,beta-carotene,beta-carotene,False
+X-P0926-0393,lutein,lutein,False
+EXP-ALG-P0546-01,fucoxanthin,fucoxanthin,False
+EXP-ALG-P0682-01,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-02,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-03,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-04,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-05,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-06,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-07,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-08,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-09,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-10,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-11,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-12,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-13,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-14,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-15,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-16,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-17,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-18,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-19,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-20,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-21,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-22,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-23,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-24,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-25,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-26,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-27,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-28,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-29,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-30,total carotenoids,total carotenoids,False
+EXP-ALG-P0682-31,total carotenoids,total carotenoids,False
+EXP-AD-EGG2021-001,lutein,lutein,False
+EXP-AD-EGG2021-002,zeaxanthin,zeaxanthin,False
+EXP-AD-P0986-001,beta-carotene,beta-carotene,False
+EXP-AD-P0986-002,beta-carotene,beta-carotene,False
+EXP-AD-P0986-003,beta-carotene,beta-carotene,False
+EXP-AD-P0986-004,beta-carotene,beta-carotene,False
+EXP-AD-P0986-005,beta-carotene,beta-carotene,False
+EXP-AD-P0986-006,beta-carotene,beta-carotene,False
+E-OIL-P0128-01,astaxanthin,astaxanthin,False
+E-OIL-P0128-02,lutein,lutein,False
+E-OIL-P0128-03,alpha-carotene,alpha-carotene,False
+E-OIL-P0128-04,total carotenoids,total carotenoids,False
+E-OIL-P0128-05,alpha-carotene,alpha-carotene,False
+E-OIL-P0128-06,total carotenoids,total carotenoids,False
+E-OIL-TUCUMA-01,beta-carotene,beta-carotene,False
+E-OIL-TUCUMA-02,beta-carotene,beta-carotene,False
+E-OIL-TUCUMA-03,beta-carotene,beta-carotene,False
+E-OIL-TUCUMA-04,beta-carotene,beta-carotene,False
+EXP-SIX-P1901-001,total carotenoids,total carotenoids,False
+EXP-SIX-P1901-002,total carotenoids,total carotenoids,False
+EXP-SIX-P1901-003,total carotenoids,total carotenoids,False
+EXP-SIX-P1901-004,total carotenoids,total carotenoids,False
+EXP-SIX-P1901-005,total carotenoids,total carotenoids,False
+R2-AD-XAVIER2014-001,lutein,lutein,False
+R2-AD-XAVIER2014-002,lutein,lutein,False
+R2-AD-XAVIER2014-003,lutein,lutein,False
+R2-AD-XAVIER2014-004,lutein,lutein,False
+R2-AD-XAVIER2014-005,lutein,lutein,False
+R2-AD-XAVIER2014-006,lutein,lutein,False
+R2-ALG-P0916-01,antheraxanthin,antheraxanthin,False
+R2-ALG-P0916-02,antheraxanthin,antheraxanthin,False
+R2-ALG-P0916-03,antheraxanthin,antheraxanthin,False
+R2-ALG-P0916-04,antheraxanthin,antheraxanthin,False
+R2-ALG-P0916-05,zeaxanthin,zeaxanthin,False
+R2-ALG-P0916-06,zeaxanthin,zeaxanthin,False
+R2-ALG-P0916-07,zeaxanthin,zeaxanthin,False
+R2-ALG-P0916-08,zeaxanthin,zeaxanthin,False
+R2-ALG-P0916-09,beta-carotene,beta-carotene,False
+R2-ALG-P0916-10,beta-carotene,beta-carotene,False
+R2-ALG-P0916-11,beta-carotene,beta-carotene,False
+R2-ALG-P0916-12,beta-carotene,beta-carotene,False
+R2-ALG-P0105-01,total carotenoids,total carotenoids,False
+R2-ALG-P0105-02,total carotenoids,total carotenoids,False
+R2-ALG-P0105-03,total carotenoids,total carotenoids,False
+R2-ALG-P0105-04,total carotenoids,total carotenoids,False
+R2-ALG-P0105-05,total carotenoids,total carotenoids,False
+R2-ALG-P0105-06,total carotenoids,total carotenoids,False
+R2-ALG-P0105-07,total carotenoids,total carotenoids,False
+R2-ALG-P0105-08,total carotenoids,total carotenoids,False
+R2-ALG-P0105-09,total carotenoids,total carotenoids,False
+R2-ALG-P0105-10,total carotenoids,total carotenoids,False
+R2-ALG-P0105-11,total carotenoids,total carotenoids,False
+R2-ALG-P0105-12,total carotenoids,total carotenoids,False
+R2-ALG-P0105-13,total carotenoids,total carotenoids,False
+R2-ALG-P0105-14,total carotenoids,total carotenoids,False
+R2-ALG-P0105-15,total carotenoids,total carotenoids,False
+R2-ALG-P0105-16,total carotenoids,total carotenoids,False
+R2-ALG-P0105-23,total carotenoids,total carotenoids,False
+R2-ALG-P0105-24,total carotenoids,total carotenoids,False
+R2-ALG-P0105-25,total carotenoids,total carotenoids,False
+R2-ALG-P0105-26,total carotenoids,total carotenoids,False
+R2-ALG-P0105-27,total carotenoids,total carotenoids,False
+R2-ALG-P0105-28,total carotenoids,total carotenoids,False
+R2-ALG-P0105-29,total carotenoids,total carotenoids,False
+R2-ALG-P0105-30,total carotenoids,total carotenoids,False
+R2-ALG-P0105-31,total carotenoids,total carotenoids,False
+R2-ALG-P0105-32,total carotenoids,total carotenoids,False
+R2-CEREAL-CUPCAKE2017-001,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-002,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-003,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-004,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-005,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-006,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-007,lutein,lutein,False
+R2-CEREAL-CUPCAKE2017-008,lutein,lutein,False
+R3-AD-XAVIER2014-RECON-001,lutein,lutein,False
+R3-AD-XAVIER2014-RECON-002,lutein,lutein,False
+R3-AD-XAVIER2014-RECON-003,lutein,lutein,False
+R3-AD-XAVIER2014-RECON-004,lutein,lutein,False
+R3-CEREAL-SQUASH2022-001,alpha-carotene,alpha-carotene,False
+R3-CEREAL-SQUASH2022-002,beta-carotene,beta-carotene,False
+R3-CEREAL-SQUASH2022-003,lutein,lutein,False
+R3-CEREAL-SQUASH2022-004,alpha-carotene,alpha-carotene,False
+R3-CEREAL-SQUASH2022-005,beta-carotene,beta-carotene,False
+R3-CEREAL-SQUASH2022-006,lutein,lutein,False
+R3-CEREAL-SQUASH2022-007,alpha-carotene,alpha-carotene,False
+R3-CEREAL-SQUASH2022-008,beta-carotene,beta-carotene,False
+R3-CEREAL-SQUASH2022-009,lutein,lutein,False
+R3-CEREAL-SQUASH2022-010,alpha-carotene,alpha-carotene,False
+R3-CEREAL-SQUASH2022-011,beta-carotene,beta-carotene,False
+R3-CEREAL-SQUASH2022-012,lutein,lutein,False
+R3-CEREAL-SQUASH2022-013,alpha-carotene,alpha-carotene,False
+R3-CEREAL-SQUASH2022-014,lutein,lutein,False
+R3-LEAF-P0670-01,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-02,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-03,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-04,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-05,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-06,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-07,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-08,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-09,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-10,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-11,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-12,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-13,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-14,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-15,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-16,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-17,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-18,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-19,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-20,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-21,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-22,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-23,total carotenoids,total carotenoids,False
+R3-LEAF-P0670-24,total carotenoids,total carotenoids,False
+X-P0819-0370,zeaxanthin equivalents (free + esters),zeaxanthin equivalents (free + esters),False
+X-P0934-0150,carotenes,carotenes,False
+X-P1050-0241,lutein,lutein,False
+X-P1072-0644,lutein,lutein,False
+X-P1072-0645,lutein,lutein,False
+TDE09-QUINOA-001,lutein,lutein,False
+TDE09-QUINOA-002,lutein,lutein,False
+TDE09-QUINOA-003,lutein,lutein,False
+TDE09-QUINOA-004,lutein,lutein,False
+TDE09-QUINOA-005,lutein,lutein,False
+TDE09-QUINOA-006,lutein,lutein,False
+TDE09-QUINOA-007,lutein,lutein,False
+TDE09-QUINOA-008,lutein,lutein,False
+TDE09-QUINOA-009,lutein,lutein,False
+TDE09-QUINOA-010,lutein,lutein,False
+TDE09-QUINOA-011,lutein,lutein,False
+TDE09-QUINOA-012,lutein,lutein,False
+TDE09-QUINOA-013,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-014,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-015,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-016,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-017,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-018,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-019,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-020,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-021,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-022,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-023,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-024,zeaxanthin,zeaxanthin,False
+TDE09-QUINOA-025,beta-carotene,beta-carotene,False
+TDE09-QUINOA-026,beta-carotene,beta-carotene,False
+TDE09-QUINOA-027,beta-carotene,beta-carotene,False
+TDE09-QUINOA-028,beta-carotene,beta-carotene,False
+TDE09-QUINOA-029,beta-carotene,beta-carotene,False
+TDE09-QUINOA-030,beta-carotene,beta-carotene,False
+TDE09-QUINOA-031,beta-carotene,beta-carotene,False
+TDE09-QUINOA-032,beta-carotene,beta-carotene,False
+TDE09-QUINOA-033,beta-carotene,beta-carotene,False
+TDE09-QUINOA-034,beta-carotene,beta-carotene,False
+TDE09-QUINOA-035,beta-carotene,beta-carotene,False
+TDE09-QUINOA-036,beta-carotene,beta-carotene,False

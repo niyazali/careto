@@ -22,8 +22,8 @@
     "SVR_behavior": "sample weights multiply per-observation C",
     "intervals": "2000 paired fixed-prediction study resamples; conditional and unadjusted",
     "inputs": {
-      "COHORT.json": "7cacef898369da59da010981747c71d66b7e3cc761e58fe98625d375f0817d18",
-      "analysis_config.json": "bffff91f059b7af066ab713d9763ad04c1897fa41190b6bfeed7811c726d1ed2",
+      "COHORT.json": "fe57c41b88cc427d806b251a250dc36e8b69dec798d707ba4936c01a2966a53e",
+      "analysis_config.json": "2ef88a51220912cc4358200db20669cccb357d83f0fa4ecc108b9cb613643555",
       "run_validation.py": "f57160e15fad755ef8cf015f1afb6061ffa1781a8097827a1c883e7cda210e53"
     }
   },
@@ -45,20 +45,20 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 21.63829131498172,
-      "row_MAE": 19.167116546405435,
-      "row_RMSE": 23.85767016871297,
-      "R2": -0.11185472319270362,
-      "calibration_slope": -0.19158754020342586,
-      "calibration_joint_intercept": 33.78619745816029,
-      "calibration_in_the_large": 1.9621129288390016,
+      "study_MAE": 21.626128064062723,
+      "row_MAE": 19.168295497006433,
+      "row_RMSE": 23.855756003197587,
+      "R2": -0.11167631611643758,
+      "calibration_slope": -0.18967203987032635,
+      "calibration_joint_intercept": 33.73578639947743,
+      "calibration_in_the_large": 1.9581757057227167,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.5067145969214268,
+        "delta_study_MAE": 1.4945513460024267,
         "conditional_CI": [
-          -0.23303845475387075,
-          3.4364534423541846
+          -0.24265318326338028,
+          3.41861851425112
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -70,20 +70,20 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 19.955863042945786,
-      "row_MAE": 17.785079622737225,
-      "row_RMSE": 23.529892342477567,
-      "R2": -0.08151330153036285,
-      "calibration_slope": 0.13109083659938345,
-      "calibration_joint_intercept": 26.092208529185122,
-      "calibration_in_the_large": 9.00973679960569,
+      "study_MAE": 20.005928365391938,
+      "row_MAE": 17.904069171719758,
+      "row_RMSE": 23.666691059910477,
+      "R2": -0.094125319226124,
+      "calibration_slope": -0.10137069574708785,
+      "calibration_joint_intercept": 30.649612769661253,
+      "calibration_in_the_large": 9.135156952183017,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.1757136751145077,
+        "delta_study_MAE": -0.12564835266836,
         "conditional_CI": [
-          -0.6886994518634183,
-          0.3033527259419233
+          -0.6640036440221765,
+          0.3790768572482863
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -95,30 +95,30 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 23.07563991588868,
-      "row_MAE": 19.582605902391457,
-      "row_RMSE": 24.623814232614393,
-      "R2": -0.18441155892359662,
-      "calibration_slope": -0.15080142367725455,
-      "calibration_joint_intercept": 32.848822929091426,
-      "calibration_in_the_large": 0.9547452940840029,
+      "study_MAE": 23.050923409853795,
+      "row_MAE": 19.568479263539526,
+      "row_RMSE": 24.600878304556907,
+      "R2": -0.18220613889253356,
+      "calibration_slope": -0.14866014550996115,
+      "calibration_joint_intercept": 32.78620025419457,
+      "calibration_in_the_large": 0.9767946782753043,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 2.9440631978283798,
+        "delta_study_MAE": 2.9193466917935007,
         "conditional_CI": [
-          0.40678596101226827,
-          5.55707191568182
+          0.36665074666184455,
+          5.529417036885879
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.4373486009069518,
+        "delta_study_MAE": 1.4247953457910745,
         "conditional_CI": [
-          -0.4471578572948681,
-          3.324534470359293
+          -0.4772175811398144,
+          3.3166917876330837
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -129,30 +129,30 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 19.924935007129115,
-      "row_MAE": 17.566913480268294,
-      "row_RMSE": 23.183740355487057,
-      "R2": -0.04992673245897672,
-      "calibration_slope": 0.07478379931141994,
-      "calibration_joint_intercept": 27.141736158978073,
-      "calibration_in_the_large": 8.24151664691497,
+      "study_MAE": 19.937038051628637,
+      "row_MAE": 17.606621376689787,
+      "row_RMSE": 23.19451607815365,
+      "R2": -0.0509029639388483,
+      "calibration_slope": 0.034612857684873065,
+      "calibration_joint_intercept": 27.959807649392562,
+      "calibration_in_the_large": 8.16824063850546,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.20664171093118383,
+        "delta_study_MAE": -0.19453866643166134,
         "conditional_CI": [
-          -0.6908889374203836,
-          0.25258166804689197
+          -0.6815369333533677,
+          0.2607720374213458
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.030928035816676004,
+        "delta_study_MAE": -0.06889031376330126,
         "conditional_CI": [
-          -0.3958507163926615,
-          0.3662873954926517
+          -0.3778569208226607,
+          0.2352227782910777
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -163,20 +163,20 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 21.52821218190441,
-      "row_MAE": 18.9149472548467,
-      "row_RMSE": 23.926715334561596,
-      "R2": -0.11829955024530503,
-      "calibration_slope": -0.02193346948965525,
-      "calibration_joint_intercept": 29.228251666073906,
-      "calibration_in_the_large": 3.190547228929543,
+      "study_MAE": 21.552739507433095,
+      "row_MAE": 18.94184091596899,
+      "row_RMSE": 23.96113937833561,
+      "R2": -0.1215197236002572,
+      "calibration_slope": -0.021950016113370732,
+      "calibration_joint_intercept": 29.2289229640729,
+      "calibration_in_the_large": 3.1791709814826867,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.3966354638441154,
+        "delta_study_MAE": 1.4211627893728023,
         "conditional_CI": [
-          -0.485805223203035,
-          3.3886920813897756
+          -0.4622546690414596,
+          3.3962019038233273
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -188,20 +188,20 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 20.49003254483647,
-      "row_MAE": 18.19437094540296,
-      "row_RMSE": 23.77428587541784,
-      "R2": -0.10409627876329419,
-      "calibration_slope": -0.026806970945257996,
-      "calibration_joint_intercept": 29.22652672042008,
-      "calibration_in_the_large": 7.886946136867985,
+      "study_MAE": 20.58165680717937,
+      "row_MAE": 18.340090575099676,
+      "row_RMSE": 23.833048448222797,
+      "R2": -0.10956098287530658,
+      "calibration_slope": -0.040103384952941384,
+      "calibration_joint_intercept": 29.50381578105371,
+      "calibration_in_the_large": 7.863087963753822,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 0.3584558267761745,
+        "delta_study_MAE": 0.45008008911907554,
         "conditional_CI": [
-          -0.5544902311866442,
-          1.4254128291015948
+          -0.46582909151869695,
+          1.5204634383396811
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -213,30 +213,30 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 23.154490304200365,
-      "row_MAE": 19.482667414330457,
-      "row_RMSE": 24.717627158693904,
-      "R2": -0.19345360049100768,
-      "calibration_slope": -0.12097289052069986,
-      "calibration_joint_intercept": 31.88120150320741,
-      "calibration_in_the_large": 2.1197466215314207,
+      "study_MAE": 23.11191105368485,
+      "row_MAE": 19.434621240153618,
+      "row_RMSE": 24.676491935368443,
+      "R2": -0.1894846005822639,
+      "calibration_slope": -0.12162548130539597,
+      "calibration_joint_intercept": 31.888560268066286,
+      "calibration_in_the_large": 2.2016973924188106,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 3.0229135861400693,
+        "delta_study_MAE": 2.9803343356245526,
         "conditional_CI": [
-          0.6824258938599852,
-          5.645487983316932
+          0.6655406323481909,
+          5.582057553815897
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.6262781222959533,
+        "delta_study_MAE": 1.5591715462517501,
         "conditional_CI": [
-          0.14691526504194555,
-          3.30753475289805
+          0.08531819060441564,
+          3.260920984971539
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -247,30 +247,30 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 20.21206220003028,
-      "row_MAE": 17.901134048348666,
-      "row_RMSE": 23.13444761384777,
-      "R2": -0.04546681809407893,
-      "calibration_slope": 0.16068598497712988,
-      "calibration_joint_intercept": 25.104697517494706,
-      "calibration_in_the_large": 6.485061022822281,
+      "study_MAE": 20.21523811770232,
+      "row_MAE": 17.967124235491973,
+      "row_RMSE": 23.13057597602334,
+      "R2": -0.04511692167569192,
+      "calibration_slope": 0.16223401266583276,
+      "calibration_joint_intercept": 25.052612080730444,
+      "calibration_in_the_large": 6.375691555451299,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 0.08048548196998272,
+        "delta_study_MAE": 0.08366139964202501,
         "conditional_CI": [
-          -0.7669726248149823,
-          0.9774369676897074
+          -0.7695990239242733,
+          0.9879753609951265
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.27797034480619154,
+        "delta_study_MAE": -0.36641868947705064,
         "conditional_CI": [
-          -1.0135151161575298,
-          0.3755791768449011
+          -1.1411174525194083,
+          0.3082781796657896
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -281,20 +281,20 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 21.275630002718735,
-      "row_MAE": 18.703266441291042,
-      "row_RMSE": 23.870606007867035,
-      "R2": -0.11306076493890771,
-      "calibration_slope": -0.08944252808902316,
-      "calibration_joint_intercept": 30.990662106264278,
-      "calibration_in_the_large": 2.7169885999763355,
+      "study_MAE": 21.268000208160164,
+      "row_MAE": 18.703686788782232,
+      "row_RMSE": 23.86874212097774,
+      "R2": -0.11288694963066659,
+      "calibration_slope": -0.08463702564615709,
+      "calibration_joint_intercept": 30.86535773315898,
+      "calibration_in_the_large": 2.7239588375078174,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.1440532846584388,
+        "delta_study_MAE": 1.1364234900998693,
         "conditional_CI": [
-          -0.6217268148886143,
-          3.1745164503766214
+          -0.630635730432103,
+          3.162635809672252
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -306,20 +306,20 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 19.98001373308577,
-      "row_MAE": 17.85977742278718,
-      "row_RMSE": 23.66516151045113,
-      "R2": -0.09398389981878075,
-      "calibration_slope": -0.09664730147471878,
-      "calibration_joint_intercept": 30.55521703479172,
-      "calibration_in_the_large": 9.157172544182902,
+      "study_MAE": 20.005928365391938,
+      "row_MAE": 17.904069171719758,
+      "row_RMSE": 23.666691059910477,
+      "R2": -0.094125319226124,
+      "calibration_slope": -0.10137069574708785,
+      "calibration_joint_intercept": 30.649612769661253,
+      "calibration_in_the_large": 9.135156952183017,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.15156298497452514,
+        "delta_study_MAE": -0.12564835266836,
         "conditional_CI": [
-          -0.6879303207384947,
-          0.3522569042022207
+          -0.6640036440221765,
+          0.3790768572482863
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -331,30 +331,30 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 22.83038262561988,
-      "row_MAE": 19.46389517020236,
-      "row_RMSE": 24.59141401283773,
-      "R2": -0.18129669237591672,
-      "calibration_slope": -0.051593008492266945,
-      "calibration_joint_intercept": 30.068810119336135,
-      "calibration_in_the_large": 1.5456135605634427,
+      "study_MAE": 22.77217565289905,
+      "row_MAE": 19.35208321428757,
+      "row_RMSE": 24.46963205695055,
+      "R2": -0.1696255938957114,
+      "calibration_slope": -0.050370398365937964,
+      "calibration_joint_intercept": 30.033000173276207,
+      "calibration_in_the_large": 1.598186416701721,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 2.6988059075595823,
+        "delta_study_MAE": 2.6405989348387524,
         "conditional_CI": [
-          0.25142780385498403,
-          5.357218451518767
+          0.16809478505346706,
+          5.274148709646014
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.5547526229011435,
+        "delta_study_MAE": 1.5041754447388835,
         "conditional_CI": [
-          -0.30433000800177157,
-          3.4594283793990286
+          -0.34287541217287865,
+          3.4060677354321744
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -365,30 +365,30 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 19.881541166537858,
-      "row_MAE": 17.60302664959557,
-      "row_RMSE": 22.919501277427763,
-      "R2": -0.026129826567080183,
-      "calibration_slope": 0.4247020338152898,
-      "calibration_joint_intercept": 19.698651022172754,
-      "calibration_in_the_large": 7.546930518543393,
+      "study_MAE": 19.869718036995717,
+      "row_MAE": 17.60068881929611,
+      "row_RMSE": 22.893683793778564,
+      "R2": -0.023819377591734803,
+      "calibration_slope": 0.44876670502234817,
+      "calibration_joint_intercept": 19.175891819222535,
+      "calibration_in_the_large": 7.514723056534145,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.25003555152243684,
+        "delta_study_MAE": -0.26185868106457866,
         "conditional_CI": [
-          -0.9068796700182018,
-          0.41665605802045047
+          -0.9244366522684008,
+          0.3942515860838211
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.0984725665479116,
+        "delta_study_MAE": -0.13621032839621855,
         "conditional_CI": [
-          -0.5964795024281238,
-          0.4272121295695052
+          -0.6434673244667081,
+          0.3918460939471869
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -399,20 +399,20 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 21.131589611112467,
-      "row_MAE": 18.815711204211162,
-      "row_RMSE": 23.588581995566425,
-      "R2": -0.0869151792280769,
-      "calibration_slope": -0.0979240194613886,
-      "calibration_joint_intercept": 31.275784950025134,
-      "calibration_in_the_large": 2.0531311426719503,
+      "study_MAE": 21.111334805616405,
+      "row_MAE": 18.805777952818058,
+      "row_RMSE": 23.58634366635995,
+      "R2": -0.08670891345398934,
+      "calibration_slope": -0.09667087050959235,
+      "calibration_joint_intercept": 31.239678592910042,
+      "calibration_in_the_large": 2.0816008661175798,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.0000128930521732,
+        "delta_study_MAE": 0.9797580875561092,
         "conditional_CI": [
-          -0.7496729835982343,
-          2.950847666843683
+          -0.758555505828576,
+          2.9169277947367203
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -424,20 +424,20 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 20.047845570785128,
-      "row_MAE": 17.96855231121612,
-      "row_RMSE": 23.745106539911387,
-      "R2": -0.10138772000369478,
-      "calibration_slope": -0.24308270934426607,
-      "calibration_joint_intercept": 33.44291794567034,
-      "calibration_in_the_large": 9.032037351465707,
+      "study_MAE": 20.045764367968044,
+      "row_MAE": 17.930048399119883,
+      "row_RMSE": 23.605833129173487,
+      "R2": -0.08850555676129046,
+      "calibration_slope": 0.02183489990483777,
+      "calibration_joint_intercept": 28.237346114753123,
+      "calibration_in_the_large": 8.881565008827426,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.08373114727516806,
+        "delta_study_MAE": -0.08581235009225203,
         "conditional_CI": [
-          -0.637017009109586,
-          0.44092939117786933
+          -0.6302829547982359,
+          0.4202067214126878
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -449,30 +449,30 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 22.80129459558552,
-      "row_MAE": 19.578712518463636,
-      "row_RMSE": 24.594647889789293,
-      "R2": -0.18160740401931585,
-      "calibration_slope": -0.24903385166076367,
-      "calibration_joint_intercept": 35.82118655059159,
-      "calibration_in_the_large": -0.04867107417506622,
+      "study_MAE": 22.798720302775415,
+      "row_MAE": 19.602032122965404,
+      "row_RMSE": 24.62527473036503,
+      "R2": -0.18455206369686206,
+      "calibration_slope": -0.2521974009814647,
+      "calibration_joint_intercept": 35.91268399462704,
+      "calibration_in_the_large": -0.05123403701884355,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 2.6697178775252235,
+        "delta_study_MAE": 2.667143584715116,
         "conditional_CI": [
-          0.3333689609342819,
-          5.306737546916695
+          0.3079211650228552,
+          5.320754846135092
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.6697049844730503,
+        "delta_study_MAE": 1.6873854971590074,
         "conditional_CI": [
-          -0.02439013945730457,
-          3.6139772089156956
+          0.0068472514161123516,
+          3.654622790536359
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -483,30 +483,30 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 19.924935007129115,
-      "row_MAE": 17.566913480268294,
-      "row_RMSE": 23.183740355487057,
-      "R2": -0.04992673245897672,
-      "calibration_slope": 0.07478379931141994,
-      "calibration_joint_intercept": 27.141736158978073,
-      "calibration_in_the_large": 8.24151664691497,
+      "study_MAE": 19.937038051628637,
+      "row_MAE": 17.606621376689787,
+      "row_RMSE": 23.19451607815365,
+      "R2": -0.0509029639388483,
+      "calibration_slope": 0.034612857684873065,
+      "calibration_joint_intercept": 27.959807649392562,
+      "calibration_in_the_large": 8.16824063850546,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.20664171093118383,
+        "delta_study_MAE": -0.19453866643166134,
         "conditional_CI": [
-          -0.6908889374203836,
-          0.25258166804689197
+          -0.6815369333533677,
+          0.2607720374213458
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.12291056365601566,
+        "delta_study_MAE": -0.10872631633940923,
         "conditional_CI": [
-          -0.44535394654484683,
-          0.19871980624688054
+          -0.4794320870007892,
+          0.3017743798908378
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -517,20 +517,20 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 21.27638557661782,
-      "row_MAE": 18.70971876423553,
-      "row_RMSE": 23.75678736577039,
-      "R2": -0.10247158816655011,
-      "calibration_slope": 0.06457815826336448,
-      "calibration_joint_intercept": 27.012467721963564,
-      "calibration_in_the_large": 3.011447981733106,
+      "study_MAE": 21.23081544881185,
+      "row_MAE": 18.639013542316587,
+      "row_RMSE": 23.474560775462695,
+      "R2": -0.07643283073849405,
+      "calibration_slope": 0.08489690528833224,
+      "calibration_joint_intercept": 26.417639522370585,
+      "calibration_in_the_large": 2.1458036570907617,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.1448088585575236,
+        "delta_study_MAE": 1.099238730751551,
         "conditional_CI": [
-          -0.775792769354986,
-          3.2054719322319762
+          -0.794209525894058,
+          3.0986708067085824
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -542,20 +542,20 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 20.212512969291524,
-      "row_MAE": 17.765508302814897,
-      "row_RMSE": 23.545692828822677,
-      "R2": -0.08296627661464617,
-      "calibration_slope": 0.07482268394365521,
-      "calibration_joint_intercept": 27.09662775193248,
-      "calibration_in_the_large": 7.6492620855865345,
+      "study_MAE": 20.231528621600106,
+      "row_MAE": 17.731106496263887,
+      "row_RMSE": 23.49253427889311,
+      "R2": -0.07808182226291249,
+      "calibration_slope": 0.06891216631232203,
+      "calibration_joint_intercept": 27.23640238619576,
+      "calibration_in_the_large": 7.874689173181929,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 0.08093625123122941,
+        "delta_study_MAE": 0.0999519035398096,
         "conditional_CI": [
-          -1.0807423356400176,
-          1.3231165874720265
+          -1.026190937518467,
+          1.3457618077822997
         ],
         "direction": "A minus B; positive means A has larger error"
       },
@@ -567,30 +567,30 @@
       "model": "RandomForest",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 22.362577260600183,
-      "row_MAE": 19.126391605132273,
-      "row_RMSE": 23.978779268589303,
-      "R2": -0.12317162893796807,
-      "calibration_slope": -0.14332909855143766,
-      "calibration_joint_intercept": 32.74418476525683,
-      "calibration_in_the_large": 0.23992300155516633,
+      "study_MAE": 22.35257846938922,
+      "row_MAE": 19.152264004555498,
+      "row_RMSE": 24.07889799730398,
+      "R2": -0.132570378722771,
+      "calibration_slope": -0.14533356636227782,
+      "calibration_joint_intercept": 32.784300122522346,
+      "calibration_in_the_large": 0.3560051859251443,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 2.231000542539886,
+        "delta_study_MAE": 2.221001751328922,
         "conditional_CI": [
-          0.17233130421715492,
-          4.581181401204407
+          0.16550709763079183,
+          4.542464995651623
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": 1.0861916839823627,
+        "delta_study_MAE": 1.1217630205773705,
         "conditional_CI": [
-          -0.4944759426679181,
-          2.781350712656144
+          -0.333258899838587,
+          2.6257965467325532
         ],
         "direction": "A minus B; positive means A has larger error"
       }
@@ -601,30 +601,30 @@
       "model": "SVR",
       "rows": 450,
       "studies": 64,
-      "study_MAE": 19.924935007129115,
-      "row_MAE": 17.566913480268294,
-      "row_RMSE": 23.183740355487057,
-      "R2": -0.04992673245897672,
-      "calibration_slope": 0.07478379931141994,
-      "calibration_joint_intercept": 27.141736158978073,
-      "calibration_in_the_large": 8.24151664691497,
+      "study_MAE": 19.937038051628637,
+      "row_MAE": 17.606621376689787,
+      "row_RMSE": 23.19451607815365,
+      "R2": -0.0509029639388483,
+      "calibration_slope": 0.034612857684873065,
+      "calibration_joint_intercept": 27.959807649392562,
+      "calibration_in_the_large": 8.16824063850546,
       "versus_median": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.20664171093118383,
+        "delta_study_MAE": -0.19453866643166134,
         "conditional_CI": [
-          -0.6908889374203836,
-          0.25258166804689197
+          -0.6815369333533677,
+          0.2607720374213458
         ],
         "direction": "A minus B; positive means A has larger error"
       },
       "versus_unweighted": {
         "rows": 450,
         "studies": 64,
-        "delta_study_MAE": -0.28757796216241327,
+        "delta_study_MAE": -0.2944905699714708,
         "conditional_CI": [
-          -1.2948904221336879,
-          0.6250964371286865
+          -1.2750559857220565,
+          0.5724353332525869
         ],
         "direction": "A minus B; positive means A has larger error"
       }
